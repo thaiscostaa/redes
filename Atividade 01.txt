@@ -1,0 +1,28 @@
+Atividade 01
+Questão 01- Topologia ponto a ponto: Cada um dos pontos funciona tanto como cliente como servidor, permitido compartilhamento de dados sem a necessidade de um servidor. Essa topologia é de baixo custo e fácil implementação, porém, é também de baixa segurança e extensão para evitar problemas.
+Topologia de barramento: Os computadores se apresentam conectados por segmentos de cabos e conectores T. Simples e relativamente confiável, o uso do cabo é econômico e de fácil expansão, no entanto, uma falha no cabo compromete aa rede inteira.
+Topologia em estrela: Utilizam cabos de par trançado e um hub como ponto central da rede, com isso a falha de um computador não causa impacto na rede, apenas uma falha no dispositivo central. A adição de novos computadores é simples.
+Topologia em anel: Consiste em computadores ligados em circulo fechado. Nessa topologia os computadores acessam a rede igualmente, porém a falha de um impacta o resto da rede.
+Topologia mista: Uma topologia híbrida conecta componentes de rede, combinando as características de duas ou mais outras topologias. Apesar de melhor tolerância a falha, possui um custo alto e difícil instalação e configuração.
+Questão 02- Internet é uma rede mundial que conecta computadores de todo o mundo, assim como a internet, com diferença com relação a abrangência com relação aos computadores conectados, pois a intranet é restrita a um local físico como por exemplo órgãos públicos. Já a extranet funciona com extensão da intranet à computadores que não estão conectados a essa rede, como por exemplo clientes, funcionários, entre outros que precisem acessar alguns serviços da intranet.
+Questão 03- Camadas Física: Transmite e recebe os bits brutos através de um meio físico. Descreve interfaces mecânicas, elétricas/ópticas e funcionais com o meio físico e transporta sinais para as outras camadas.
+Camada de Enlace: proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as outras camadas assumam a transmissão praticamente sem erros através do vínculo.
+Camada de Rede: Responsável pelo tráfego no processo de internetworking.
+Camada de Transporte: É responsável pela qualidade na entrega/recebimento dos dados.
+Camada de Sessão: Responsável pelo processo da troca de dados/comunicação a camada de sessão inicia, gerencia e termina a conexão entre hosts.
+Camada de Apresentação: Formatação e representa os dados. Responsável por fazer com que duas redes diferentes se comuniquem, traduzindo os dados no processo de comunicação.
+Camada de aplicação: É a interface para inserção/recepção de dados.
+
+Questão 04- Camada de Aplicação: Faz a comunicação entre os aplicativos e o protocolo de transporte.
+Camada de Transporte: Capta os dados enviados pela camada de aplicação e os transforma  em pacotes a serem passados para a camada de Internet.
+Camada de internet: Adiciona ao datagrama informações sobre o caminho que ele deverá percorrer.
+Camada de Interface com a Rede:  Envia o datagrama recebido pela camada de Internet em forma de um quadro através da rede.
+Questão 05- Hubs: Operam na camada física na conexão de outros dispositivos de rede para comunicação.
+Switch: Controla a comunicação entre os dispositivos conectados à rede e opera na camada de enlace.
+Roteador: Conecta computadores à Internet, de modo que os usuários possam compartilhar uma conexão física e opera na camada de rede.
+
+
+
+
+
+
