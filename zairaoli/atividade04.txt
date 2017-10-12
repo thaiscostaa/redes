@@ -1,0 +1,36 @@
+Subredes 03
+
+1)  
+2n-2≥30
+n=5
+11100000
+24+3=27
+Letra A
+2)
+256-240=16
+Variação 16
+Letra A
+3)
+2n-2≥60
+32-6=26 → máscara
+128+64=192
+256-192=64 → Variação
+Letra B
+4)
+32-29=3
+11111000 → 248
+256-248=8 → Variação
+Letra D
+5)
+Letra C
+6)
+2n-2=x
+n=12       pois   32-20=12
+x=4094
+Letra A
+7)
+Letra B
+8)
+256-252=4
+B, C, D → host
+Letras C e D.
