@@ -1,0 +1,12 @@
+Elai Emylle Matos de Lima - 431
+
+
+Questão 1. O default gateway roteia o trânsito dos hosts da rede para a internet e da internet para a rede. Sendo assim, é a porta de entrada e saída da rede.
+
+Questão 2. A alteração do endereço mac da placa de rede pode ocasionar problemas na conexão.
+
+Questão 3. Portas TCP e UDP.         
+
+Questão 4. E-mails e acessos a sites são realizados via TCP e não UDP porque o TCP tem a função de garantir que os pacotes sejam entregues sem alterações, sem terem sido corrompidos e na ordem correta, dependendo de conexão. Enquanto que o UDP, tem a mesma função, porém é menos confiável, pois não há procedimentos de verificação no envio e recebimento de dados.
+
+Questão 5. Apareceram as conexões UDP ativas. O Netstat exibe todas as conexões TCP e UDP ativas.
