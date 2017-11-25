@@ -1,0 +1,13 @@
+                                                              REVISÃO-CAMADA 3
+
+1(4.1) R= Datagrama. O comutador de camada de enlace cria redes e o reteador permite a conexão com essas redes.
+
+12(4.4) R= Sim. Um endereço IP para cada rede, totalizando 2.
+
+13(4.4) R= 11011111.00000001.00000011.00011011;
+
+14(4.4) R= IP: 10.17.9.60; Máscara de rede: 255.255.248.0; DNS: 127.0.1.1; Gateway: 10.17.10.220;
+
+18(4.4) R= Os IPs são atribuídos com o auxílio do DHCP. Ele usa NAT.
+
+19(4.4) R= No IPv4 o comprimento pode variar de 20-60 bytes à depender das opções de IP e há várias opções de cabeçalho; no IPv6 o comprimento é fixo, 40 bytes e não tem opções de cabeçalho. Tem semelhanças sim: ambos admitem entrega sem conexão.
