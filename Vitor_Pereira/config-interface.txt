@@ -1,0 +1,63 @@
+Pratica 1:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ps -aux | grep dhclient
+[sudo] senha para alunos: 
+root      1210  0.0  0.0  16120  3716 ?        S    11:49   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wls2.pid -lf /var/lib/NetworkManager/dhclient-507337b7-d653-40d7-855b-9aa9ab3d007a-wls2.lease -cf /var/lib/NetworkManager/dhclient-wls2.conf wls2
+alunos    2714  0.0  0.0  14252  1088 pts/2    S+   12:37   0:00 grep --color=auto dhclient
+
+Pratica 2:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    600    0        0 wls2
+10.17.8.0       0.0.0.0         255.255.248.0   U     600    0        0 wls2
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wls2
+
+Pratica 3:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 0
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ 
+
+Pratica 4:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 10.17.12.62
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ ping 8.8.8.8
+connect: Network is unreachable
+
+Pratica 5:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 wls2
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route add default gw 10.17.10.220
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    0      0        0 wls2
+10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 wls2
+
+Questão 1.
+Default gateway (ou gateway padrão) é responsável pela rota traçada pelo endereço IP.
+
+Pratica 6:
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 down
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 hw ether 1c:65:9d:71:b6:b2
+alunos@lab-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2
+wls2      Link encap:Ethernet  Endereço de HW 1c:65:9d:71:b6:b2  
+          inet end.: 10.17.12.62  Bcast:10.255.255.255  Masc:255.0.0.0
+          BROADCAST MULTICAST  MTU:1500  Métrica:1
+          pacotes RX:32648 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:5463 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1000 
+          RX bytes:5938942 (5.9 MB) TX bytes:895629 (895.6 KB)
+
+
+Questão 2. Problemas de conectividade
+
+Questão 3.
+Porta TCP
+Foi necessário a permissão como administrador e comando tais como up e down.
+
+Questão 4.
+Porque a preferência é a segurança e não a velocidade, já que o TCP priveligia a segurança e UDP a velocidade.
+
+Questão 5.
+Útil para saber endereços remotos,local e estado. A saida TCP retorna dados, enquanto UDP só envia.
+
