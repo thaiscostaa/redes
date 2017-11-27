@@ -1,0 +1,10 @@
+(Questão 01)
+R: Default gateway (ou gateway padrão) é responsável pela rota traçada pelo endereço IP.
+(Questão 02)
+R: Problemas de conectividade
+(Questão 03)
+R: Porta TCP. Foi necessário a permissão como administrador e comando tais como up e down.
+(Questão 04)
+R: Porque a preferência é a segurança e não a velocidade, já que o TCP privilegia a segurança e UDP a velocidade.
+(Questão 05)
+R: Útil para saber endereços remotos, local e estado. A saída TCP retorna dados, enquanto UDP só envia.
