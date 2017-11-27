@@ -1,0 +1,15 @@
+Questão 1
+O gateway padrão, ou default gateway, é responsável pela conexão com o IP da rede.
+
+Questão 2
+A alteração do endereço mac da placa de rede pode ocasionar problemas de conectividade entre o computador e a rede.
+
+Questão 3
+Porta TCP
+Foi necessário a permissão como administrador e comando tais como up e down.
+
+Questão 4
+Pois a preferência é a segurança e não a velocidade, já que o TCP priveligia a segurança e UDP a velocidade.
+
+Questão 5
+Utilizado para saber endereços remotos,local e estado. A saida TCP retorna dados, enquanto UDP só envia.
