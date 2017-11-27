@@ -1,0 +1,90 @@
+Questão 1…..
+4,1
+Na camada de rede um pacote é denominado de datagrama. O comutador de pacotes na camada de rede local ou ethernet é chamado switche, os roteadores conectam os computadores de uma rede à internet por meio de chaveamento intermediário.
+
+4.4
+Q12…….
+Sim o numero de ip é igual ao numero de interface
+q13
+11011111.00000001.00000011.000111000
+
+q14
+endereço de rede: 10.17.9.143, mascara:255.255.248.0, reteador default:10.17.8.0 e endereço ip DNS:127.0.1.1
+q18
+o roteador sem fio usa NAT e os endereços ips PODEM SER ATRIBUIDOS AOS COMPUTADORES ATRAVES DO dhcp
+q19 
+diferença
+Em resumo o IPv6 se diferencia em endereços quase ilimitadas, aumento da mobilidade, melhor desempenho, características de segurança superiores como visualizado na tabela abaixo.
+
+Questão 2…… 
+
+1. Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteamento na rede. Tabelas estáticas não se ajustam automaticamente a alterações na rede, portanto devem ser utilizadas somente onde as rotas não sofrem alterações. Algumas vantagens do roteamento estático são a segurança obtida pela não divulgação de rotas que devem permanecer escondidas; e a redução do overhead introduzido pela troca de mensagens de roteamento na rede.
+
+2. Roteamento dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construída a partir de informações trocadas entre protocolos de roteamento. Os protocolos são desenvolvidos para distribuir informações que ajustam rotas dinamicamente para refletir alterações nas condições da rede. Protocolos de roteamento podem resolver situações complexas de roteamento mais rápida e eficientemente que o administrador do sistema. Protocolos de roteamento são desenvolvidos para trocar para uma rota alternativa quando a rota primária se torna inoperável e para decidir qual é a rota preferida para um destino. Em redes onde existem várias alternativas de rotas para um destino devem ser utilizados protocolos de roteamento.
+Estático -> É feito manualmente pelo administrador do sistema.
+Dinâmico -> É feito a partir de informações trocadas entre protocolos de roteamento. 
+
+Questao 3
+Descrição do algoritmo
+O algoritmo de Dijkstra identifica, a partir de um vértice do grafo, qual é o custo mínimo entre esse vértice e todos os outros do grafo. No início, o conjunto S contém somente esse vértice, chamado origem. A cada passo, selecionamos no conjunto de vértices sobrando, o que é o mais perto da origem. Depois atualizamos, para cada vértice sobrando, a sua distância em relação à origem. Se passando pelo novo vértice acrescentado, a distância fica menor, é essa nova distância que será memorizada. 
+Suponhamos que o grafo é representado por uma matriz de adjacência onde temos o valor 
+ se não existe aresta entre dois vértices. Suponhamos também que os vértices do grafo são enumerados de 1 até n, isto é, o conjunto de vértices é N = {1, 2, ..., n}. Utilizaremos também um vetor D[2..n] que conterá a distância que separa todo vértice do vértice 1 (o vertíce do grafo que é o vertice 1 é escolhido arbitrariamente). Eis o algoritmo: 
+Para entender melhor o algoritmo, considere o grafo direcionado ilustrado na figura 1. 
+
+
+Para identificar esse caminho mínimo, acrescentamos mais um vetor P[2..n], onde P[v] indica o vértice que precede v no caminho mais curto. A modificação do algoritmo para obter esse vetor é simples. Primeiro devemos inicializar esse vetor. Segundo, no mesmo momento que o vetor D é atualizado, atualizamos também o vetor P. O algoritmo modificado é o seguinte: 
+função Dijkstra(L = [1..n, 1..n]: grafo): vetor[2..n] 
+C := {2,3,...,n}
+Para i := 2 até n:
+D[i] :=   L[1,i]
+P[i] :=   1
+Repetir n-2 vezes:
+v :=   Elemento de C que minimiza D[v]
+C :=   C - {v}
+Para cada elemento w de C:
+Se D[w] > D[v]+ L[v,w] então 
+D[w] :=   D[v]+ L[v,w]
+P[w] := v 
+Retornar P
+Com esse algoritmo modificado, as etapes da execução são as seguintes: 
+Passo 
+v 
+C 
+D 
+P 
+Início 
+- 
+{2,3,4,5} 
+[50,30,100,10] 
+[1,1,1,1] 
+1 
+5 
+{2,3,4} 
+[50,30,20,10] 
+[1,1,5,1] 
+2 
+4 
+{2,3} 
+[40,30,20,10] 
+[4,1,5,1] 
+3 
+3 
+{2} 
+[35,30,20,10] 
+[3,1,5,1]
+Vemos que o estado final do vetor P é [3,1,5,1]. Para saber qual é o caminho mais curto entre os vértices 1 e 2, procuramos o valor na posiçao 2 desse vetor (não esqueça que P e D são indexados a partir de 2). O vetor indica que o último vértice antes do vértice 2 é o vértice 3. Repetimos de novo o mesmo processo para ver o caminho mais curto entre 1 e 3. No vetor, na posição 3, temos o valor 1, que é a origem. Então, o caminho mais curto é 1,3,2.
+
+Conceitos básicos
+Em vários problemas, é preciso particionar os vértices de um grafo em conjuntos de vértices independentes. Imagine por exemplo que queremos dividir um grupo em subgrupos que contêm somente elementos compatíveis. Considere por exemplo o seguinte grafo: 
+
+Eis uma partição dos vértices em conjuntos de vértices independentes: {a},{b, d}, {c,f}, {e}. Evidentemente isso não é a melhor solução. Uma solução ótima seria a seguinte: {a,c,e}, {b, d}, {f}. 
+Em teoria dos grafos, esse problema é representado como um problema de coloração. Usamos n cores para colorir o grafo de tal maneira que não tenha nenhum par de vértices adjacentes com a mesma cor. O objetivo, claro, é de minimizar esse valor n. O valor mínimo de n é chamado número cromático. O número cromático do grafo da figura 1 é 3. E fácil ver que não pode ser menor, pois existe no grafo uma clique de 3 vértices (os vértices b, e e f). 
+Para alguns tipos de grafos, o número cromático é facil de determinar (Ci representa um grafo cíclico de i vértices): 
+C2p: número cromático = 2 
+C2p+1: número cromático =3 
+Kp: número cromático = p 
+Grafo bipartite: número cromático = 2 
+Algoritmos gulosos com heurísticas
+Na apresentação dos algoritmos para coloração de grafos, utilizaremos a seguinte convenção: cada cor é identificada por um número inteiro. 
+Para resolver o problema de coloração de grafos, podemos usar uma técnica simples. Escolhemos uma cor para colorir os vértices do grafos de tal maneira que não tenha vértices adjacentes da mesma cor. Se sobrar vértices não coloridos, repetimos com outra cor, e assim por diante até obtenção de um grafo completamente colorido. Eis o algoritmo: 
+função Col_ingenuo (G: grafo): Grafo colorido
