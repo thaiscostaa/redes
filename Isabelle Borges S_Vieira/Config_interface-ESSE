@@ -1,0 +1,77 @@
+PRÁTICA
+
+1.Resultado:
+root      2183  0.0  0.0  16128  3744 ?        S    13:00   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wls2.pid -lf /var/lib/NetworkManager/dhclient-ad059a4d-ed0a-42d8-8e13-7346ba517160-wls2.lease -cf /var/lib/NetworkManager/dhclient-wls2.conf wls2
+alunos    2993  0.0  0.0  14252   984 pts/2    S+   13:05   0:00 grep --color=auto dhclient
+
+2.Resultado:
+sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    600    0        0 wls2
+10.17.8.0       0.0.0.0         255.255.248.0   U     600    0        0 wls2
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wls2
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ping 8.8.8.8
+
+Teve êxito.
+
+3.Resultado:
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 0
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ 
+
+4. Resultado:
+sudo ifconfig wls2 10.17.10.220
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ping 8.8.8.8
+connect: Network is unreachable
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ 
+
+*O que mudou foi que não pode alcançar a rede.
+
+5. Resultado:
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    0      0        0 wls2
+10.0.0.0        0.0.0.0         255.0.0.0       U     0      0        0 wls2
+
+QUESTÕES
+
+1. É um portão de entrada. IP da rede.
+
+2. problemas de conectividade.
+
+3. 
+
+*******************************************************************************
+http		80/tcp		www		# WorldWideWeb HTTP
+http		80/udp				# HyperText Transfer Protocol
+https		443/tcp				# http protocol over TLS/SSL
+http-alt	8080/tcp	webcache	# WWW caching service
+
+*******************************************************************************
+pop3		110/tcp		pop-3		# POP version 3
+pop3		110/udp		pop-3
+pop3s		995/tcp				# POP-3 over SSL
+
+*******************************************************************************
+ssh		22/tcp				# SSH Remote Login Protocol
+
+*******************************************************************************
+rtelnet		107/tcp				# Remote Telnet
+telnets		992/tcp				# Telnet over SSL
+tfido		60177/tcp			# fidonet EMSI over telnet
+
+*******************************************************************************
+nntp		119/tcp		readnews untp	# USENET News Transfer Protocol
+nntps		563/tcp		snntp		# NNTP over SSL
+
+*******************************************************************************
+FTP - TCP.
+
+*******************************************************************************
+
+4. Porque a preferência é por enviar e receber dados e não só enviar.
+
+5. Os endereços mudam de UDP e TCP. O TCP envia e retorna dados e o UDP tem a preocupaçõa apenas de enviar.
+É útil para para saber endereços remotos e local do pacote que é observado lá.
+
+

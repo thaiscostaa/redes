@@ -1,0 +1,32 @@
+01. Responda às seguintes questões do livro Redes de Computadores e a Internet, 5ª edição, de Kurose. O livro encontra-se na biblioteca:
+
+Seção 4.1.
+Questão 01:
+Na camada de rede um pacote é chamado de datagram. O comutador de pacotes na camada de rede local ou ehternet é denominado switche, os roteadores ligam os computadores de uma rede a internet por meio de um chaveamento intermediario.
+
+Seção 4.4.
+Questões 12:
+Sim. A quantidade de endereços Ips é igual a de interfaces.
+
+Questões 13:
+11011111.00000001.00000011.000111000
+
+Questões 14:
+Masc:255.255.248.0.
+Endereço ip: 10.17.8.52.
+Roteador default: 10.17.10.220.
+Servidor DNS local: 127.0.1.1.
+
+Questões 18:
+Como o roteador distribui IP's privados, para sua rede interna, para sair para internet ele precisa usar um NAT.
+
+Questões 19:
+O cabeçalho do IPV6 tem menos informação do que o do IPV4, Tem a source Address e a Destination Address.
+
+
+02. Descreva roteamento estático e roteamento dinâmico. Cite diferenças entre eles.
+Usa-se roteamento estático quando se tem uma rede com um número limitado de roteadores para outras redes.  Para dinâmico é com redes com mais de uma rota possível para o mesmo ponto. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, podendo ou não ser divulgada para outros dispositivos de roteamento na rede. E essas tabelas não são ajustadas automaticamente a um mudança da rede. Já a tabela de roteamento dinamico é formada a partir de dados trocadas entre protocolos de roteamento. Os protocolos são projetados para distribuir informações que ajustam rotas dinamicamente em relação as alterações nas condições da rede.
+
+
+03. Descreva o algoritmo Dijkstra.
+É um dos algoritmos que calcula a rota de custo mínimo entre vértices de um grafo. Selecionado um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os outros vértices do grafo. Ele é mutio simples e  tem um bom nível de performance e qualidade. Ele não garante a exatidão da solução caso ocorra a presença de arcos com valores negativos.

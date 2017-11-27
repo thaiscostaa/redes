@@ -1,0 +1,23 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO TI 431
+
+Questão 01
+1.  O pacote recebe o nome de datagrama.O comtador de camada de enlace se baseia na decisão de repasse do valor que está no campo do cabeçalho do pacote,já os roteadores tomam decisões de repasse no valor que esá no campo da camaa de rede.
+Seção 4.4
+12. Sim,ele possui.O número de endereços é equivalente ao       número de interfaces.
+13. O endereço é: 11011111.00000001.00000011.00011011
+14.
+Endereço ip: 10.17.8.43
+Mask:255.255.248.0
+Dns:127.0.1.1
+Dhcp:10.17.10.220
+18. Dhcp do roteador irá distribui vários endereços de rede.Sim,ele irá usar Nat,pois precisa precisa sair para acessa a ineternet.
+19.O número de campos foi reduzido para 8 a fim de tornar mais eficiente e simples.Sem contar que cada um deles tem bits.
+Questão 02
+O roteamenro dinâmico possui uma quatidade limitada de roteadores e é configurada manualmente,já o roteamento dinâmico tem mais de uma rota possível e é construído através de informações trocadas pelos protocolos.
+Questão 03
+É um algorítimo de custo mínimo entrelaçado entre as vértices de um grafo.Ele é simples e calcula o custo mínimo deste vértice para com os demais sempre se ajustando de acordo com as circunstâncias. Considera-se que um vértice estará fechado quando já tiver sido obtido um caminho de custo mínimo dele tomado-o como raiz da busca. Se isso não ocorrer o algorítimo estará aberto.
+          
+
+
+

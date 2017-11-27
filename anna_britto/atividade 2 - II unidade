@@ -1,0 +1,19 @@
+01. 
+   Questão 01)  O nome do pacote de camada de rede é datagrama. “Os comutadores de camada de enlace baseiam a decisão de repasse no valor que está no campo da camada de enlace”, já  os roteadores “baseiam sua decisão de repasse no valor que está no campo de camada de rede”. (livro)
+   Questão 12) Sim. O número de IPs é igual ao número de interfaces. 
+   Questão 13) 11011111.00000001.00000011.00011011
+   Questão 14)      DNS :  IP: 10.17.10.10
+                    DHCP: IP: 10.17.13.183
+                          MASK: 255.255.248.0
+                          GATEWAY: 10.17.10.220
+   Questão 18) O DHCP do roteador vai oferecer um endereço IP para cada PC. Sim, ele usa NAT para distribuir IPs para mais de um computador e para acessar a internet. 
+   Questão 19) O número de elementos do cabeçalho é menor para torna-lo mais eficiente. 
+
+02. O roteamento estático possui uma quantidade limitada de roteadores para outras redes e possui uma manutenção manual do administrador não possibilitando dessa forma uma manutenção automática. 
+Diferente do roteamento dinâmico que permite não só uma manutenção automática das redes, como também mais de uma rota na própria.
+
+03. “O Algoritmo de Dijkstra é um dos algoritmos que calcula o caminho de custo mínimo entre vértices de um grafo. 
+Escolhido um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os demais vértices do grafo. 
+Ele é bastante simples e com um bom nível de performance. 
+Ele não garante, contudo, a exatidão da solução caso haja a presença de arcos com valores negativos.” 
+(http://www.inf.ufsc.br/grafos/temas/custo-minimo/dijkstra.html)

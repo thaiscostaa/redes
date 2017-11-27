@@ -1,0 +1,41 @@
+Livro:
+
+Questão 1 -
+
+O pacote da camada de rede se chama Datagrama. A diferença entre um roteador e o comutador de camada de enlace é que o comutador cria uma rede, enquanto que o roteador conecta redes.
+
+Qustão 12 -
+
+Sim, pois existe um endereço IP para cada interface.
+
+Questão 13 - 
+
+IP: 223.1.3.27 = 11011111.00000001.00000011.00011011
+    
+Questão 14 - 
+
+ Endereço IP: 10.17.8.45  
+ Broadcast:10.17.15.255  
+ Masc:255.255.248.0
+ DNS: 127.0.1.1
+ search labifba.local
+ Roteador de default: 10.17.10.220
+
+Questão 18 -
+
+O roteador distribui IP's privados para a rede interna, para sair para internet ele precisa usar um NAT que faz a tradução dos endereços IP e portas TCP da rede local para a Internet.
+
+Questão 19 -
+
+O cabeçalho do IPv4 tem comprimento varíavel dependendo das opções de IP. E o do IPv6 tem comprimento fixo e não existem opções de cabeçalho de IP. Os dois admitem entrega sem conexão, pois cada datagrama é roteado independentemente.
+
+
+Atividade:
+
+Questão 2 - Descreva roteamento estático e roteamento dinâmico. Cite diferenças entre eles.
+
+Só utiliza o roteamento estático quando  tem uma rede com números limitados de roteadores para outras redes, a tabela desse tipo de roteamento  é construída manualmente pelo administrador do sistema, podendo ou não ser divulgada para outros dispositivos de roteamento na rede, essas tabelas não são ajustadas automaticamente a um mudança da rede. Já o roteamento dinâmico é com redes com mais de uma rota possível para o mesmo ponto, e suas tabelas de roteamento é formada a partir de dados trocadas entre protocolos de roteamento. Os protocolos são projetados para distribuir informações que ajustam rotas dinamicamente em relação as alterações nas condições da rede.
+
+Questão 3 - Descreva o algoritmo Dijkstra.
+ 
+É um dos algoritmos que calcula a rota de custo mínimo entre vértices de um grafo. Selecionado um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os outros vértices do grafo. Ele é mutio simples e  tem um bom nível de performance e qualidade. Ele não garante a exatidão da solução caso ocorra a presença de arcos com valores negativos. 
