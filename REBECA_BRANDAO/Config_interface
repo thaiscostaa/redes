@@ -1,0 +1,9 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO TI 431
+QUESTÃO 01. 
+O novo endereço default gateway é referente ao endereço de rede e por isso quando ele é adicionado o contador,no passo 5, o mesmo para de contar.O gateway é o encaminhador de pacotes de endereço IP.
+Questão 02.
+Pode ocasionar problemas de conectividade entre o dispositivo e a rede.
+Questão 03. A porta TCP,porém para identificá-la foi necessário utilizar os comandos up and down.
+Questão 04. No sistema eles priorizam a segurança e não a velocidade e por isso o TCP,por ser mais seguro é mais priorizado,enquanto o UDP que é mais veloz não.
+Questão 05. Com eles se pode perceber o local,endereço remoto e o estado.O TCP envia e retorna e o UDP só envia.
