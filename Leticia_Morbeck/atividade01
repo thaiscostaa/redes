@@ -1,0 +1,20 @@
+questão 1) O Gateway é um “roteador” que fica entre duas redes, emcaminhando os dados entre um computador, cleular e outros em serviços da internet.
+
+questão 2) causa problemas de conectividade, o servidor não consegue estabelecer uma conexão com o navegador.
+
+Questão 3) As portas são tcp e udc
+
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+http		80/tcp		www		# WorldWideWeb HTTP
+http		80/udp				# HyperText Transfer Protocol
+https		443/tcp				# http protocol over TLS/SSL
+https		443/udp
+http-alt	8080/tcp	webcache	# WWW caching service
+http-alt	8080/udp
+
+
+questão 4)  o TCP  ele envia e recebe dados, diferente do UDP que apenas envia.
+
+Questão 5)sudo netstat -lt -----→ protocolos TCP e o sudo netstat -lu -----→ protocolo UDP. O netstat ele mostra o endereço local, endereço remoto, estado e a porta.
+
