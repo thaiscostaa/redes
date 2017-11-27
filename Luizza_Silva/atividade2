@@ -1,0 +1,19 @@
+1- O nome de um pacote de camada de rede é o datagrama. O computador de pacotes na camada de redes.
+
+12- Sim, o numero de endereços IP é iagual ao numero de Interfaces.
+
+13- 11011111.00000001.00000011.00011100
+
+14- IP - 10.17.9.124  MÁSCARA - 255.255.248.0
+DNS - 10.17.8.0              
+GATEWAY - 127.0.1.1
+
+18- O roteador sem fio usa NAT e os endereços IP podem ser atribuidos aos computadores atráves do DHCP.
+
+19- O cabeçalho do IPV6 tem menos dados do que o do IPV4, tem a source Address e a Destination Address.
+
+2- Roteamento Estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático.
+Uma tabela de roteamento estático é construida manualmente pelo adiministrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteameto na rede.
+Roteamento Dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construida a partir de informações trocadas entre protocolos de roteamento.
+
+3-O algoritimo de Dijkstra é um dos algoritimos que calcula o caminho de custo minímo entre vértices de um grafo. Escolhido um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os demais vértices do grafo. Ele é bastante simples e com um bom nível de performance. Ele não garante, contudo, a exatidão da solução caso haja a presença de arcos com valores negativos.
