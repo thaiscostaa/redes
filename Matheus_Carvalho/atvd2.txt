@@ -1,0 +1,28 @@
+Aluno: Matheus Santos Carvalho
+Turma:431
+
+Questão 1:
+O novo gateway padrão do passo 5 é referente ao de rede, pois houve resposta no ping. Gateway funciona como um encaminhador de pocotes.
+
+Questão 2:
+Gera um problema de conexão. 
+
+Questão 3:
+Tcp e Udp.
+
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+http		80/tcp		www		# WorldWideWeb HTTP
+http		80/udp				# HyperText Transfer Protocol
+https		443/tcp				# http protocol over TLS/SSL
+https		443/udp
+http-alt	8080/tcp	webcache	# WWW caching service
+http-alt	8080/udp
+
+Questão 4:
+O TCP é voltado para a conexão, já o UDP não.
+
+Questão 5: 
+Sudo netstat -lt: Apresenta as portas em tcp, com o endereço local, remoto e o estado.
+Sudo netstat -lu: Apresenta as portas em udp, com o endereço local, remoto e o estado.
+O neststat permite observar configurações da rede.
