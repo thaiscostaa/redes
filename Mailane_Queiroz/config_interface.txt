@@ -1,0 +1,19 @@
+QUESTÃO 01
+
+Resposta: Default gateway (ou gateway padrão) é responsável pela rota traçada pelo endereço IP.
+
+QUESTÃO 02
+
+Resposta: Problemas de conectividade
+
+QUESTÃO 03
+
+Resposta: Porta TCP. Foi necessário a permissão como administrador e comando tais como up e down.
+
+QUESTÃO 04
+
+Resposta: Porque a preferência é a segurança e não a velocidade, já que o TCP privilegia a segurança e UDP a velocidade.
+
+QUESTÃO 05
+
+Resposta: Útil para saber endereços remotos, local e estado. A saída TCP retorna dados, enquanto UDP só envia.
