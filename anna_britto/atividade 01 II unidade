@@ -1,0 +1,9 @@
+Questão 01 --> Default gateway é a porta de entrada e saída de rede, responsável pela sua conexão com o IP.  
+
+Questão 02 --> O computador pode ter uma má conexão com a rede.
+
+Questão 03 --> Porta TCP, para utilização tem que ter a permissão como administrador e os comandos up e down. 
+
+Questão 04 --> A prioridade é a segurança e não a velocidade, o TCP prioriza a segurança e UDP a velocidade. 
+
+Questão 05 --> Serve para enconatrar endereços remotos,estado e local. A saida TCP retorna dados, enquanto UDP só envia.
