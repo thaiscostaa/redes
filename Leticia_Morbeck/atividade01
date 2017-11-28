@@ -2,7 +2,13 @@ questão 1) O Gateway é um “roteador” que fica entre duas redes, emcaminhan
 
 questão 2) causa problemas de conectividade, o servidor não consegue estabelecer uma conexão com o navegador.
 
-Questão 3) As portas são tcp e udc
+Questão 3)  portas do http é 80
+            as do pop3 é 110
+            as do ssh é 22
+            telnet-->23
+            nntp--->119
+            ftp--->20
+            
 
 # Updated from http://www.iana.org/assignments/port-numbers and other
 # sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
