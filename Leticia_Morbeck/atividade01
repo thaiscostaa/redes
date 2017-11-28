@@ -20,7 +20,7 @@ http-alt	8080/tcp	webcache	# WWW caching service
 http-alt	8080/udp
 
 
-questão 4)  o TCP  ele envia e recebe dados, diferente do UDP que apenas envia.
+questão 4)  o TCP  ele envia e recebe dados,ouseja responde ao servidor, diferente do UDP que apenas envia.
 
 Questão 5)sudo netstat -lt -----→ protocolos TCP e o sudo netstat -lu -----→ protocolo UDP. O netstat ele mostra o endereço local, endereço remoto, estado e a porta.
 
