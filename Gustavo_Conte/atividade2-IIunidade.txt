@@ -1,0 +1,19 @@
+Gustavo Conte Bastos De Andrade
+
+1) Um pacote da camada de rede chama-se datagrama.
+A diferença entre um roteador e um comutador de camada de enlace é que o primeiro é um switch que da origem a rede, e no roteador ele intercala as redes.
+
+12) Sim tem um indereço de IP pra cada interface.
+
+13) IP 223.1.3.27 --> 11011111.00000001.00000011.00011011
+    
+14) IP -> 10.17.12.62
+    mask -> 255.255.248.0
+    broadcast -> 10.17.15.255
+    roteador de default -> 10.17.10.220 
+    DNS -> 127.0.1.1
+
+18) Para uma rede interna o roteador distribui IP privados, precisando assim de um NAT que faz a tradução dos endereços IP e portas TCP da rede local para a Internet.
+
+19) IPv4 tem cabeçalho de tamanho variado e depende das configuraçoes e o IPv6 tem temanho fixo, Os dois admitem entrega sem conexão, pois cada datagrama é roteado independentemente.
+
