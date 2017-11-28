@@ -1,0 +1,14 @@
+Gustavo Conte Bastos De Andrade
+
+QUESTOES:
+1) O gateway roteia o trânsito dos hosts da rede para a internet e da internet para a rede.
+é a porta de entrada e saída da rede
+
+2) Problemas de conexao, devido a mudança do endereço mac
+
+3) As Portas UDP e TCP         
+
+4) E-mails e acessos a sites são realizados via TCP e não UDP ,TCP tem a função de garantir a integridade dos dados.
+Enquanto que o UDP, tem a mesma função, mas é menos confiável, pois não há procedimentos de verificação no envio e recebimento de dados.
+
+5) Apareceram as conexões UDP ativas. O Netstat exibe todas as conexões TCP e UDP ativas.
