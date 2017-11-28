@@ -1,0 +1,5 @@
+R1: Responsável pela conexão IP da rede.
+R2: Em algumas situações pode causar problemas de conectividade ou fazer com que a atividade de redes pareça suspeita.
+R3: A porta TCP,porém para identificá-la foi necessário utilizar os comandos up and down.
+R4: O TCP além de enviar ele recebe também, ao contrário do UDP que só envia.
+R5: A saida observada após o comando sudo netstat -lt mostra o protoclo do tipo TCP e o comando sudo netstat -lu exibe o protocolo do tipo UDP.
