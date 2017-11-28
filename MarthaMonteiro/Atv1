@@ -1,6 +1,7 @@
 4- Rede inaucansavel
 1- Funciona como encaminhador de pacotes.
 2- Ele afeta a conectividade da rede.
+3- portas do http:  80, pop3: 110, ssh:22, telnet: 23, nntp:119, ftp:20.
 4- O TCP além de enviar ele recebe também, ao contrário do UDP que só envia.
 5-sudo netstat -lt é o TCP, sudo netstat -lu É O UDP. 
 Observar as configurações da rede.
