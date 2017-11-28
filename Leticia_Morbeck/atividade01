@@ -2,9 +2,9 @@ questão 1) O Gateway é um “roteador” que fica entre duas redes, emcaminhan
 
 questão 2) causa problemas de conectividade, o servidor não consegue estabelecer uma conexão com o navegador.
 
-Questão 3)  portas do http é 80
-            as do pop3 é 110
-            as do ssh é 22
+Questão 3)  portas do http--> 80
+            pop3-->110
+            ssh--->22
             telnet-->23
             nntp--->119
             ftp--->20
