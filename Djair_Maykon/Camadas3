@@ -1,0 +1,20 @@
+1º - Na camada de rede um pacote é denominado de datagrama. O comutador de pacotes na camada de rede local ou ethernet é chamado switche, os roteadores conectam os computadores de uma rede à internet por meio de chaveamento intermediário.
+
+12º - Sim. O número de endereços IPs é igual ao número de interfaces. 
+
+13º -  11011111.00000001.00000011.000111000 
+
+14º - Masc:255.255.248.0.
+Endereço ip: 10.17.8.52.
+Roteador default: 10.17.10.220.
+Servidor DNS local: 127.0.1.1.
+
+18º -  Para a rede interna, o roteador concede IP's privados, mas para a internet, precisa de um NAT, que faz a tradução dos endereços IP e portas TCP da rede local para a Internet.
+
+19º - O cabeçalho do IPv4 tem comprimento varíavel dependendo das opções de IP. E o do IPv6 tem comprimento fixo e não existem opções de cabeçalho de IP. Os dois admitem entrega sem conexão, pois cada datagrama é roteado independentemente.
+
+
+02 -  Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. 
+      Roteamento dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico.
+
+03 - É um dos algoritmos que calcula a rota de custo mínimo entre vértices de um grafo. Selecionado um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os outros vértices do grafo. Ele é mutio simples e  tem um bom nível de performance e qualidade. Ele não garante a exatidão da solução caso ocorra a presença de arcos com valores negativos.
