@@ -1,0 +1,28 @@
+Igor Sousa      
+TI431
+
+Atividade 2 terceira unidade
+
+Questão 1:
+1- Na  camada de rede um pacote é denominado dee datagrama. O comutador de pacotes na camada de rede local ou ethernet é chamado switche, os roteadores conectam os computadores de uma rede à internet por meio de um chaveamento intermediario.
+
+12- Sim, o número de endereços do IP é igual ao número de interface.
+
+13- 11011111.00000001.00000011.00011100
+
+14- IP: 10.17.8.41
+    Mascara: 155.155.148.0
+    Roteador de default: 10.17.10.200
+    Endereço do DNS local: 10.17.10.20
+
+18- O roteador sem fio usa NAT e os endereços de IP podem ser atribuidos aos computadores por meio do DHCP.
+
+19- O IPV6 é um enderço de 128 bits, funciona por meio de autoconfiguração, suporta pacotes de 1280 bytes sem risco de fragmentar.
+    O IPV4 é um endereço de 32 bits, só funciona se for adcionado mannualmente e suporta 576 bytes sem risco de framentar.
+
+Questão 2:
+Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. Uma tabela de roteamento estático. Uma tabela de roteamento estático é construida manualmente pelo administrador do sistema e pode ou não ser divulgada para outros dispositivos de roteamento na rede.
+Roteamento dinâmico: rede com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construida a partir de informações trocadas entre protocolos de roteamento.
+
+Questão 3:
+O algoritimo dijkistra solucionao problema do caminho mais curto num grafico dirigido ou não dirigido com arestas de peso não negativo, em tempo computacional. Simples e com boa performance. Porém não garante exatidão nas susa soluções.
