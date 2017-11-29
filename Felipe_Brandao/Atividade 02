@@ -1,0 +1,32 @@
+Atividade 02
+(QUESTÃO 1)
+Na camada de rede um pacote é chamado de datagram. O comutador de pacotes na camada de rede local ou ehternet é denominado switche, os roteadores ligam os computadores de uma rede a internet por meio de um chaveamento intermediario.
+
+(QUESTÃO 12)
+Sim. A quantidade é igual ao numero de interfaces.
+
+(QUESTÃO 13)
+11011111.00000001.00000011.000111000
+
+(QUESTÃO 14)
+
+Mascara:255.255.248.0.
+Endereço ip: 10.17.8.52.
+Roteador default: 10.17.10.220.
+DNS: 127.0.1.1.
+
+(QUESTÃO 18)
+Os endereços IP são designados aos computadores através do DHCP. Sim o roteador sem fio usa NAT.
+
+(QUESTÃO 19)
+
+No cabeçalho do ipv4 o comprimento varia de 20 a 60 bytes e depende das opções de IP, já  no ipv6 é fixo um comprimento de 40 bytes. Geralmente o ipv6 é mais simples que o ipv4.
+Suas principais diferenças são: O IPv4 tem 32 bits de endereço e o IPv6 tem 128, o suporte de IPSec é opcional no IPv4 e obrigatório no IPv6. As semelhanças são que ambos admitem entrega sem conexão, permetem o emissor escolha o tamanho de um datagrama e exigem que o emissor especifique o numero de saltos que um datagrama pode fazer, antes de ser descartado.
+
+Questão 2
+
+Usa-se roteamento estático quando se tem uma rede com um número limitado de roteadores para outras redes. Para dinâmico é com redes com mais de uma rota possível para o mesmo ponto. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, podendo ou não ser divulgada para outros dispositivos de roteamento na rede. E essas tabelas não são ajustadas automaticamente a um mudança da rede. Já a tabela de roteamento dinamico é formada a partir de dados trocadas entre protocolos de roteamento. Os protocolos são projetados para distribuir informações que ajustam rotas dinamicamente em relação as alterações nas condições da rede.
+
+QUestão 3
+
+É um dos algoritmos que calcula a rota de custo mínimo entre vértices de um grafo. Selecionado um vértice como raiz da busca, este algoritmo calcula o custo mínimo deste vértice para todos os outros vértices do grafo. Ele é mutio simples e tem um bom nível de performance e qualidade. Ele não garante a exatidão da solução caso ocorra a presença de arcos com valores negativos.
