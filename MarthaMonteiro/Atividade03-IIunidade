@@ -1,0 +1,11 @@
+Problema 1
+25, nós: 1-3, 3-4, 4-5, 5-6.
+Sim, por fazer parte do caminho.
+Não, por não fazer parte do caminho.
+Problema 2
+54, nó: 1-2, 2-3, 3-4, 4-8.
+Problema 3.
+
+
+Para ganhar tal jogo é preciso chegar no destino, o canto inferior direito, analisando o menor caminho entre dois nós, como do nó  1 ao nó 2, a distancia é 4.
+A menor distancia é 21, passando-se pelos nós: 1→5→9→10→11→12.
