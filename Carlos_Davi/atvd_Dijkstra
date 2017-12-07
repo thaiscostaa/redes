@@ -1,0 +1,19 @@
+Aluno: Carlos Davi
+Turma: 431
+
+Problema 1;
+
+a)1-3-4-5-6 a soma total é:25.
+b)Sim,pois pelos calculos utilizados na alternativa a chegam no nó 4 pelo menor caminho possivel.
+c)Não, pois com a mudança de nós o caminho também muda.
+
+Problema 2:
+
+R=1-2-3-4-8-Ourivesaria a soma total é:54.
+
+Problema 3:
+
+a)O jogo funcionará do seguinte modo cada "casa" será um nó sendo numerado de 1 a 12, da esquerda para a direita e de cima para baixo.
+O numero que estava dentro de cada "casa" sera correspondente ao valor da distancia entre eles por exemplo: entre o 1 nó e o 2 a distancia sera igual a 4.
+Os deslocamentos aceitos são apenas para baixo ou para a direita.
+b)Seguindo as regras da alternativa "a", o menor caminho será:1-5-9-10-11-12, tendo como resultado da soma total:21.
