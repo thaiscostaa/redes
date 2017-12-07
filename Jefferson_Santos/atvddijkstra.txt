@@ -1,0 +1,19 @@
+Aluno: Jefferson de Jesus Santos
+Turma: 431
+Doscente: Ramon
+
+Questão 1
+
+a) 25, 1->3->4->5->6.
+b)Sim, pois a partir dos cálculos feitos na letra a, o algoritmo identifica a distância mmínima do nó 1 ao 4.
+c)Não, pois a partir dos cálculos feitos na letra a, não se torna viável descbrir o menor caminho entre 2 e6, pois este não trabalha com a origem.
+
+Questão 2
+  1->2->3->4->8->Ourivesaria
+  
+Questão 3
+
+a) Para a formulação do jogo de caminho mínimo é necessa´rio primeiramente transformar os quadrinhos em nós, sendo estes numeradoos da esquerda para a direita.O número do quadrinho corresponderá na distância de um nó para o outro.
+
+b) A distância mínima tem soma= 21 
+1->5->9->10->11->12
