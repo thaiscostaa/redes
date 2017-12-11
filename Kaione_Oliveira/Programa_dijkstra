@@ -1,0 +1,99 @@
+/////PROGRAMA FEITO EM DUPLA : Carlos Davi e Kaione Oliveira
+
+
+#include <stdio.h>
+
+
+
+int main(){
+    
+    int c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12,t[12],ct;
+    
+    printf("OBSERVAÇÃO SE O PROGRAMA RETORNAR MAIS DE UM CAMINHO, ISSO QUER DIZER QUE TODOS ESSES CAMINHOS POSSUEM O MESMO VALOR SENDO OS MESMOS OS MENORES VALORES!\n");
+    
+    
+    printf("Digite os valores para os campos abaixo:\n");
+    printf("c1  | c2  | c3  | c4  \nc5  | c6  | c7  | c8  \nc9  | c10 | c11 | c12\n\n");
+    printf("Digite o valor c2:\n");
+    scanf("%d", &c2);
+    printf("Digite o valor c3:\n");
+    scanf("%d", &c3);
+    printf("Digite o valor c4:\n");
+    scanf("%d", &c4);
+    printf("Digite o valor c5:\n");
+    scanf("%d", &c5);
+    printf("Digite o valor c6:\n");
+    scanf("%d", &c6);
+    printf("Digite o valor c7:\n");
+    scanf("%d", &c7);
+    printf("Digite o valor c8:\n");
+    scanf("%d", &c8);
+    printf("Digite o valor c9:\n");
+    scanf("%d", &c9);
+    printf("Digite o valor c10:\n");
+    scanf("%d", &c10);
+    printf("Digite o valor c11:\n");
+    scanf("%d", &c11);
+    printf("Digite o valor c12:\n");
+    scanf("%d", &c12);
+    
+    t[1]=c2+c3+c4+c8+c12;
+    t[2]=c2+c3+c7+c8+c12;
+    t[3]=c2+c3+c7+c11+c12;
+    t[4]=c2+c6+c7+c8+c12;
+    t[5]=c2+c6+c7+c11+c12;
+    t[6]=c2+c6+c10+c11+c12;
+    t[7]=c5+c9+c10+c11+c12;
+    t[8]=c5+c6+c7+c8+c12;
+    t[9]=c5+c6+c7+c11+c12;
+    t[10]=c5+c6+c10+c11+c12;
+    
+    ct = t[1];
+    
+    for(int x=1;x<=10;x++){
+        if(t[x] < ct){
+            ct=t[x];
+        }
+    }
+    if(t[1] != t[2] || t[1] != t[3] || t[1] != t[4] || t[1] != t[5] || t[1] != t[6] || t[1] != t[7] || t[1] != t[8] || t[1] != t[9] || t[1] != t[10]){
+    
+    
+    if(t[1] == ct ){
+        printf("\nO menor caminho é c1 -> c2 -> c3 -> c4 -> c8 -> c12\nTendo como soma:%d\n", t[1]);
+    }
+    if(t[2] == ct){
+        printf("\nO menor caminho é c1 -> c2 -> c3 -> c7 -> c8 -> c12\nTendo como soma:%d\n", t[2]);
+    }
+    
+    if(t[3] == ct){
+        printf("\nO menor caminho é c1 -> c2 -> c3 -> c7 -> c11 -> c12\nTendo como soma:%d\n", t[3]);
+    }
+    if(t[4] == ct){
+        printf("\nO menor caminho é c1 -> c2 -> c6 -> c7 -> c8 -> c12\nTendo como soma:%d\n", t[4]);
+    }
+    if(t[5] == ct){
+        printf("\nO menor caminho é c1 -> c2 -> c6 -> c7 -> c11 -> c12\nTendo como soma:%d\n", t[5]);
+    }
+    if(t[6] == ct){
+        printf("\nO menor caminho é c1 -> c2 -> c6 -> c10 -> c11 -> c12\nTendo como soma:%d\n", t[6]);
+    }
+    if(t[7] == ct){
+        printf("\nO menor caminho é c1 -> c5 -> c9 -> c10 -> c11 -> c12\nTendo como soma:%d\n", t[7]);
+    }
+    if(t[8] == ct){
+        printf("\nO menor caminho é c1 -> c5 -> c6 -> c7 -> c8 -> c12\nTendo como soma:%d\n", t[8]);
+    }
+     if(t[9] == ct){
+        printf("\nO menor caminho é c1 -> c5 -> c6 -> c7 -> c11 -> c12\nTendo como soma:%d\n", t[9]);
+    }
+     if(t[10] == ct){
+        printf("\nO menor caminho é c1 -> c5 -> c6 -> c10 -> c11 -> c12\nTendo como soma:%d\n", t[10]);
+     }}
+    
+    else{
+       printf("Todos os caminhos tem os mesmos valores\nTendo como soma:%d\n", t[1]);
+   }
+   
+   
+  
+}
