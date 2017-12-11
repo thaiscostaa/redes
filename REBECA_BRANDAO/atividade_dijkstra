@@ -1,0 +1,26 @@
+Problema 1: Considere a seguinte rede:
+
+
+a)Determine a distância mínima do nó 1 ao nó 6 e indique o respectivo caminho.
+A soma do caminho 1,3,4,5,6 é a menor,pois:9+3+6+7=25
+b)Pode, apenas a partir dos cálculos realizados em (a), determinar qual é a distância mínima do nó 1 ao nó 4? Justifique.
+Não,pois é necessário o uso de todas as variáveis,além do fato de que esse percurso não passará por todos os pontos.
+c)Poderia, nas mesmas circunstâncias, indicar qual a distância mínima entre os nós 2 e 6? Justifique.
+Também não,pelos mesmos motivos da letra b.
+
+
+Problema 2: 
+
+Um órgão de segurança pública da cidade Jequié/BA recebeu um pedido urgente para intervir em uma tentativa de assalto que está ocorrendo uma ourivesaria no centro da cidade. O comando operacional deverá conhecer o melhor caminho de forma a minimizar o tempo de viagem até o destino final. Você, líder desse comando operacional, precisa conhecer esse melhor caminho. Qual seria ele?
+O melhor caminho para chegar na ourivessaria seria o 1,2,3,4 e 8.
+Problema 3:
+
+Considere o tabuleiro 3x4 abaixo:
+
+O seu objetivo é desenvolver um jogo que consiste em deslocar um peão que está localizado no canto superior esquerdo até o canto inferior direito. Esse deslocamento deve prover uma sequência de movimentos para a direita ou para baixo, de forma a minimizar o somatório dos pontos correspondentes aos quadrinhos.
+
+a)Formule este jogo como um problema de menor caminho.
+**Professor,posso mostrar a questão para o senhor segunda?É que não consegui enviar por anexo.
+                     
+b)Resolva-o, usando o algoritmo Dijkstra.
+ O jeito mais eficaz de resolvé-lo é pelo caminho do 1 até o 12 que abrange os pontos 1,5,9,10,11-->7+2+3+1+8=21
