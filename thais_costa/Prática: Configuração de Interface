@@ -1,0 +1,20 @@
+Prática: configura ção de interface 
+  Questão 01. Defina default gateway (ou gateway padrão) de acordo com o comportamento observado.  
+  R- Funciona como uma ponte de ligação, uma máquina intermediaria que interliga redes, separa domínios e separa protocolos.   
+ 
+ Questão 02. O que a alteração do endereço mac da placa de rede pode ocasionar? Identifique apenas um caso.  
+ R- Problemas de conectividade, o servidor não consegue conectar com o navegador.  
+ Questão 03. Agora identifique quais portas são utilizadas pelos protocolos http, pop3, ssh, telnet, nntp e ftp. Utilize o comando grep X /etc/services, onde X é o nome do protocolo.  
+ R-Tcp e Udp. 
+ # Atualizado a partir de http://www.iana.org/assignments/port-numbers e outros  
+ # fontes como http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services.  
+ http 80 / tcp www # WorldWideWeb HTTP  
+ HTTP 80 / udp # HyperText Transfer Protocol  
+ https 443 / tcp # protocolo http sobre TLS / SSL  
+ https 443 / udp  
+ HTTP-alt 8080 / tcp webcache # WWW serviço de cache  
+ http-alt 8080 / udp  
+ Questão 04. Explique por que e-mails e acessos a sites são realizados via TCP e não UDP.  
+ R-O Udp recebe e o  Tcp envia dados  
+ Questão 05. Vamos listar as conexões TCP e UDP ativas em seu computador. Para tanto, rode sudo netstat -lt e sudo netstat -lu, respectivamente. Comente sobre a saída observada e em que circunstâncias o netstat pode ser útil.  
+ R-Sudo netstat -lt: Apresenta portas tcp, com o endereço local, remoto e estado.  sudo netstat -lu: Apresenta portas udp, com o endereço local, remoto e estado.  O neststat permite  observar a rede. 
