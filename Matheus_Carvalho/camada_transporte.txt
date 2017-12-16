@@ -1,0 +1,50 @@
+Aluno: Matheus Santos Carvalho.
+Turma: 431.
+
+Questão 1: Camada 4
+
+Questão 2: Segmento
+
+Questão 3: TCP e UDP
+
+Questão 4: 
+-Orientada à Conexão.
+-Entrega de dados com sobrecarga adicional.
+-Entrega ordenada, confiável e realiza controle de fluxo
+-É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+Questão 5:
+-É um protocolo simples.
+-Entrega de dados com baixa sobrecarga.
+-Não orientado a conexão.
+-É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP).
+
+Questão 6:
+Utilizado pelo TCP e UDP para endereçamento, indentificando uma dada conexão, aplicaçoes e conversação. Existem portas padrão para algumas aplicações.
+
+Questão 7:
+É uma junção de um endereço IP com um número de porta, possibilitando definir um processo único tanto para o cliente quanto o servidor.  O funcionamento dos serviços de  rede da camada de transporte precisam de um par de endereço de socket,assim um de cliente e outro de servidor.
+
+Questão 8:
+Número de porta origem: Y, e número de porta destino: X.
+
+Questão 9:
+O UDP é estruturalmente simples e não é bem organizado como o TCP, especialmente na segurança de trasmissão de dados. Porém o que promove seu uso em aplicações é sua ótima performace em velocidade e a baixa sobrecarga.
+
+Questão 10:
+
+A=130, B=240 e Telnet=23.
+
+a-Porta da fonte: 130
+Porta de destino: 23
+
+b-Porta da fonte: 240
+Porta de destino: 23
+
+c-Porta da fonte: 23
+Porta de destino: 130
+
+d-Porta da fonte: 23
+Porta de destino: 240
+
+e-Sim, pode ocorrer que os números de porta da fonte sejam iguais em A->S e B->S.
