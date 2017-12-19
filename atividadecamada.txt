@@ -1,0 +1,50 @@
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+( ) Camada 1
+( ) Camada 2 
+(X) Camada 3
+( ) Camada 4 
+( ) Camada 5
+( ) Camada 6
+( ) Camada 7
+
+2. Qual a PDU da camada de transporte? 
+
+( X) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+3. Quais os principais protocolos da camada de transporte?
+
+( )ARP ( X)TCP ( )IP ( )DNS ( )UDP
+
+4. Marque as características que representam o protocolo TCP. 
+
+(X ) Orientado à conexão; 
+( ) É um protocolo simples; 
+( ) Entrega de dados com baixa sobrecarga; 
+( ) Não orientado a conexão. 
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(X) Entrega de dados com sobrecarga adicional; 
+(X) Entrega ordenada, confiável e realiza controle de fluxo 
+(X) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5. Marque as características que representam o protocolo UDP. 
+
+( ) Orientado à conexão;
+(X) É um protocolo simples; 
+(X) Entrega de dados com baixa sobrecarga; 
+(X) Não orientado a conexão. 
+(X) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6. Para que serve o número de portas na camada de transporte?
+Serve como endereçamento, pricipalmente nos processos/protocolo TCP/IP
+
+7. O que são os sockets?
+R=Sockets são mecanismos de comunicação que permitem a troca de mensagens entre servidor e cliente.
+
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+R=A porta de origem vai ser y a de destino x.
+
