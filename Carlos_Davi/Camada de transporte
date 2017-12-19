@@ -1,0 +1,53 @@
+Aluno:Carlos Davi Silva Pereira 
+
+Questão 1-
+
+R: Camada 4.
+
+Questão 2-
+
+R: Segmento.
+
+Questão 3-
+
+R: TCP e UDP.
+
+Questão 4-
+
+R:
+ORIENTADO À CONEXÃO.
+ENTREGA ORDENADA, CONFIÁVEL E REALIZA CONTROLE DE FLUXO. 
+É UTILIZADO EM APLICAÇÕES COMO NAVEGADORES WEB, E-MAIL E FTP.
+
+QUestão 5-
+
+R:
+É UM PROTOCOLO SIMPLES 
+NÃO ORIENTADO A CONEXÃO 
+É UTILIZADO EM APLICAÇÕES COMO, DNS, VÍDEO EM STREAMING E VOZ SOBRE IP (VOIP).
+
+Questão 6-
+
+R:O numero de portas serve principalmente para identificar qual processo deverá se encarregar da informaçao vinda por um pacote.
+
+Questão 7-
+
+R:O socket é um mecanismo de comunicação, usado principalmente para implementar um moelo cliente/servidor, desse modo permitindo a troca e mensagens entre os processos de uma maquina/aplicaçao servidor.
+
+Questão 8-
+
+R: Origem Y e Destino X.
+
+Questão 9-
+
+R: A principal vantagem do UDP em relação ao TCP é a questao dele ser mais rapido e leve, desse modo não ocorrendo por exemplo sobrecargas.
+
+QUestão 10-
+
+R:
+
+a)133->15
+b)180->15
+c)15->233
+d)15->180
+e)Não, pois mesmo sendo hospedeiros, os mesmos possuem numeros diferentes de portas.
