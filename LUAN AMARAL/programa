@@ -1,0 +1,97 @@
++#include <stdio.h>
+ +
+ +
+ +
+ +int main(){
+ +    
+ +    int k2,k3,k4,k5,k6,k7,k8,k9,k10,k11,k12,w[12],kw;
+ +    
+ +    
+ +    
+ +    printf("Digite os valores para os campos abaixo:\n");
+ +    printf("k1  | k2  | k3  | k4  \nk5  | k6  | k7  | k8  \nk9  | k10 | k11 | k12\n\n");
+ +    printf("Digite o valor k2:\n");
+ +    scanf("%d", &k2);
+ +    printf("Digite o valor k3:\n");
+ +    scanf("%d", &k3);
+ +    printf("Digite o valor k4:\n");
+ +    scanf("%d", &k4);
+ +    printf("Digite o valor k5:\n");
+ +    scanf("%d", &k5);
+ +    printf("Digite o valor k6:\n");
+ +    scanf("%d", &k6);
+ +    printf("Digite o valor k7:\n");
+ +    scanf("%d", &k7);
+ +    printf("Digite o valor k8:\n");
+ +    scanf("%d", &k8);
+ +    printf("Digite o valor k9:\n");
+ +    scanf("%d", &k9);
+ +    printf("Digite o valor k10:\n");
+ +    scanf("%d", &k10);
+ +    printf("Digite o valor k11:\n");
+ +    scanf("%d", &k11);
+ +    printf("Digite o valor k12:\n");
+ +    scanf("%d", &k12);
+ +    
+ +    w[1]=k2+k3+k4+k8+k12;
+ +    w[2]=k2+k3+k7+k8+k12;
+ +    w[3]=k2+k3+k7+k11+k12;
+ +    w[4]=k2+k6+k7+k8+k12;
+ +    w[5]=k2+k6+k7+k11+k12;
+ +    w[6]=k2+k6+k10+k11+k12;
+ +    w[7]=k5+k9+k10+k11+k12;
+ +    w[8]=k5+k6+k7+k8+k12;
+ +    w[9]=k5+k6+k7+k11+k12;
+ +    w[10]=k5+k6+k10+k11+k12;
+ +    
+ +    kw = w[1];
+ +    
+ +    for(int x=1;x<=10;x++){
+ +        if(w[x] < kw){
+ +            kw=w[x];
+ +        }
+ +    }
+ +    if(w[1] != w[2] || w[1] !=w[3] || w[1] != w[4] || w[1] != w[5] || w[1] != w[6] || w[1] != w[7] || w[1] != w[8] || w[1] != w[9] || w[1] != w[10]){
+ +    
+ +    
+ +    if(w[1] == kw ){
+ +        printf("\nO menor caminho é k1 -> k2 -> k3 -> k4 -> k8 -> k12\nTendo como soma:%d\n", w[1]);
+ +    }
+ +    if(w[2] == kw){
+ +        printf("\nO menor caminho é k1 -> k2 -> k3 -> k7 -> k8 -> k12\nTendo como soma:%d\n", w[2]);
+ +    }
+ +    
+ +    if(w[3] == kw){
+ +        printf("\nO menor caminho é k1 -> k2 -> k3 -> k7 -> k11 -> k12\nTendo como soma:%d\n", w[3]);
+ +    }
+ +    if(w[4] == kw){
+ +        printf("\nO menor caminho é k1 -> k2 -> k6 -> k7 -> k8 -> k12\nTendo como soma:%d\n", w[4]);
+ +    }
+ +    if(w[5] == kw){
+ +        printf("\nO menor caminho é k1 -> k2 -> k6 -> k7 -> k11 -> k12\nTendo como soma:%d\n", w[5]);
+ +    }
+ +    if(w[6] == kw){
+ +        printf("\nO menor caminho é k1 -> k2 -> k6 -> k10 -> k11 -> k12\nTendo como soma:%d\n", w[6]);
+ +    }
+ +    if(w[7] == kw){
+ +        printf("\nO menor caminho é k1 -> k5 -> k9 -> k10 -> k11 -> k12\nTendo como soma:%d\n", w[7]);
+ +    }
+ +    if(w[8] == kw){
+ +        printf("\nO menor caminho é k1 -> k5 -> k6 -> k7 -> k8 -> k12\nTendo como soma:%d\n", w[8]);
+ +    }
+ +     if(w[9] == kw){
+ +        printf("\nO menor caminho é k1 -> k5 -> k6 -> k7 -> k11 -> k12\nTendo como soma:%d\n", w[9]);
+ +    }
+ +     if(w[10] == kw){
+ +        printf("\nO menor caminho é k1 -> k5 -> k6-> k10 -> k11 -> k12\nTendo como soma:%d\n", w[10]);
+ +     }}
+ +    
+ +    else{
+ +       printf("Todos os caminhos tem os mesmos valores\nTendo como soma:%d\n", w[1]);
+ +   }
+ +   
+ +   
+ +  
+ +}
+
+		Luan Amaral e João Victor Rebouças-431
