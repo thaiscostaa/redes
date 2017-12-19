@@ -1,0 +1,31 @@
+Ifba, 2017
+Aluno: Jefferson de Jesus Santos 
+Turma: 431         Docente: Ramon
+
+
+
+		  				Atividade Camada de Redes
+
+1- Camada 4
+
+2-Segmento
+
+3-TCP e UDP
+
+4-Entrega ordenada, confiável, realiza controle de fluxos. Orientado a conexão. É utilizado em aplicações como navegadores Web, E-mail e FTP. Entrega de dados com sobrecarga adicional.
+
+5-É um protocolo simples, com entrega de dados com baixa sobrecarga, não orientado a conexão, é utilizado em aplicações como, DNS, vídeo em Streaming e voz Sobre IP (VOIP).  
+
+6- Identifica qual processo deve se encarregar da informação enviada por um pacote, identificando os processos de redes e quais podem ser acessadas.
+
+7-É o ponto final do fluxo de comunicação feito pelos computadores.
+
+8-Origem Y e destino X.
+
+9-A UDP é mais rápida que a TCP, tem baixa sobrecarga de dados, melhor controle sobre os dados que serão enviados e quando serão enviados.
+
+10-  a)233->>15.
+     b)180->>15.
+     c)15->>233.
+     d)15->>180. 
+     e)Não, mesmos sendo hopedeiros eles possuem portas numéricas diferentes.
