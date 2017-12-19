@@ -1,0 +1,179 @@
+  O PROGRAMA FOI DESENVOLVIDO UTILIZANDO A LINGUAGEM DE PROGRAMAÇÃO "JAVA" E CONSISTE NA APLICAÇÃO DE UM METÓDO QUE APLIQUE AS NORMAS DIJKSTRA EM UMA TABELA 3x4. 
+  BOTÃO PROCURAR :
+  ESSE BOTÃO INICIALIZA DOIS VETORES ("vt"e "cam"). 
+  O vetor "vt" amazenará os valores que serão alocados nos Textfields do programa. 
+  O vetor "cam", armazenará a soma de todos os caminhos possíveis para uma tabela 3x4.
+  "OBs: Sempre Iniciando no bloco do canto superior esquerdo até o  bloco do canto inferior esquerdo, lembrando que os caminhos apenas são traçados da esquerda pra direita e de baixo para cima."
+  O próximo passo do botão procurar é um laço de repetição (for) com uma condição(if) dentro. Esse laço procura a menor das somatórias e depois a guarda em uma variavél "x".
+  A menor somatória(x) passará por todas as variavéis "cam" até que encontre a igual a sua e, assim, atribuirá cor nos campos de texto.
+  A coloração dos TextFields acontece pois os caminhos foram determinados dentro de cada uma de suas condições. 
+  O BOTÃO RECOMEÇAR:
+  Esse botão reinica o programa, igualando os valores dos TextFields em nulo e tirando as cores dos mesmos.
+  SEGUE O CÓDIGO
+    BOTAO PROCURAR :
+     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        int vt[];
+        vt = new int[12];
+        vt[0] = Integer.parseInt(n0.getText());
+        vt[1] = Integer.parseInt(n1.getText());
+        vt[2] = Integer.parseInt(n2.getText());
+        vt[3] = Integer.parseInt(n3.getText());
+        vt[4] = Integer.parseInt(n4.getText());
+        vt[5] = Integer.parseInt(n5.getText());
+        vt[6] = Integer.parseInt(n6.getText());
+        vt[7] = Integer.parseInt(n7.getText());
+        vt[8] = Integer.parseInt(n8.getText());
+        vt[9] = Integer.parseInt(n9.getText());
+        vt[10] = Integer.parseInt(n10.getText());
+        vt[11] = Integer.parseInt(n11.getText());
+        
+        int cam[];
+        cam = new int [9];
+        cam[0] = vt[0]+vt[1]+vt[2]+vt[3]+vt[7]+vt[11];
+        cam[1] = vt[0]+vt[1]+vt[2]+vt[6]+vt[7]+vt[11];
+        cam[2] = vt[0]+vt[1]+vt[5]+vt[6]+vt[7]+vt[11];
+        cam[3] = vt[0]+vt[4]+vt[5]+vt[6]+vt[7]+vt[11];
+        cam[4] = vt[0]+vt[1]+vt[2]+vt[6]+vt[10]+vt[11];
+        cam[5] = vt[0]+vt[4]+vt[5]+vt[6]+vt[10]+vt[11];
+        cam[6] = vt[0]+vt[1]+vt[5]+vt[9]+vt[10]+vt[11];
+        cam[7] = vt[0]+vt[4]+vt[5]+vt[8]+vt[10]+vt[11];
+        cam[8] = vt[0]+vt[4]+vt[8]+vt[9]+vt[10]+vt[11];
+        int y= 0;
+        int x = 0;
+       
+        for(int i = 0;i<=8;i++){
+           if( cam[i]<= cam[y]){
+               y = i;
+               x = cam[i];
+               
+           }
+           
+           
+           
+        }
+        
+        
+        if (x == cam[0]){
+            n0.setBackground(Color.green);
+            n1.setBackground(Color.green);
+            n2.setBackground(Color.green);
+            n3.setBackground(Color.green);
+            n7.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[1]){
+            n0.setBackground(Color.green);
+            n1.setBackground(Color.green);
+            n2.setBackground(Color.green);
+            n6.setBackground(Color.green);
+            n7.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[2]){
+            n0.setBackground(Color.green);
+            n1.setBackground(Color.green);
+            n5.setBackground(Color.green);
+            n6.setBackground(Color.green);
+            n7.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[3]){
+            n0.setBackground(Color.green);
+            n4.setBackground(Color.green);
+            n5.setBackground(Color.green);
+            n6.setBackground(Color.green);
+            n7.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[4]){
+            n0.setBackground(Color.green);
+            n1.setBackground(Color.green);
+            n2.setBackground(Color.green);
+            n6.setBackground(Color.green);
+            n10.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[5]){
+            n0.setBackground(Color.green);
+            n4.setBackground(Color.green);
+            n5.setBackground(Color.green);
+            n6.setBackground(Color.green);
+            n10.setBackground(Color.green);
+            n11.setBackground(Color.red);
+            
+        }
+        if (x == cam[6]){
+            n0.setBackground(Color.green);
+            n1.setBackground(Color.green);
+            n5.setBackground(Color.green);
+            n9.setBackground(Color.green);
+            n10.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[7]){
+            n0.setBackground(Color.green);
+            n4.setBackground(Color.green);
+            n5.setBackground(Color.green);
+            n9.setBackground(Color.green);
+            n10.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+        if (x == cam[8]){
+            n0.setBackground(Color.green);
+            n4.setBackground(Color.green);
+            n8.setBackground(Color.green);
+            n9.setBackground(Color.green);
+            n10.setBackground(Color.green);
+            n11.setBackground(Color.green);
+            
+        }
+           JOptionPane.showMessageDialog(null,"Soma :"+x); 
+  
+        
+        
+    }
+    
+  BOTÃO RECOMEÇAR:
+  
+      private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+ n0.setBackground(Color.white);
+ n1.setBackground(Color.white);
+ n2.setBackground(Color.white);
+ n3.setBackground(Color.white);
+ n4.setBackground(Color.white);
+ n5.setBackground(Color.white);
+ n6.setBackground(Color.white);
+ n7.setBackground(Color.white);
+ n8.setBackground(Color.white);
+ n9.setBackground(Color.white);
+ n10.setBackground(Color.white);
+ n11.setBackground(Color.white);
+ 
+ n0.setText("");
+ n1.setText("");
+ n2.setText("");
+ n3.setText("");
+ n4.setText("");
+ n5.setText("");
+ n6.setText("");
+ n7.setText("");
+ n8.setText("");
+ n9.setText("");
+ n10.setText("");
+ n11.setText("");
+    }                                        
+
+  
+  
+   
+  
+  
