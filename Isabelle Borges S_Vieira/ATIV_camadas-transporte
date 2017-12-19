@@ -1,0 +1,38 @@
+1 - (x) Camada 4
+
+2 - (x) Segmento 
+
+3 - (x) TCP (x) UDP
+
+4 - (x) Orientado à conexão; 
+    (x) Entrega de dados com sobrecarga adicional; 
+    (x) Entrega ordenada, confiável e realiza controle de fluxo 
+    (x) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+5 - (x) É um protocolo simples; 
+    (x) Entrega de dados com baixa sobrecarga; 
+    (x) Não orientado a conexão.
+    (x) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+
+6 - O número de portas na camada de transporte serve como identificador da porta da interface utilizada para distribuir dados através roteador.
+
+7 - Sockets são os términos da comunicação entre hosts.
+
+8 - Origem Y e Destino X.    
+
+9 - Um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP porque em certos tipos de aplicações não é necessário informar que o dado chegou ao destino e é mais rápido pois tem baixa sobrecarga de dados.
+
+10 - 
+a = 121 e b = 260
+
+a. os segmentos enviados de A para S.
+	121 -> 23
+b. os segmentos enviados de B para S.
+   260 -> 23
+c. os segmentos enviados de S para A.
+	23 -> 121
+d. Os segmentos enviados de S para B.
+	23 -> 260
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos segmentos de A para S seja o mesmo que de B para S
+	Sim, pois como estão em hospedeiros diferentes, as portas podem ter o mesmo valor.
+	
