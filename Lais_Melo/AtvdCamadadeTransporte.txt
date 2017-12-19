@@ -1,0 +1,40 @@
+(Questão 01)
+R: Camada 4, transporte, faz a ligação entre esses dois grupos.
+
+(Questão 02)
+R: Segmento.
+
+(Questão 03)
+R: TCP e UDP.
+
+(Questão 04)
+R: Orientado à conexão
+Entrega de dados com sobrecarga adicional
+Entrega ordenada, confiável e realiza controle de fluxo
+É utilizado em aplicações como navegadores Web, E-mail e FTP.
+
+(Questão 05)
+R: É um protocolo simples; 
+Entrega de dados com baixa sobrecarga; 
+Não orientado a conexão;
+É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+
+(Questão 06)
+R: O número de portas aponta qual processo deverá se encarregar da informação trazida por um pacote e serve para se comunicar com uma porta exterior.
+
+(Questão 07)
+R: O socket, ou soquete de rede, é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores.
+
+(Questão 08)
+R: Origem é Y e o destino é X.
+
+(Questão 09)
+R: Um desenvolvedor pode escolher a UDP pois uma das vantagens do UDP é que ele é mais rápido e tem baixa sobrecarga de dados, e em determinados tipos de aplicação não é necessário dizer que o dado chegou ao destino.
+
+(Questão 10)
+(Letra a) R: 233->15
+(Letra b) R: 180->15
+(Letra c) R: 15->233
+(Letra d) R: 15->180
+(Letra e) R: Não, pois mesmo sendo hospedeiros, eles possuem número portas diferentes.
+
