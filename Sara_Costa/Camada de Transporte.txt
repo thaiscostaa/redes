@@ -1,0 +1,65 @@
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+( ) Camada 1 ( ) Camada 2 (X) Camada 3 ( ) Camada 4 ( ) Camada 5 ( ) Camada 6 ( ) Camada 7
+
+
+2. Qual a PDU da camada de transporte? 
+
+(X) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+3. Quais os principais protocolos da camada de transporte?
+
+( )ARP (X)TCP ( )IP ( )DNS (X)UDP
+
+
+4. Marque as características que representam o protocolo TCP. 
+
+(X) Orientado à conexão; 
+( ) É um protocolo simples; 
+( ) Entrega de dados com baixa sobrecarga; 
+( ) Não orientado a conexão. 
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(X) Entrega de dados com sobrecarga adicional; 
+(X) Entrega ordenada, confiável e realiza controle de fluxo 
+(X) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5. Marque as características que representam o protocolo UDP. 
+
+( ) Orientado à conexão;
+(X) É um protocolo simples; 
+(X) Entrega de dados com baixa sobrecarga; 
+(X) Não orientado a conexão. 
+(X) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6. Para que serve o número de portas na camada de transporte?
+
+A porta é o que identifica os tipos de protocolo.
+
+7. O que são os sockets?
+
+O socket é o ponto final do fluxo de comunicação entre uma rede de computadores.
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+
+O número de porta Y do computador B passa a ser a origem que vai encaminhar os segmentos até o número de porta X que passa a ser o destino no computador A. 
+
+9. Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.  
+
+Pois o protocolo UDP é mais rápido e tem baixa sobrecarga de dados, e em algumas aplicações não é necessário dizer que o dado chegou ao destino.
+
+
+10. Suponha que o cliente A inicie uma sessão Telnet com o servidor S. Quase ao mesmo tempo, o cliente B também inicia uma sessão Telnet com o servidor S. Forneça possíveis números de porta de origem e destino para:
+
+a. os segmentos enviados de A para S.
+Resp: De 120 para 23.
+b. os segmentos enviados de B para S.
+Resp: De 161 para 23.
+c. os segmentos enviados de S para A.
+Resp: De 23 para 120. 
+d. Os segmentos enviados de S para B.
+Resp: De 23 para 161. 
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos segmentos de A para S seja o mesmo que de B para S
+Resp: Sim, pois eles podem acessar a mesma porta de origem.
