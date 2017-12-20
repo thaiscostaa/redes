@@ -1,0 +1,67 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO                        TI431
+                             Camada de Transporte
+
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+( ) Camada 1 (x ) Camada 2 ( x ) Camada 3 ( ) Camada 4 ( ) Camada 5 ( ) Camada 6 ( ) Camada 7
+
+
+2. Qual a PDU da camada de transporte? 
+
+( x ) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+3. Quais os principais protocolos da camada de transporte?
+
+( )ARP (x )TCP ( )IP ( )DNS (x )UDP
+
+
+4. Marque as características que representam o protocolo TCP. 
+
+(x ) Orientado à conexão; 
+( ) É um protocolo simples; 
+( ) Entrega de dados com baixa sobrecarga; 
+( ) Não orientado a conexão. 
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(x  ) Entrega de dados com sobrecarga adicional; 
+( x ) Entrega ordenada, confiável e realiza controle de fluxo 
+( x ) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5. Marque as características que representam o protocolo UDP. 
+
+( ) Orientado à conexão;
+( x ) É um protocolo simples; 
+( x ) Entrega de dados com baixa sobrecarga; 
+( x) Não orientado a conexão. 
+(x ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6. Para que serve o número de portas na camada de transporte?
+R - Eles servem como forma de endereçamento quando utilizados pelos protocolos TCP/IP e também  para identificar aplicações e conversações.
+
+7. O que são os sockets?
+R -  Os sockets são instrumentos de comunicação entre os processos através da rede na camada de transporte.Para que isso aconteça cada socket se conecta a uma porta específica criando um ponto final para a conexão e dando início para uma nova
+Porta + Endereço IP
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+R - Porta B
+Origem: Y
+Destino: X
+
+
+9. Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.  
+R - O TCP é mais confiável na transmissão ,logo vai utilizar mais atributos o que vai causar um overhead  gastando muito mais tempo e já o UDP não usa nenhum tipo de confirmação de envio ou nenhum outro atributo do gênero e por isso não gera overhead otimizando o tempo e tornando a transmissão mais rápida.
+10. Suponha que o cliente A inicie uma sessão Telnet com o servidor S. Quase ao mesmo tempo, o cliente B também inicia uma sessão Telnet com o servidor S. Forneça possíveis números de porta de origem e destino para:
+
+a. os segmentos enviados de A para S. 
+b. os segmentos enviados de B para S.
+c. os segmentos enviados de S para A.
+d. Os segmentos enviados de S para B.
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos segmentos de A para S seja o mesmo que de B para S
+R - a. Origem : porta 130       Destino: porta 23
+      b. Origem: porta 140        Destino: porta 23
+      c .Origem: porta 23          Destino:porta 130
+      d. Origem: porta 23          Destino:porta 140
+      e. É possível,pois o número acessado na porta independente dos lados(origem/destino) é igual.
