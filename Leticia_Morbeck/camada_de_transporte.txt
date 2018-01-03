@@ -1,0 +1,48 @@
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+R: Camada 3
+
+2. Qual a PDU da camada de transporte?
+R: Segmentos
+3. Quais os principais protocolos da camada de transporte?
+R: TCP e UDP  
+4. Marque as características que representam o protocolo TCP.
+(X) Orientado à conexão;
+( ) É um protocolo simples;
+( ) Entrega de dados com baixa sobrecarga;
+( ) Não orientado a conexão.
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+(X) Entrega de dados com sobrecarga adicional;
+(X) Entrega ordenada, confiável e realiza controle de fluxo
+(X) É utilizado em aplicações como navegadores web, E-mail e FTP
+5. Marque as características que representam o protocolo UDP.
+ ( ) Orientado à conexão;
+(X) É um protocolo simples; 
+(X) Entrega de dados com baixa sobrecarga; 
+(X) Não orientado a conexão. 
+(X) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6. Para que serve o número de portas na camada de transporte?
+o numero das portas servem para distinguir as diferentes fontes de dados, onde é a origem e qual o destino.
+
+7. O que são os sockets?
+R: é a combinação do  Porta + endereço  IP
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+
+De B para A , o numero da porta origem vai ser y e a porta destino será x. já que no protoloco uzado, tcp, acontece um “comunicação” entre as portas. O enunciado da questão se descreve a requisição de A para B e pedi a resposta.
+
+9.Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.  
+Porque o UDP não estabelece conexão, nem controle de congestionamento, o que aumenta o numero de usuários ativos no mesmo servidor; pequena sobrecarga de cabeçalho; E um Melhor controle no nível de aplicação sobre quais os dados são enviados e quando o processo de aplicação passa os dados, O protocolo UDP encapsula e repassa para camada de redes.
+
+10. A=190
+    B=243
+    telnet=23
+a.porta de origem : 190, porta de destino:23;
+b. porta de origem : 243, porta de destino:23;
+c.porta de origem: 23, porta de destino: 190;
+d.porta de origem: 23, porta de destino: 243;
+e.Sim, se o porta de  origem de A e B forem iguais.
