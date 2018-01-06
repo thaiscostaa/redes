@@ -1,0 +1,45 @@
+1-
+a)131.247.95.216
+
+b)A porta de origem está solicitando a porta de destino uma confirmação para a troca de dados.
+
+c)No frame 6 o usuário soicita um pacote, no entanto não é possíve enviar o pacote competo, por isso no frame 7 ele envia somente o que  usuário suporta.
+
+d)
+
+e)A página é remontada pela perda de pacote e é "atualizada".
+
+f)O usuário solicita um conjunto de pacote.
+
+g)Porque a informação já vem contida no pacote enviado ao usuário, pra o usuário visuaizar o cliente pergunta a porta de origem que dado é aquele
+
+h)É remontado o conjunto de dados para o cliente e enviado, após isso é confirmado o recebimento do pacote.
+
+i)É solicitado pelo cliente o icone da página, ela é remontada e enviada, após isso é confirmada a ação.
+
+j)Acessando uma página web.
+
+
+2-
+a) www.yahoo.com: type CNAME, class IN, cname www.yahoo.akadns.net
+ www.yahoo.akadns.net: type A, class IN, addr 216.109.117.106
+ www.yahoo.akadns.net: type A, class IN, addr 216.109.117.109
+ 
+b)6 pacotes
+
+c)O usuário realiza a pesquisa de um site.Não,já que pode ocorrer problemas como congestionamento,queda do servidor dentre outros, por isso há necessidade do uso de vários sewrvidores para atender o cliente independente da situação.
+
+d)Porque ele ainda não possui.
+
+e)Porque ele já tem.
+
+f)O pacote precisa ser reenviado na ordem correta.
+
+
+3-
+a)Pacote 3 dst port:80 Se refere a HTTP
+  Pacote 12 dst port:443 Se refere a HTTPS
+
+b)Os dados estão sendo criptografados por motivos de segurança já que a porta que está sendo utilizada é a 443,ou seja, HTTPS.
+
+c)Quadro 20.Os dados estão criptografados.
