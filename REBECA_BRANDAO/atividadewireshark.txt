@@ -1,40 +1,34 @@
 IFBA 
 ALUNA-REBECA DE JESUS BRANDÃO TI-431
 Exercício 01. Abra o arquivo exercicio-um.pcap. Você deverá ver 26 pacotes nesse arquivo. O conjunto de pacotes descreve uma “conversação” entre usuários clientes e um servidor central. Toda essa conversa acontece automaticamente depois que um usuário digita algo e tecla enter. Analise os pacotes para responder às seguintes questões em relação a essa conversação.
-Qual 	é o endereço IP do cliente que inicia a conversação? 131.247.95.216
-
-a)O que está ocorrendo nos frames 3, 4 e 5?
+a)Qual 	é o endereço IP do cliente que inicia a conversação? 
+R = 131.247.95.216
+b)O que está ocorrendo nos frames 3, 4 e 5?
 R = o “cliente” inicia uma conversação com o servidor
-b)O que está ocorrendo nos frames 6 e 7? 
-R = No 6 ele solicita uma página web e no 7 o servidor está enviando um segmento.
-	
-c)Ignore o frame 8. Contudo, para sua informação, o frame 8 é utilizado para gerenciar o controle de fluxos.
-	
-d)O que está ocorrendo com os frames 9 e 10? 
-R = O servidor que reajustou/remontou o tamanho do segmento de forma que ele coubesse no próximo processo,no caso o 10 ,que foi enviado normalmente.
-	
-e)O que está ocorrendo no pacote 11? 
-R = O “cliente” está enviando uma confirmação para o servidor.
-	
-f)Após 	o recebimento do primeiro conjunto de pacotes, o cliente envia uma 	nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
-R = Isso ocorre ,pois o “link” foi referenciado antes por meio de uma conversação. 	
-	
-g)O que está ocorrendo nos pacotes 13 a 22?
-R = O servidor reajusta e envia o que pode ser enviado ,após isso recebe uma confirmação e em seguida ele envia novamente em partes até 	completar a solicitação e a imagem da página carrega.
-	
-h)Explique o que está ocorrendo nos pacotes 23 a 26. 
+c)O que está ocorrendo nos frames 6 e 7? 
+R = No 6 ele solicita uma página web e no 7 o servidor está enviando um segmento.	
+d)Ignore o frame 8. Contudo, para sua informação, o frame 8 é utilizado para gerenciar o controle de fluxos.	
+e)O que está ocorrendo com os frames 9 e 10? 
+R = O servidor que reajustou/remontou o tamanho do segmento de forma que ele coubesse no próximo processo,no caso o 10 ,que foi enviado normalmente.	
+f)O que está ocorrendo no pacote 11? 
+R = O “cliente” está enviando uma confirmação para o servidor.	
+g)Após 	o recebimento do primeiro conjunto de pacotes, o cliente envia uma 	nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
+R = Isso ocorre ,pois o “link” foi referenciado antes por meio de uma conversação. 		
+h)O que está ocorrendo nos pacotes 13 a 22?
+R = O servidor reajusta e envia o que pode ser enviado ,após isso recebe uma confirmação e em seguida ele envia novamente em partes até completar a solicitação e a imagem da página carrega.	
+i)Explique o que está ocorrendo nos pacotes 23 a 26. 
 R = O “cliente ” solicita o ícone e o servidor reajusta o segmento ,o envia , e a página é carregada.Depois o cliente envia uma confirmação encerrando a conversação. 		
-Em poucas palavras descreva o que o usuário está fazendo (lendo email? Acessando uma página web? FTP? Outro?) O cliente está acessando uma página web,pois ele envia e recebe 	sinais de busca web e também o protocolo http é usado,assim como a 	porta de destino é 80.
+j)Em poucas palavras descreva o que o usuário está fazendo (lendo email? Acessando uma página web? FTP? Outro?) 
+R = O cliente está acessando uma página web,pois ele envia e recebe sinais de busca web e também o protocolo http é usado,assim como a 	porta de destino é 80.
 
 Exercício 02. Abra o arquivo exercicio-dois.pcap. Você deverá ver 176 pacotes listados.
 
 a)Nos primeiros pacotes, a máquina cliente está procurando o common name (cname) de uma página web para encontrar o seu endereço IP. Qual o cname desta página web? Cite dois endereços IP desta página web. 
 R = 216.109.117.106 	e 216.109.117.109
-
 b)Quantos pacotes/quadros são necessários para receber a página web (referente apenas ao primeiro http request)? 
 R = 16 pacotes
-c)O que está ocorrendo nos pacotes 26 e 27? Todos os componentes de uma página web tem de vir de um mesmo servidor? Dica: Seu computador usa um pedido de DNS para pesquisar um CNAME e ele retorna um conjunto de endereços IP (um endereço primário e um ou mais endereços de backup) que podem ser usados para entrar em contato com o servidor. No pacote 26 existe um pedido para acessar a página web e no 27 há uma resposta do servidor. 
-R = Não,pois podem ocorrer várias situações que o levam a precisar de outro servidor ,como por exemplo,a utilização de componentes que estão em um outro servidor,uma ,congestidonamento,falha ou queda.E por esse motivo o cliente precisa ser atendido por vários.
+c)O que está ocorrendo nos pacotes 26 e 27? Todos os componentes de uma página web tem de vir de um mesmo servidor? Dica: Seu computador usa um pedido de DNS para pesquisar um CNAME e ele retorna um conjunto de endereços IP (um endereço primário e um ou mais endereços de backup) que podem ser usados para entrar em contato com o servidor. 
+R = No pacote 26 existe um pedido para acessar a página web e no 27 há uma resposta do servidor. Não,pois podem ocorrer várias situações que o levam a precisar de outro servidor ,como por exemplo,a utilização de componentes que estão em um outro servidor,um congestionamento,falha ou queda.E por esse motivo o cliente precisa ser atendido por vários.
 d)No pacote 37 vemos outra consulta DNS, desta vez para us.i1.yimg.com. Por que o cliente precisa pesquisar sobre esse endereço IP? Não obtivemos este endereço no pacote 26? (Compare cuidadosamente os dois nomes comuns nos pacotes 26 e 37.) 
 R = O endereço de IP tanto de origem como de destino são iguais.O cliente precisou pesquisar sobre o endereço,pois provavelmente ele ainda não foi referenciado ou houve uma falha.
 e )No pacote 42 vemos uma declaração HTTP "Get" e, no pacote 48, uma nova declaração HTTP "Get". Por que o sistema não precisa de outro pedido de DNS antes da segunda declaração de obtenção? Clique no pacote 42 e olhe na janela do meio. Expanda a linha intitulada "Hypertext Transfer Protocol" e leia a linha "Host:". Compare essa linha com a linha "Host:" para o pacote 48. 
