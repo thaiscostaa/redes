@@ -1,3 +1,5 @@
+Wireshark
+
 
 Exercício 01.
 
@@ -5,36 +7,36 @@ a. 131.247.95.216.
 
 b. A porta de origem solicita uma confirmação para porta de destino para a troca de dados.
 
-c. O frame 6 é a solicitação de um pacote da pág. HTTP, mas como não é possível enviar o pacote completo o frame 7 envia somente o que consegue suportar.
+c. O frame 6 é a solicitação de um pacote da página HTTP, mas como não é possível enviar o pacote completo o frame 7 envia somente o que consegue suportar.
 
 e. A página é remontada e atualizada por causa da perda de pacote. 
 
 f. O usuário solicita um conjunto de pacotes.
 
-g. As informações vem contidas nos pacotes enviados ao usuário, para o usuário visuaizar o cliente pergunta a porta de origem qual os dados.
+g. As informações vem contidas nos pacotes enviados ao usuário, ou seja, o código já vem com a informação.
 
 h. É remontado o conjunto de dados para o cliente e enviado, após isso é confirmado o recebimento do pacote.
 
-i. O cliente solicita o icone da página, a ação é remontada, enviada e confirmada.
+i. O cliente solicita o icone da página, essa ação é remontada, enviada e confirmada.
 
-j. Acessando uma página web.
+j. Acessando página web.
 
 
 Exercício 02.
 
 a. www.yahoo.com: type CNAME, class IN, cname www.yahoo.akadns.net
 
- www.yahoo.akadns.net: type A, class IN, addr 216.109.117.106
+   www.yahoo.akadns.net: type A, class IN, addr 216.109.117.106
 
- www.yahoo.akadns.net: type A, class IN, addr 216.109.117.109
+   www.yahoo.akadns.net: type A, class IN, addr 216.109.117.109
 
-b. 6 pacotes
+b. 17 pacotes.
 
-c. O usuário realiza a pesquisa de um site. Não, porque pode ocorrer problemas como: congestionamento; queda do servidor; entre outros. Por isso há necessidade do uso de vários servidores para atender o cliente independente da situação.
+c. O usuário realiza a pesquisa de um site. Não, porque pode ocorrer problemas como: congestionamento; queda do servidor; falha; entre outros. Por isso há necessidade do uso de vários servidores para atender o cliente independente da situação.
 
-d. Porque ele não tem.
+d. Porque são páginas diferentes/acessos diferentes.
 
-e. Porque ele já possui.
+e. Porque ele já possui, ou seja, é o mesmo.
 
 f. O pacote precisa ser reenviado para chegarem na ordem correta.
 
