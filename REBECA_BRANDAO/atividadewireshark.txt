@@ -26,7 +26,7 @@ Exercício 02. Abra o arquivo exercicio-dois.pcap. Você deverá ver 176 pacotes
 a)Nos primeiros pacotes, a máquina cliente está procurando o common name (cname) de uma página web para encontrar o seu endereço IP. Qual o cname desta página web? Cite dois endereços IP desta página web. 
 R = 216.109.117.106 	e 216.109.117.109
 b)Quantos pacotes/quadros são necessários para receber a página web (referente apenas ao primeiro http request)? 
-R = 16 pacotes
+R = 6 pacotes
 c)O que está ocorrendo nos pacotes 26 e 27? Todos os componentes de uma página web tem de vir de um mesmo servidor? Dica: Seu computador usa um pedido de DNS para pesquisar um CNAME e ele retorna um conjunto de endereços IP (um endereço primário e um ou mais endereços de backup) que podem ser usados para entrar em contato com o servidor. 
 R = No pacote 26 existe um pedido para acessar a página web e no 27 há uma resposta do servidor. Não,pois podem ocorrer várias situações que o levam a precisar de outro servidor ,como por exemplo,a utilização de componentes que estão em um outro servidor,um congestionamento,falha ou queda.E por esse motivo o cliente precisa ser atendido por vários.
 d)No pacote 37 vemos outra consulta DNS, desta vez para us.i1.yimg.com. Por que o cliente precisa pesquisar sobre esse endereço IP? Não obtivemos este endereço no pacote 26? (Compare cuidadosamente os dois nomes comuns nos pacotes 26 e 37.) 
