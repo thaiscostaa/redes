@@ -12,7 +12,7 @@ resposta-> O servidor que reajustou/remontou o tamanho do segmento de forma que 
 6.	O que está ocorrendo no pacote 11? 
 resposta->O “cliente” está enviando uma confirmação para o servidor.
 7.	Após o recebimento do primeiro conjunto de pacotes, o cliente envia uma nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
-resposta->Isso ocorre ,pois o “link” foi referenciado antes por meio de uma conversação.
+resposta->Isso ocorre ,pois no codigo html ja tinha uma função para carregar a imagem.
 8.	O que está ocorrendo nos pacotes 13 a 22? 
 reposta->O servidor reajusta e envia o que pode ser enviado ,após isso recebe uma confirmação e em seguida ele envia novamente em partes até completar a solicitação e a imagem da página carrega.
 9.	Explique o que está ocorrendo nos pacotes 23 a 26. 
