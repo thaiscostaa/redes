@@ -1,35 +1,35 @@
 Exercício 01. Abra o arquivo exercicio-um.pcap. Você deverá ver 26 pacotes nesse arquivo. O conjunto de pacotes descreve uma “conversação” entre usuários clientes e um servidor central. Toda essa conversa acontece automaticamente depois que um usuário digita algo e tecla enter. Analise os pacotes para responder às seguintes questões em relação a essa conversação.
 
-1.	Qual é o endereço IP do cliente que inicia a conversação? 
+a.	Qual é o endereço IP do cliente que inicia a conversação? 
 resposta->131.247.95.216
-2.	O que está ocorrendo nos frames 3, 4 e 5? 
+b.	O que está ocorrendo nos frames 3, 4 e 5? 
 respostar->o “cliente” inicia uma conversação com o servidor
-3.	O que está ocorrendo nos frames 6 e 7? 
+c.	O que está ocorrendo nos frames 6 e 7? 
 resposta-> No 6 ele solicita uma página web e no 7 o servidor está enviando um segmento.
-4.	Ignore o frame 8. Contudo, para sua informação, o frame 8 é utilizado para gerenciar o controle de fluxos.
-5.	O que está ocorrendo com os frames 9 e 10? 
+d.	Ignore o frame 8. Contudo, para sua informação, o frame 8 é utilizado para gerenciar o controle de fluxos.
+e.	O que está ocorrendo com os frames 9 e 10? 
 resposta-> O servidor que reajustou/remontou o tamanho do segmento de forma que ele coubesse no próximo processo,no caso o 10 ,que foi enviado normalmente.
-6.	O que está ocorrendo no pacote 11? 
+f.	O que está ocorrendo no pacote 11? 
 resposta->O “cliente” está enviando uma confirmação para o servidor.
-7.	Após o recebimento do primeiro conjunto de pacotes, o cliente envia uma nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
+g.	Após o recebimento do primeiro conjunto de pacotes, o cliente envia uma nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
 resposta->Isso ocorre ,pois no codigo html ja tinha uma função para carregar a imagem.
-8.	O que está ocorrendo nos pacotes 13 a 22? 
+h.	O que está ocorrendo nos pacotes 13 a 22? 
 reposta->O servidor reajusta e envia o que pode ser enviado ,após isso recebe uma confirmação e em seguida ele envia novamente em partes até completar a solicitação e a imagem da página carrega.
-9.	Explique o que está ocorrendo nos pacotes 23 a 26. 
+i.	Explique o que está ocorrendo nos pacotes 23 a 26. 
 resposta-> O “cliente ” solicita o ícone e o servidor reajusta o segmento ,o envia , e a página é carregada.Depois o cliente envia uma confirmação encerrando a conversação.
-10.	Em poucas palavras descreva o que o usuário está fazendo (lendo email? Acessando uma página web? FTP? Outro?) 
+j.	Em poucas palavras descreva o que o usuário está fazendo (lendo email? Acessando uma página web? FTP? Outro?) 
 resposta-> O cliente está acessando uma página web,pois ele envia e recebe sinais de busca web e também o protocolo http é usado,assim como a porta de destino é 80.
 
 Exercício 02. Abra o arquivo exercicio-dois.pcap. Você deverá ver 176 pacotes listados.
 
 a.	Nos primeiros pacotes, a máquina cliente está procurando o common name (cname) de uma página web para encontrar o seu endereço IP. Qual o cnamedesta página web? Cite dois endereços IP desta página web. 
-resposta->216.109.117.106 e 216.109.117.109
+resposta->  www.yahoo.akadns.net e 216.109.117.106 e 216.109.117.109
 b.	Quantos pacotes/quadros são necessários para receber a página web (referente apenas ao primeiro http request)? 
-resposta->6 pacotes
+resposta->17 pacotes
 c.	O que está ocorrendo nos pacotes 26 e 27? Todos os componentes de uma página web tem de vir de um mesmo servidor? Dica: Seu computador usa um pedido de DNS para pesquisar um CNAME e ele retorna um conjunto de endereços IP (um endereço primário e um ou mais endereços de backup) que podem ser usados para entrar em contato com o servidor. 
-resposta-> Ocorre uma solicitação de uma pagina na web e a resposta do servidor. Não é necessário vir de um único servidor.
+resposta-> Ocorre uma solicitação de uma pagina na web e a resposta do servidor. Não é necessário vir de um único servidor,pois pode ocorrer varios problemas, como o congestionamento.
 d.	No pacote 37 vemos outra consulta DNS, desta vez para us.i1.yimg.com. Por que o cliente precisa pesquisar sobre esse endereço IP? Não obtivemos este endereço no pacote 26? (Compare cuidadosamente os dois nomes comuns nos pacotes 26 e 37.) 
-resposta-> porque ele ainda não tem o novo endereço, para acessar o que deseja.
+resposta-> porque ele está acessando paginas diferentes.
 e.	No pacote 42 vemos uma declaração HTTP "Get" e, no pacote 48, uma nova declaração HTTP "Get". Por que o sistema não precisa de outro pedido de DNS antes da segunda declaração de obtenção? Clique no pacote 42 e olhe na janela do meio. Expanda a linha intitulada "Hypertext Transfer Protocol" e leia a linha "Host:". Compare essa linha com a linha "Host:" para o pacote 48. 
 resposta-> Não é necessário, pois é o mesmo DNS, além de possuir o mesmo host. 
 f.	Examine o pacote 139. Este é um segmento de uma PDU que é remontado com vários outros segmentos no pacote 160. Olhe para os pacotes 141, 142 e 143. Esses três pacotes também fazem parte do pacote 160? O que acontece se um conjunto de pacotes que deveriam ser remontados não chegam em um fluxo contínuo ou não chegam na ordem correta? 
@@ -38,10 +38,10 @@ resposta->Eles pertencem ao mesmo pacote. Ocorre um erro no carregamento do arqu
 Exercício 03. Abra o arquivo exercicio-tres.pcap. Você deverá ver 22 pacotes listados. Esses pacotes representam duas diferente solicitações de acesso a páginas web. Pacotes 1-7 dizem respeito a solicitações da página yahoo.com, enquanto que os pacotes 8-22 dizem respeito a página my.usf.edu.
 
 a.	Compare a porta de destino no pacote TCP no quadro 3 com a porta de destino no pacote TCP do frame 12. Qual diferença você pode notar? O que isso diz sobre a diferença entre as duas solicitações? 
-resposta->A diferença é que o endereço  do  pacote 3, tem porta 80, que é um http que não é seguro, é apenas  simples, diferente do endereço que corresponde frame 12, que tem porta 443 que é um https, que é seguro.
+resposta->A diferença é que o endereço  do  pacote 3, tem porta 80, que é um http que não é seguro, é apenas  simples, diferente do endereço que corresponde frame 12, que tem porta 443 que é um https, que é seguro. uma é criptografada e a outra não.
 b.	A tabela a seguir compara os dois pedidos para as páginas web. Por exemplo, a linha i) mostra que quadros 1-2 e quadros 8-9 representam as pesquisas de DNS para cada uma das solicitações
 Explique o que está acontecendo na linha iii. Por que não existem quadros listados para yahoo na linha iii? 
 resposta-> Não são mostrados porque estão sendo criptografados. (pois utiliza o protocolo Https)
 c) Olhe a coluna “Info” do quadro 6. Ele diz:  “GET / HTTP / 1.1.”. Qual é o campo Info correspondente para my.usf.com (quadro 21)? Qual a diferença para o quadro 6? 
-resposta->O correspondente é uma aplicação data, que é uma comunicação entre a maquina e o servidor, quando termina o handshake e indica uma confirmação.
+resposta->O correspondente é o frame 20. Uma aplicação data, que é uma comunicação entre a maquina e o servidor, quando termina o handshake e indica uma confirmação.
 
