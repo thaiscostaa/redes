@@ -1,0 +1,50 @@
+IFBA 
+ALUNA-REBECA DE JESUS BRANDÃO TI-431
+Exercício 01. Abra o arquivo exercicio-um.pcap. Você deverá ver 26 pacotes nesse arquivo. O conjunto de pacotes descreve uma “conversação” entre usuários clientes e um servidor central. Toda essa conversa acontece automaticamente depois que um usuário digita algo e tecla enter. Analise os pacotes para responder às seguintes questões em relação a essa conversação.
+a)Qual 	é o endereço IP do cliente que inicia a conversação? 
+R = 131.247.95.216
+b)O que está ocorrendo nos frames 3, 4 e 5?
+R = o “cliente” inicia uma conversação com o servidor
+c)O que está ocorrendo nos frames 6 e 7? 
+R = No 6 ele solicita uma página web e no 7 o servidor está enviando um segmento.	
+d)Ignore o frame 8. Contudo, para sua informação, o frame 8 é utilizado para gerenciar o controle de fluxos.	
+e)O que está ocorrendo com os frames 9 e 10? 
+R = O servidor que reajustou/remontou o tamanho do segmento de forma que ele coubesse no próximo processo,no caso o 10 ,que foi enviado normalmente.	
+f)O que está ocorrendo no pacote 11? 
+R = O “cliente” está enviando uma confirmação para o servidor.	
+g)Após 	o recebimento do primeiro conjunto de pacotes, o cliente envia uma 	nova solicitação no pacote 12. Isso ocorre automaticamente sem qualquer ação realizada pelo usuário. Por que isso ocorre? 
+R = Isso ocorre ,pois o “link” foi referenciado antes por meio de uma conversação. 		
+h)O que está ocorrendo nos pacotes 13 a 22?
+R = O servidor reajusta e envia o que pode ser enviado ,após isso recebe uma confirmação e em seguida ele envia novamente em partes até completar a solicitação e a imagem da página carrega.	
+i)Explique o que está ocorrendo nos pacotes 23 a 26. 
+R = O “cliente ” solicita o ícone e o servidor reajusta o segmento ,o envia , e a página é carregada.Depois o cliente envia uma confirmação encerrando a conversação. 		
+j)Em poucas palavras descreva o que o usuário está fazendo (lendo email? Acessando uma página web? FTP? Outro?) 
+R = O cliente está acessando uma página web,pois ele envia e recebe sinais de busca web e também o protocolo http é usado,assim como a 	porta de destino é 80.
+
+Exercício 02. Abra o arquivo exercicio-dois.pcap. Você deverá ver 176 pacotes listados.
+
+a)Nos primeiros pacotes, a máquina cliente está procurando o common name (cname) de uma página web para encontrar o seu endereço IP. Qual o cname desta página web? Cite dois endereços IP desta página web. 
+R = 216.109.117.106 	e 216.109.117.109
+b)Quantos pacotes/quadros são necessários para receber a página web (referente apenas ao primeiro http request)? 
+R = 6 pacotes
+c)O que está ocorrendo nos pacotes 26 e 27? Todos os componentes de uma página web tem de vir de um mesmo servidor? Dica: Seu computador usa um pedido de DNS para pesquisar um CNAME e ele retorna um conjunto de endereços IP (um endereço primário e um ou mais endereços de backup) que podem ser usados para entrar em contato com o servidor. 
+R = No pacote 26 existe um pedido para acessar a página web e no 27 há uma resposta do servidor. Não,pois podem ocorrer várias situações que o levam a precisar de outro servidor ,como por exemplo,a utilização de componentes que estão em um outro servidor,um congestionamento,falha ou queda.E por esse motivo o cliente precisa ser atendido por vários.
+d)No pacote 37 vemos outra consulta DNS, desta vez para us.i1.yimg.com. Por que o cliente precisa pesquisar sobre esse endereço IP? Não obtivemos este endereço no pacote 26? (Compare cuidadosamente os dois nomes comuns nos pacotes 26 e 37.) 
+R = O endereço de IP tanto de origem como de destino são iguais.O cliente precisou pesquisar sobre o endereço,pois provavelmente ele ainda não foi referenciado ou houve uma falha.
+e )No pacote 42 vemos uma declaração HTTP "Get" e, no pacote 48, uma nova declaração HTTP "Get". Por que o sistema não precisa de outro pedido de DNS antes da segunda declaração de obtenção? Clique no pacote 42 e olhe na janela do meio. Expanda a linha intitulada "Hypertext Transfer Protocol" e leia a linha "Host:". Compare essa linha com a linha "Host:" para o pacote 48. 
+R=O sistema não precisa de outro pedido DNS pois já foi estabelecida uma pré-conversação com o sistema e assim a obtenção pela segunda vez não é necessária ,pois esse DNS já existe no sistema.
+f)Examine o pacote 139. Este é um segmento de uma PDU que é remontado com vários outros segmentos no pacote 160. Olhe para os pacotes 141, 142 e 143. Esses três pacotes também fazem parte do pacote 160? O que acontece se um conjunto de pacotes que deveriam ser remontados não chegam em um fluxo contínuo ou não chegam na ordem correta? 
+R = Sim,eles fazem parte do mesmo pacote.Caso os pacotes remontados não cheguem na ordem correta , a máquina conserva o número do último pacote enviado na ordem correta e espera o reenvio dos outros pacotes na ordem correta.
+
+Exercício 03. Abra o arquivo exercicio-tres.pcap. Você deverá ver 22 pacotes listados. Esses pacotes representam duas diferente solicitações de acesso a páginas web. Pacotes 1-7 dizem respeito a solicitações da página yahoo.com, enquanto que os pacotes 8-22 dizem respeito a página my.usf.edu.
+
+a)Compare a porta de destino no pacote TCP no quadro 3 com a porta de destino no pacote TCP do frame 12. Qual diferença você pode notar? O que isso diz sobre a diferença entre as duas solicitações? 
+R = Os endereços IP das portas de destino são diferentes,indica que eles partiram de um mesmo “cliente”,mas chegaram em servidores diferentes.No frame 12 indica uma confirmação por parte do servidor.
+Pacote 3 destino port:80 = HTTP
+Pacote 12 destino port:443 =HTTPS
+
+b)Explique o que está acontecendo na linha iii. Por que não existem quadros listados para yahoo na linha iii? 
+R = Não existem quadros listados,pois se trata de um protocolo https e está sendo realizada uma espécie de negociação(criptografia) entre a máquina e o site.Em primeiro o “cliente” exige um certificado para o servidor e no pacote 15 existe uma resposta por parte do mesmo.
+
+c) Olhe a coluna “Info” do quadro 6. Ele diz:  “GET / HTTP / 1.1.”. Qual é o campo Info correspondente para my.usf.com (quadro 21)? Qual a diferença para o quadro 6?
+R = O campo correspondente é o do frame 20. No quadro 21 indica uma aplicação de dados que geralmente aparece quando o handshake/conversação foram realizados com sucesso , já foram  validados e que agora já podem realizar a criptografia dos dados entre servidor e cliente e no quadro 6 indica uma solicitação de uma página web.
