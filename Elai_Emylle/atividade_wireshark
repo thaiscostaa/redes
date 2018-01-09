@@ -1,0 +1,31 @@
+Atividade
+
+01.
+ a) 131.247.95.216
+ b)
+ 3 requerindo o acesso a uma porta web, é a origem, cliente
+ 4 retorna as informações pedidas, servidor
+ 5 eh a confirmação do recebimento do pacote, porque a comunicação está sendo feita pelo protocolo TCP
+ c) No pacote 6 está solicita o acesso a uma pagina wwweb através do protocoolo HTTP e no 7, retornam pacotes de confirmação através do TCP
+ e) O pacote 9 é o último segmento remontado que solicita a página web. O 10 é a confirmação do conteúdo da página web.
+ f) É a confirmação do servidor para o cliente de que o pacote ou parte dele foi recebido.
+ g) Isso ocorre porque a imagem é solicitada pela página web automaticamente.
+ h) São enviados segmentos para carregar um gif na página web.
+ i) Solicitação para carregamento do ícone na guia da página e a confirmação do recebimento do mesmo.
+ 
+02.
+ a) 216.109.117.106
+    www.yahoo.com CNAME www.yahoo.akadns.net
+    216.109.117.109 e 216.109.117.110
+    
+ b) 6 pacotes
+ c) O pacote 26 requere o CNAME pelo DNS e o pacote 27 retorna alguns endereços IP. Não, os elementos de uma página podem estar em servidores direrentes.
+ d) Porque é uma pesquisa a um DNS diferente.
+ e) São elementos de uma mesma página, ou seja, um mesmo DNS. Eles possuem o mesmo endereço de host.
+ f) Os segmentos 141 e 142 não foram remontados no pacote 160, mas o 143 foi. Erro no carregamento do arquivo.
+
+03.
+ a) As portas são diferentes. A primeira solitação destina-se a uma página HTTP e a segunda, HTTPS.
+ b) Como o my.usf.com utiliza o protocolo HTTPS, ele está fazendo a criptografia nos quadros 13-20. Porque o yahoo utiliza o protocolo HTTP, não fazendo criptografia.
+ c) Application Data. Ele não dá tantas informações quanto o quadro 6. E ele pega a informação dos pacotes anteriores, enquanto que o outro não.
+ 
