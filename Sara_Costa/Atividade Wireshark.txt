@@ -1,7 +1,6 @@
 
 Exercício 01.
 
-
 a. 131.247.95.216.
 
 b. A porta de origem solicita uma confirmação para porta de destino para a troca de dados.
@@ -21,7 +20,6 @@ i. O cliente solicita o icone da página, a ação é remontada, enviada e confi
 j. Acessando uma página web.
 
 
-
 Exercício 02.
 
 a. www.yahoo.com: type CNAME, class IN, cname www.yahoo.akadns.net
@@ -38,8 +36,8 @@ d. Porque ele não tem.
 
 e. Porque ele já possui.
 
-
 f. O pacote precisa ser reenviado para chegarem na ordem correta.
+
 
 Questões 03.
 
