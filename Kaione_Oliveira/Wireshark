@@ -1,0 +1,27 @@
+1-
+  a)131.247.95.216
+  b)Os 3 estão enviando informação e recebendo confirmações, pois são TCP.
+  c)O frame 6 está navegando na internet, enquanto o 7 está enviando e recebendo dados.
+  d)Ok.
+  e)Está acontecendo a reestruturação do pacote em si, porque ocorreu a perda e por isso foi solicitado novamente.
+  f)A origem está reenviando o pacote.
+  g)Isso ocorre porque ja havia ocorrido uma reestruturação de dados.
+  h)Ocorreu uma remontação e troca de dados dos pacotes ate chegar em uma imagem em gif.
+  i)Esta realizando uma query no us.js2.yimg.com, com resposta do icone da pagina.
+  j)Acessando uma pagina.
+
+2-
+  a)www.yahoo.com
+    64.233.161.99
+    64.233.161.104
+  b)5 pacotes.
+  c)Nao, pois podem utilizar componentes que ficam em outros servidores.
+  d)Precisou pesquisar novamente porque provavelmente houve falha.
+  e)No DNS, só é  preciso estabelecer uma vez, na primeira vez no caso. 
+  f)Fazem, é aceito o que foi enviado de maneira correta e espera o reenvio dos que foram enviados de maneira errônea.
+
+	
+3-
+  a)O cliente hello indica que esta criptografando os dados, já que no 12 foi em uma porta HTTPs e a 3 em HTTP.
+  b)Porque um utiliza o protocolo HTTPS, e nesse utiliza-se da criptografia e no HTTP nao utiliza da criptografia.
+  c)O correspondente é o quadro 20, e tem como diferença que um ja pode ser criptografado e o outro é apenas uma pesquisa na web.
