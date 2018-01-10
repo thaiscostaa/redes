@@ -1,0 +1,22 @@
+Mailane Queiroz.
+Atividade Redes
+1 a) 131.247.95.216
+  b) Os 3 estão enviando informações e recebendo confirmações, pois são TCP.
+  c) O quadro 6 está navegando na internet, enquanto está 7 está enviando e recebendo dados.
+  d) Ok.	
+  e) Está acontecendo uma reestruturação do pacote em si, porque ocorreu uma perda e por isso foi solicitado novamente.
+  f) A origem está reenviando o pacote.	
+  h) Ocorreu uma remontação e troca de dados do pacote de pacotes em uma imagem em gif.	
+  i) Esta realização uma consulta no us.js2.yimg.com, com resposta do icone da pagina.	
+  j) Acessando uma página.
+
+2 a) 216.109.118.70 e 216.109.118.76	
+  b) 17 pacotes.	
+  c) Não, 26 o usuário solicita para acessar uma página WEB e no 27 ele tem a resposta. Não pode vir em um mesmo servidor pode deixar uma falha do mesmo ou uma necessidade de outro servidor.
+  d) Pode ter ocorrido uma pesquisa em um DNS diferente ou uma falha.
+  e) Por que o DNS ja foi alocado no sistema. Ambos tem o mesmo Anfitrião.
+  f) Os pacotes 141 e 142 não foram remontados no pacote 160, já o 143 foi. É necessário que os pacotes são enviados na ordem de correção, não estão disponíveis para uma máquina aguarde eles são reenviados na ordem certa.
+
+3 a) O cliente hello indica que esta criptografando os dados, já que não 12 foi em uma porta HTTPs e 3 em HTTP.	
+  b) Esta ocorrendo uma criptografia dos dados, sendo assim, consulte um HTTP de referência (porta 43).
+  c) O 20. A diferença e está escrito com criptografia de dados.
