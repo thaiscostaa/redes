@@ -1,0 +1,47 @@
+Aluno: Carlos Davi 431
+Exercicio 1-
+
+a)R:131.247.95.216
+
+b)No treceiro frame o cliente esta iniciando a conversaçao soliticitando acesso ao sevidor.
+No quarto frame o CLiente esta recebendo uma informação vinda do servidor.
+No quinto frame O cliente confirma o recebimento do pacote ao servidor.
+
+c)No sexto frame ocorre uma solicitaçao de dados de um servidor.
+No setimo frame o servidor envia uma confirmação ao cliente.
+
+E)No nono frame ocorre uma remontagem de um segmento por parte do servidor.
+No decimo frame Ocorre uma confirmação da pagina web.
+
+f)NO decimo primeiro frame ocorre uma confirmaçao dos dados recebidos feita pelo cliente para o servidor.
+
+g)Isso ocorre pois a imagem ja estava presente no codigo da pagina web.
+
+h)Ocorrem confirmações dos dados recebidos feitas pelo cliente para o servidor e vice versa.
+
+I)Durantes esses frames é feito uma solicitação de um icone da pagina HTTP, posteriormente é feita uma confirmaçao do recebimento do icone pelo cliente.
+
+J)O usuario esta acessando uma pagina web.
+
+Exercicio 2-
+
+a)www.yahoo.com CNAME www.yahoo.akadns.net
+216.109.117.106 e 216.109.117.109
+
+b)São necessarios 17 pacotes.
+
+c)Ocorre uma solitação a uma pagina Web e logo depois a resposta.Não, isso depende de como esta o trafego do servidor em questão.
+
+d)É feita solicitações em diferentes servidores, talvez por causa de alguma falhar ou congestionamento no primeiro servidor.
+
+E)Os dois tem o mesmo endereço DNS.
+
+F)Nao, apenas o 143.Ocorre um erro no carregamento, a maquina guarda ate onde foi chegado corretamente e espera o resto vim em ordem correta.
+
+Exerciocio 3-
+
+a)Uma é a HTTP nao segura a outra é HTTPs segura.No terceiro frame é utilizado o HTTP, ja no decimo segundo frame a porta utilizada é a 443 o HTTPS.
+
+b)Nao tem pois eles estão cripitografados.
+
+c) 20.Nele ocorre uma criptografia de dados.
