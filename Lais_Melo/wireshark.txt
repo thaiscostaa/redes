@@ -1,0 +1,28 @@
+(QUESTÃO 01)
+A) 131.247.95.216
+B) Frame 3: O cliente está iniciando a conversação solicitando o acesso a uma porta web.
+Frame 4: O cliente está obtendo resposta do servidor.
+Frame 5: Comunicação que indica o recebimento do pacote feita pelo TCP
+C) Frame 6: É feita a solicitação dos dados de um servidor HTTP.
+Frame 7: É feito o reconhecimento de dados pelo TCP.
+E) A página é remontada e atualizada por causa da perda de pacote.
+F) Frame 11: Reconhecimento do recebimento dos dados do servidor para o cliente.
+G) a imagem já foi montada, pois ela está no código HTML da página.
+H) É remontado o conjunto de dados para o cliente e enviado, após isso é confirmado o recebimento do pacote.
+I) Solicitação de carregamento do ícone da página HTTP, logo em seguida a confirmação do recebimento do pacote.
+J) Acessando uma página web.
+
+(QUESTÃO 02)
+A) www.yahoo.com: type CNAME, class IN, cname www.yahoo.akadns.net
+www.yahoo.akadns.net: type A, class IN, addr 216.109.117.106
+www.yahoo.akadns.net: type A, class IN, addr 216.109.117.109
+B) Serão necessários 6 pacotes.
+C) Solicitação e resposta da página. Não podem surgir vários problemas, sendo os principais, o congestionamento e a queda do servidor.
+D) Porque tem-se acessos a servidores distintos.
+E) Porque é o mesmo DNS
+F) Somente o 143. Ele guarda até o ultimo que foi recebido corretamente.
+
+(QUESTÃO 03)
+A) Uma é criptografada a outra não, ou seja, no frame 3 a porta 80 (HTTP) é insegura, no frame 12 a porta 443 (HTTPS) é segura.
+B) Os dados estão criptografados para segurança. A porta que está sendo utilizada é a 443(HTTPS).
+C) 13-20. Os dados estão criptografados.
