@@ -15,6 +15,9 @@ UNIDADE III:
 **Atividade 02:** [wireshark - entrega 09/01](https://docs.google.com/document/d/1ORgJcwouVpAVo63lTZt-6fdnYp9VMEvnDnlQHPv6DFo/edit?usp=sharing)    
 **Atividade 03:** Dijkstra - programa   
 
+UNIDADE IV:     
+**Atividade 01:** [Mininet-WiFi: Redes sem Fio - entrega 22/01](https://github.com/ifbahia/redes/blob/2017-i431/mininet-wifi.pdf)    
+
 Video Ilustrativo sobre o Github:  
 [acessar](https://www.youtube.com/watch?v=zg8JcK1dgMI)  
 
