@@ -1,0 +1,40 @@
+Q 1.1: As publicações feitas abordam os componentes principais do Mininet-Wifi, a diferença entre o Mininet e o Mininet-Wifi, as funcionalidades principais, o objetivo e a problemática que envolveu a criação do Mininet-Wifi, ou seja, um conteúdo satisfatório e abrangente para entender as funcionalidades.
+
+Q 2.1: Foi observado um atraso de em média 0.133 ms. Não houve perca de pacote. 
+
+5 packets transmitted, 5 received, 0% packet loss, time 4086ms 
+rtt min/avg/max/mdev = 0.099/0.133/0.264/0.065 ms
+
+Q 2.2: Foi testado a banda TCP, obtendo entre sta1 e sta2 o resultado 10.5 Mbits/sec e 10.6 Mbits/sec.
+
+*** Iperf: testing TCP bandwidth between sta1 and sta2 
+.*** Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+Q 2.3:
+Sta1:
+Tem o potência de transmissão de 14.Está na wlan0. Tem o IP 10.0.0.1/8 com um range de 14, Antenna Gain : [5],  apsinrange:  [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=21770> ], com o mac ['02:00:00:00:00:00'], em uma frequência de 2.412, no modo g , associatedTo: [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=21770>] ,com uma altura de antena de 1, na posição 1.0, 0.0, 0.0, no canal 1 e com rssi: [-36.0].
+
+Q 2.4: Anulada.
+
+Q 3.1: O ponto que está incomunicavel é o sta3, pois o host de destino está inacessível. Diferentemente do sta1 e do sta2, o sta3 não está associado ao AP1.
+
+Q 3.2: O modelo Log-Normal Shadowing Propagation Loss Model. O nivel de sinal no teste anterior foi de -62dBm, após mudar o modelo, o nível de sinal de sta1 desceu para -71dBm. O modelo apresenta uma fisionomia mais realista, com alterações de sinal e consequentemente com o alcance. Por isso, o nivel de sinal caiu.
+
+Q 3.3: Por ser mais parecido com o real, e por ter mudanças de nível de sinal, o modelo Log-Normal pode ser utilizado em qualquer ambiente.
+
+Q 4.1:
+sta1 sta3 - 50.00m ['0.00 Mbits/sec', '0.00 Mbits/sec']
+sta1 sta2 - 31.62m ['8.02 Mbits/sec', '8.42 Mbits/sec']
+sta2 sta3 - 22.36m ['0.00 Mbits/sec', '0.00 Mbits/sec']
+
+Q 4.2: Clear Channel Assessment (CCA) é um dos dois mecanismos de sensores da operadora na WLAN (ou WiFi). É definido nos padrões IEEE 802.11-2007 como parte da camada de Protocolo de convergência de camada física física (PMD) e camada física (PLCP). CCA envolve duas funções relacionadas - CCA-CS e CCA-ED.
+
+Q 5.1: A comunicação entre sta1 e sta2 foi interrompida, o sta1  não está na área de alcance de AP1 e foi para o alcance de AP2, ou seja, não tem como ocorrer a comunicação entre sta1 e sta2 por estarem em áreas de rede diferentes.
+
+Q 5.2: Handover. Em uma definição mais simples, Handover pode ser considerado como a transferência de conexão do usuário de um canal de rádio para outro.
+
+Q 6.1: As estações se comunicão com outras estações que estejam dentro ou em intercessão com sua área de alcance, sendo assim, sta1 não consegue se comunicar diretamente com sta3, como entre sta4 e sta6.
+
+Q 6.2: Para que ocorra a comunicação entre sta4 e sta6, é preciso mudar  a posição x de sta4 e sta6 para “sta4 = net.addStation('sta4', position='35,140,0')” e “sta6 = net.addStation('sta6', position='80,140,0')”. Assim, os dados serão passados para STA5 que passará para STA6. Para uma transferência direta de dados, a posição x ficaria “sta4 = net.addStation('sta4', position='55,140,0')” e “sta6 = net.addStation('sta6', position='65,140,0')”.
+
+Q 6.3:  Assim como o modelo Log-Normal Shadowing Propagation Loss Model, utilizaria em experimentos mais realistas. Caso a transfrência de dados esteja dando erro por conta da distância das estações, poderia utilizar o modelo 3D para visualizar melhor e identificar as mudanças que devem ser feitas.
