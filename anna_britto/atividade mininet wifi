@@ -1,0 +1,34 @@
+1.1)  “Combining Software-Defined and Delay-Tolerant Approaches in Last-Mile Tactical Edge Networking”. 
+Iulisloi Zacarias, Luciano P. Gaspary, Andersonn Kohl, Ricardo Q. A. Fernandes, Jorgito M. Stocchero, Edison P. de Freitas. 
+A estratégia do exército ultimamente está muito ligada à computação, principalmente na conexão entra as máquinas, permitindo que haja uma facilitação ao acesso de dados entre vários aparatos por meio de uma conexão sem fio. Esse software permite essa conexão e um controle sobre os aparelhos manejados pelo exército.
+
+2.1) O atraso foi de 0.139. 
+Não houve perdas de pacote. 
+A partir dos comandos ping, iwconfig você pode visualizar o atraso entre sta1 e sta2 e também a quantidade de perdas, um valor pequeno entre 0% e 1%, desconsiderando-o. 
+
+2.2) A banda disponível entre sta1 e sta2 é de 10.5 mbits/sec.
+
+2.3) txpower -- potência do sinal
+Wlan  – suporte de conectividade 
+Ip – ip da máquina
+Range – alcance da rede
+antennaGain – alcance da antena 
+apsInRange – informações da range
+mac – endereço mac (placa)
+frequency – frequência do sinal 
+mode – modo da rede
+associatedTo – 
+antennaHeight – altura do alcance da antena
+position – parâmetro de posição 
+channel – numeração do canal
+rssi – potencial do alcance do sinal, fica entre 0 a -100, quanto mais positivo, melhor o sinal.
+
+3.2)  Modelo de propagação Log-Distância, possuí uma fórmula que se adapta para o ambiente que a pessoa deseja simular ou emular. A potencia do sinal diminui conforme a distancia aumenta para criar um “ambiente” mais parecido com a realidade, com obstáculos. 
+
+3.3) Área urbana, já que é a área em que mais convivo, assim faz parte da minha realidade. 
+
+4.2) É um mecanismo de sensor responsável por verificar o sinal antes do envio de um pacote, dependendo do valor, ele irá ou não enviar. 
+
+5.1) Não. Após um tempo o sta2 para de funcionar e só o sta1 continua com a conexão.
+
+5.2) Handover. É um processo que permite que só a melhor conexão continue para não atrapalhar o usuário. 
