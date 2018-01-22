@@ -1,0 +1,54 @@
+Questão 1.1:
+Global network modelling based on mininet approach.
+As vezes é necessário prever como os virus e malwares se disseminam na Web. Pois você pode simular a presença de virus, vendo como o mesmo se comporta.
+
+Questão 2.1:
+4 packets transmitted, 4 received, 0% packet loss, time 3062ms
+rtt min/avg/max/mdev = 0.097/0.125/0.199/0.044 ms
+mininet-wifi> 
+
+Questão 2.2:
+10.5 Mbits/sec
+
+Questão 2.3:
+{'txpower': [14], 'wlan': ['sta1-wlan0'], 'ip': ['10.0.0.1/8'], 'range': 67, 'antennaGain': [5], 'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'mac': ['02:00:00:00:00:00'], 'frequency': [2.412], 'mode': ['g'], 'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'antennaHeight': [1], 'position': (10.0, 20.0, 0.0), 'channel': ['1'], 'rssi': [-54.0]}
+
+'ip': ['10.0.0.1/8'] --> endereço ip da maquina.
+'range': 67 --> alcance do sinal.
+'wlan': ['sta1-wlan0']--> nome da interface wireless.
+'mac': ['02:00:00:00:00:00']--> endereço mac da maquina.
+'channel': ['1']--> canal do router.
+'position': (10.0, 20.0, 0.0)-->posição da estação.
+'mode': ['g']-->modo de operação da rede.
+'antennaHeight': [1]-->altura da antena.
+'antennaGain': [5]-->sinal da antena.
+'frequency': [2.412]-->Frequencia do sinal.
+'txpower': [14]-->potência do sinal.
+'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]--> Estações ao alcance.
+
+Questão 3.1:
+STA3, por estar fora do limite de alcance da rede. Está associado parcialmente, o que não é suficiente.
+
+Questão 3.2:
+ Modelo Log-Normal Shadowing Propagation Loss Model, onde o sinal anterior foi de -62dBm e depois de mudar, o nível de sinal de STA1 desceu para -71dBm. Este modelo possui uma aparencia mais realista, com alterações de sinal e consequentemente com o alcance. Por isso, o nivel de sinal caiu.
+
+Questão 3.3:
+Num ambiente sem interferências para poder atingir uma área maior.
+
+Questão 4.1:
+ STA1=-32,  STA2=37. 18 Mbits/sec para os dois, ou seja, largura 0. A distância entre eles é de 50m.
+
+Questão 4.2:
+Banda de 6.91 Mbits/sec.
+
+
+
+
+
+
+
+
+
+
+
+
