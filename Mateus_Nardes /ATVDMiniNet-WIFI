@@ -1,0 +1,24 @@
+2.1 –
+ Houve um atraso de 0.138 ms. Porém Não ocorreu perca de dados.
+ 2.2 –
+ Banda de 10,5 Mbits / seg.
+ 2.3 –
+ txpower indica a potência do sinal 
+ Wlan, indica o suporte de rede 
+ Faixa, alcance da rede 
+ antenaGain, alcance da antena 
+ frequência, frequência do sinal 
+ modo, estilo de emissão do sinal 
+ antenaHeight, altura da antena 
+posição 
+ canal
+ 3.1 - sta3 encontra-se para o alcance da rede.
+ 3.2 - LogDistancePropagationLossModel, O modelo de longa distancia. No primeiro teste o sinal era de -41 dbm, após a troca do modelo caiu para -65
+ 3.3- Um local em que não haja interferência, Aberto e sem obstaculos
+ 4.2 - É um dos meios de sensoriamento da WLAN. Utilizado pra saber a energia no canal .
+5.1 - Houve Interrupção, pois um dos nos se manteve estático enquanto o outro não.
+5.2 - Ocorreu handover. Ele funciona se movimentando junto ao usuário para que o sinal não caia
+6.1
+Sta1 envia pacotes para sta3 e ele as recebe, porém o mesmo não ocorre com o sta4 e o sta6, por causa da distancia.
+6.3
+É necessária para distancias mais precisas.
