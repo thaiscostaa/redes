@@ -1,0 +1,29 @@
+IFBA
+ALUNA - REBECA DE JESUS BRANDÃO
+
+Questão 1.1:
+Artigo:REDES SEM FIO DEFINIDAS POR SOFTWARE: ESTUDO DO MININET WI-FI
+O artigo destrincha o uso do mininet-wifi como um emulador software que facilita a conexão entre vários computadores da rede sem precisar mexer no componente físico.
+
+Questão 2.1 :
+O atraso foi obtido através da média entre os pings é de 0.139 m/s e houve 0% de perdas para o pacote segundo os indicadores(packet loss).Ao parar o ping logo no início é possível obter a média,a soma  minima e a soma máxima.
+Questão 2.2:
+ É possível determinar a banda tcp ip entre os dois através comando e um dos resultados 10.6 mbits/seg
+Questão 2.3:
+‘txpower:[14]’ - indica a potência do sinal , ‘wlan:[‘sta1-wlan0’] ‘- indica o suporte de rede  ,’ip: [‘10.0.0. 1 / 8’]’ - indica o endereço ip do sta1, ‘range: [62]’ indica o alcance do sinal , ‘mac’- indica o endereço mac(placa) do sta1 que é hexadecimal, ‘frequency’- indica a frequência do sinal, ‘mode [‘g’]’- indica o modo do sta1 ,’associated to[<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]
+’, ‘antenaheight’-alcance da antena ,’position’-posição do sta1 ,
+’channel[1]’ - canal do sta1 , rssi- é a força do sinal recebido,’antenna gain [5.0]’-representa o ganho de sinal/alcance da antena,
+Questão 3.1:
+O node em questão é o sta3 ,pois está fora de alcance apesar de existir.
+Questão 3.2:
+É o modelo log-normal de propagação (Log-Normal Shadowing Propagation Loss Model ).O nível de sinal foi inferior a -62 dbm no primeiro teste e no segundo teste ele chegou a cair ainda mais, chegando a -71 dbm,que tecnicamente seria uma potencia de sinal ruim. 
+Questão 3.3: 
+Analisando o modelo seria viável um ambiente com um número mínimo de barreiras/interferências para poder obter uma melhora no sinal e um alcance maior.
+Questão 4.1:
+Questão 4.2: O CCA é um mecanismo que é capta a energia de um canal antes de enviar um pacote ,caso essa energia seja maior que o esperado o pacote não é enviado.
+Questão 5.1:
+Não,aparece uma mensagem de erro "DESTINATION HOST UNREACHABLE" indicando que a conexão foi interrompida.O que ocorreu foi que um deles ficou parado enquanto o outro se move.
+Questão 5.2:
+É um processo conhecido como handover , ele consiste em garantir a melhor conexão e carga de sinal para o usuário impedindo assim que a conexão não "caia".
+Questão 6.3: Eu utilizaria para a representação  em "gráficos" que sejam utilizadas a  distância. 
+
