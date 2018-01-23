@@ -1,0 +1,30 @@
+1. O Mininet-WiFi: Emulating Software-Defined Wireless Networks, pelo que eu vi, é um documento bom, com linguagem clara, de fácil entendimento e descreve funcionalidades do Mininet-WiFi. 
+
+2.1  Primeira vez que usou o ping:
+       min/avg/max/mdev = 0.070/0.105/0.234/0.034 ms
+
+       Segunda vez que usou o ping, após as estações sofrerem desconexão:
+       min/avg/max/mdev =  0.106/0.118/0.225/0.032 ms
+   
+Conclusão: após desconectar as estações e reconecta-las novamente, foi possível perceber que o tempo de resposta sofreu atraso, mas, contudo, não houve a perda de pacotes.
+
+2.2 Questão prática…
+       Posição inicial dos nós: [1.0, 0.0, 0.0]
+       Nova posição dos nós “setada” por mim: (10.0, 20.0, 0.0)
+       Distância entre os novos nós: sta1-sta2 é 21.54 metros
+
+2.3  Txpower: é potência do sinal em dBm da estação em questão, que nesse caso é 14.
+       Wlan: rede sem fio local, que é definida na prática como sta1-wlan0.
+       Ip: protocolo onde seu valor na prática é 10.0.0.1/8.
+       Range: o quanto é alcançado de sinal. Na prática é 62.
+       AntennaGain: o quanto essa rede consegue concentrar de sinal transmitido. Na prática é 5.
+       ApsInRange: Informação dos pontos de acesso. Prática: <OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=5358>.
+       Mac: é o que mostra o endereço de controle de acesso à mídia, que lá é definido como 02:00:00:00:00:00.
+       Frequency: Mostra a frequência de sinal que pode ser medida em Megaherz ou GHz. Na prática é dado como 2.412
+       Mode: mostra o modo que no caso é g.
+       ass: acesso.
+       Position: mostra a posição dos nós, que nessa prática é  [1.0, 0.0, 0.0].
+       Channel: Mostra o canal, que no caso é 1.
+       Rssi: é o quanto de sinal chega do roteador e quanto mais próximo de um valor positivo, mais sinal essa estação recebe. Na prática é definido como -30.0.
+       
+3.1 O nó da sta3 está incomunicável porque ele não está fezendo parte da cobertura do AP1. Não se encontra. A cobertura do AP1 segue uma curva que vai de 60 à 60, excluindo assim as demais localidades de seu alcance. 
