@@ -1,0 +1,38 @@
+Ifba Campus Jequié
+Thais Costa
+Questão 1.1
+“Estudo de redes sem fio definidas por software: estudo do mininet wifi”. 
+O artigo define o uso do mininet-wifi como um emulador software que facilita uma conexão entre vários computadores de uma rede sem necessidade de manipular no componente físico.
+Questão 2.1
+Média de 0.139ms de atraso, sem perca de pacotes
+Questão 2.2
+10.6 mbits / seg
+Questão 2.3
+Mode: modo de operação de rede
+txpower:  - indica a potência do sinal
+ wlan:  – componentes que fazem parte da lan
+ ip:  - addres ip
+intervalo:  indica o alcance do sinal
+ mac- indica o endereço mac (placa) 
+ frequency- frequência do sinal
+Questão 3.1
+O nó sta3 esta fora do alcance ficando assim incomunicável
+Questão 3.2
+ modelo log-normal de propagação .O sinal mudou de -62 dbm chegando à  -71 dbm no segundo teste.
+Questão 3.3
+Um ambiente que facilite a passagem de sinal para ter um maior alcance
+Questão 4.1
+Ambos 18 mbits/seg. 50 m.
+Questão 4.2
+CCA Threshold é um detector de energia em excesso que pode interferir na transmissão.
+Questão 5.1
+Não. Depois de um tempo o sta2 para de funcionar e só o sta1 continua com uma conexão.
+Questão 5.2
+Pode ser considerado como uma transferência de conexão de um canal de radio pra outro
+Questão 6.1
+Se comportam como estações se comunicando entre si dentro ou em interseção de uma área de alcance dessa forma sta1 não se comunica com sta3 assim como sta4 e sta6
+Questão 6.2
+x: sta4 = net.addStation ('sta4', position = '35, 140,0 ') | sta6 = net.addStation ('sta6', position = '80, 140,0 ')
+ y: sta4 = net.addStation ('sta4', position = '100,140,0')|sta6 = net.addStation ('sta6', position = '100,120,0')
+Questão 6.3
+Experimentos em que haja a necessidade de maior precisão para a distancia entre estações
