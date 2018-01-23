@@ -1,0 +1,74 @@
+EXERCÍCIO MININET-WIFI
+
+questão 01)
+
+	Título do trabalho: Avaliação , através de simulação e teste real , de um Firewall baseado em 	SDN.
+	www.academia.edu/download/46340080/Avaliacao_de_Firewall.pdf
+	O artigo é de suma relevancia por anbordar os benefícios dos SDN, o simulador/emulador 	Mininet é citado no trabalho.
+
+questão 02.1)
+	
+	atraso: 0.118
+	não houve perda de pacote. Êxito no ping.
+
+questão 02.2)
+
+10.5 Mbits/sec
+
+questão 02.3)
+
+	txpower: taxa de transmissão=14
+	wlan: interface
+	ip: endereço
+	range: alcance
+	antennagain: ganho de antena
+	apsInRange: aps que estão ao alcance
+	mac: endereço mac da interface ou da antena
+	frequency: frequencia da antena
+	mode: modo de operação da antena
+	associatedTo: associado a axcesspoint
+	antennaHeight: tamanho da antena
+	position: posição do nó
+	channel: canal
+	rssi: nível de sinal
+
+questão 02.4)
+
+	ANULADA.
+
+questão 03.1)
+
+	o sta3 não está no raio de alcance de AP1, logo, está incomunicável. Utilizei o comando   	iwconfig.
+  
+  questão 03.2)
+          
+  modelo de propagação: friis. net.propagationModel, o nivel de sinal é de -48 dBm.
+  ao passo em que o modelo net.propagationModel, o nivel de sinal é -62 dBm.
+
+questão 03.3) 
+o modelo friis é um ambiente bom, ou seja, sem interferência. o alcance, nesse modelo, abrangeria uma área bem maior.
+
+questão 04.1)
+    banda de 6.91 Mbits/sec
+
+questão 04.2)
+   
+o dispositivo executa um CCA para 
+detectar energia no canal, se o dispositivo detectar energia acima do limite CCA, não transmitirá o pacote.
+
+questão 05.1)
+    a comuinicação é interrompida. 
+sta1 ping sta2: após um tempo para de pingar e aparece a mensagem "From 10.0.0.2 icmp_seq=1 Destination Host Unreachable"
+Em determinado momento o sta2 para de se mover e o sta1 continua.
+
+
+
+  questão 05.2)
+     
+o processo ocorrido se chama Handover: tem o objetivo de  manter o móvel conectado que oferecer o melhor transmissão no
+momento. Mantendo assim transmissão ininterrupta enquanto o usuario se movimenta.
+
+questão 06.1)
+   
+sta3 recebe pacotes do sta1, sta4 não recebe do sta3, sta6 não recebe do sta4
+
