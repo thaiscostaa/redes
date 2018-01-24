@@ -1,0 +1,231 @@
+Data: 24/01/2018
+Nomes da dupla: Elai Emylle Matos e Sara Coelho Costa
+
+
+Q 1.1: REDES SEM FIO DEFINIDAS POR SOFTWARE: ESTUDO DO MININET WI-FI, feita por 
+Leandro Aurélio da Silva. Porque ele redes sem fio em geral estudando as redes atráves do MiniNet Wifi.
+
+Q 2.1: Foi observado um atraso de em média 0.133 ms. Não houve perca de pacote. 
+
+5 packets transmitted, 5 received, 0% packet loss, time 4086ms 
+rtt min/avg/max/mdev = 0.099/0.133/0.264/0.065 ms
+
+Q 2.2: Foi testado a banda TCP, obtendo entre sta1 e sta2 o resultado 10.5 Mbits/sec e 10.6 Mbits/sec.
+
+*** Iperf: testing TCP bandwidth between sta1 and sta2 
+*** Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+Q 2.3:
+Sta1:
+Tem o potência de transmissão de 14.Está na wlan0. Tem o IP 10.0.0.1/8 com um range de 14, Antenna Gain : [5],  apsinrange:  [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=21770> ], com o mac ['02:00:00:00:00:00'], em uma frequência de 2.412, no modo g , associatedTo: [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=21770>] ,com uma altura de antena de 1, na posição 1.0, 0.0, 0.0, no canal 1 e com rssi: [-36.0] nível de sinal.
+
+Q 2.4: Anulada.
+
+Q 3.1: O ponto que está incomunicavel é o sta3, pois o host de destino está inacessível. Diferentemente do sta1 e do sta2, o sta3 não está associado ao AP1.
+
+Q 3.2: No modelo Log-Distance Propagation Loss Mode, o nivel de sinal foi de -62dBm "Signal level=-62 dBm". Já no modelo Friis Propagation Loss Model o nível de sinal mudou  para -54dBm "Signal level=-54 dBm". O nível de sinal aumentou, melhorando a qualidade do sinal. Isso acontece porque o modelo Friis relaciona as potências das antenas, ou seja, as antenas com potências baixas são compensadas com um ganho alto em antenas de recepção.   
+
+modelo Log-Distance:
+
+sta1 iwconfig
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=48/70  Signal level=-62 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:7   Missed beacon:0
+
+sta2 iwconfig
+sta2-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=25/70  Signal level=-85 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:12   Missed beacon:0
+
+sta3 iwconfig
+sta3-wlan0  IEEE 802.11  ESSID:off/any  
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+
+modelo Friis:
+
+sta1 iwconfig
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=56/70  Signal level=-54 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:6   Missed beacon:0
+
+sta2 iwconfig
+sta2-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=45/70  Signal level=-65 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:12   Missed beacon:0
+
+sta3 iwconfig
+sta3-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=42/70  Signal level=-68 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:12   Missed beacon:0
+
+
+Q 3.3: Em estações de transmissões de satélites e naves espacias. Porque nessas situações as vezes é preciso manter um antena que tenha baixo ganho, por causa de fatores como tamanho peso ou potência.  
+
+Q 4.1:
+								Distância - Largura de banda
+py sta1.setPosition('10,20,10') e py sta2.setPosition('10,20,0')  10 metros - ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+py sta1.setPosition('10,20,5')e py sta2.setPosition('5,20,0')    7.07 metros - ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+py sta1.setPosition('10,4,5')e py sta2.setPosition('10,8,5')     4.00 metros - ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+Nível de sinal:
+sta1 - Signal level=-30 dBm 
+sta2 - Signal level=-30 dBm 
+
+Q 4.2: Clear Channel Assessment (CCA) é um mecanismos de sensor da operadora na WLAN (ou WiFi). O CCA envolve duas funções que são: Carrier Sense (CCA-CS) que decodifica o sinal wifi e o Energy Detect (CCA-ED) que detecta energia que pode interferir ou não na transmissão do sinal.
+
+
+Q 5.1: 
+Não, porque sta1 está se movimentando e assim ele sai do alcance de sta2. E também sta1 foi para um ponto de acesso diferente.
+
+sta1 ping sta2
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=4.89 ms
+From 10.0.0.2 icmp_seq=42 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=43 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=44 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=45 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=46 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=47 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=48 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=49 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=50 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=51 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=52 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=53 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=54 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=55 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=56 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=58 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=59 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=60 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=61 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=62 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=63 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=64 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=65 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=66 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=70 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=71 Destination Host Unreachable
+
+--- 10.0.0.3 ping statistics ---
+72 packets transmitted, 1 received, +26 errors, 98% packet loss, time 72660ms
+rtt min/avg/max/mdev = 4.897/4.897/4.897/0.000 ms, pipe 4
+
+sta1-wlan0  IEEE 802.11  ESSID:"ssid-ap2"  
+          Mode:Managed  Frequency:2.437 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:48 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=70/70  Signal level=-30 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:38   Missed beacon:0
+
+sta2 iwconfig
+sta2-wlan0  IEEE 802.11  ESSID:"ssid-ap1"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 02:00:00:00:02:00   
+          Bit Rate:48 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=70/70  Signal level=-30 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:11   Missed beacon:0
+
+
+Q 5.2: Handover é o procedimento para redes sem fio que tratar de uma transição de uma unidade móvel de uma estação a outra, sendo ver claramente.
+
+Q 6.1:  
+
+sta1 e sta3 conseguem fazer a transmissão com sucesso. Enquanto sta4 e sta6 não conseguem se comunicar. 
+
+sta1 ping sta3
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=14.6 ms
+64 bytes from 10.0.0.3: icmp_seq=2 ttl=64 time=3.85 ms
+64 bytes from 10.0.0.3: icmp_seq=3 ttl=64 time=3.83 ms
+64 bytes from 10.0.0.3: icmp_seq=4 ttl=64 time=4.22 ms
+64 bytes from 10.0.0.3: icmp_seq=5 ttl=64 time=4.33 ms
+64 bytes from 10.0.0.3: icmp_seq=6 ttl=64 time=3.82 ms
+64 bytes from 10.0.0.3: icmp_seq=7 ttl=64 time=4.01 ms
+64 bytes from 10.0.0.3: icmp_seq=8 ttl=64 time=4.42 ms
+64 bytes from 10.0.0.3: icmp_seq=9 ttl=64 time=4.32 ms
+64 bytes from 10.0.0.3: icmp_seq=10 ttl=64 time=3.91 ms
+64 bytes from 10.0.0.3: icmp_seq=11 ttl=64 time=3.84 ms
+64 bytes from 10.0.0.3: icmp_seq=12 ttl=64 time=3.83 ms
+64 bytes from 10.0.0.3: icmp_seq=13 ttl=64 time=4.34 ms
+64 bytes from 10.0.0.3: icmp_seq=14 ttl=64 time=3.84 ms
+64 bytes from 10.0.0.3: icmp_seq=15 ttl=64 time=3.83 ms
+64 bytes from 10.0.0.3: icmp_seq=16 ttl=64 time=3.83 ms
+64 bytes from 10.0.0.3: icmp_seq=17 ttl=64 time=4.90 ms
+64 bytes from 10.0.0.3: icmp_seq=18 ttl=64 time=5.91 ms
+64 bytes from 10.0.0.3: icmp_seq=19 ttl=64 time=4.94 ms
+64 bytes from 10.0.0.3: icmp_seq=20 ttl=64 time=3.84 ms
+64 bytes from 10.0.0.3: icmp_seq=21 ttl=64 time=4.38 ms
+64 bytes from 10.0.0.3: icmp_seq=22 ttl=64 time=3.85 ms
+64 bytes from 10.0.0.3: icmp_seq=23 ttl=64 time=3.84 ms
+64 bytes from 10.0.0.3: icmp_seq=24 ttl=64 time=3.84 ms
+64 bytes from 10.0.0.3: icmp_seq=25 ttl=64 time=4.32 ms
+64 bytes from 10.0.0.3: icmp_seq=26 ttl=64 time=4.24 ms
+
+--- 10.0.0.3 ping statistics ---
+26 packets transmitted, 26 received, 0% packet loss, time 25042ms
+rtt min/avg/max/mdev = 3.827/4.578/14.662/2.072 ms
+
+sta4 ping sta6
+PING 10.0.0.6 (10.0.0.6) 56(84) bytes of data.
+From 10.0.0.4 icmp_seq=1 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=2 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=5 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=6 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=8 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=11 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=12 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=13 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=14 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=17 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=18 Destination Host Unreachable
+
+--- 10.0.0.6 ping statistics ---
+20 packets transmitted, 0 received, +11 errors, 100% packet loss, time 19446ms
+pipe 4
+
+
+Q 6.2: Anulada.
+
+Q 6.3: Para experimentos que necessitam de precisão no sinal, como sinal de telefone, tv e rádio.
