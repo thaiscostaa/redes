@@ -1,0 +1,91 @@
+Alunos: Djair Maykon e Matheus Santos Carvalho
+Turma: 431
+
+Questão 1.1:  
+
+Global network modelling based on mininet approach.
+As vezes é necessário prever como os virus e malwares se disseminam na Web. Pois você pode simular a presença de virus, vendo como o mesmo se comporta.
+
+Questão 2.1:
+Antes da desconexão de sta1 a média de atraso era 0.110ms para 10 pacotes sem perda, após reconectar a média de atraso foi de 0.120ms para 7 pacotes também sem perda.
+
+Questão 2.2:
+
+Largura de banda: 10.5 Mbits/sec
+
+Questão 2.3:
+
+{'txpower': [14], 'wlan': ['sta1-wlan0'], 'ip': ['10.0.0.1/8'], 'range': 67, 'antennaGain': [5], 'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'mac': ['02:00:00:00:00:00'], 'frequency': [2.412], 'mode': ['g'], 'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'antennaHeight': [1], 'position': (10.0, 20.0, 0.0), 'channel': ['1'], 'rssi': [-54.0]}
+ 	'ip': ['10.0.0.1/8'] --> endereço ip da maquina.
+'range': 67 --> alcance do sinal.
+'wlan': ['sta1-wlan0']--> nome da interface wireless.
+'mac': ['02:00:00:00:00:00']--> endereço mac da maquina, interface de comunicação.
+'channel': ['1']--> canal do router.
+'position': (10.0, 20.0, 0.0)-->posição da estação.
+'mode': ['g']-->modo de operação da rede.
+'antennaHeight': [1]-->altura da antena.
+'antennaGain': [5]-->sinal da antena.
+'frequency': [2.412]-->Frequencia do sinal.
+'txpower': [14]-->potência do sinal.
+'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]--> Estações ao alcance.
+'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]-->Estação associada.
+
+Questão 3.1:
+
+O sta3 esta fora de alcance, foi obtido o seguinte dado pelo iwconfig de sta3: ESSID:off/any. O sta3 esta associado ao Ap1 pois ao realizar o ping entre ambos ocorreu um resultado de conexão.
+
+Questão 3.2:
+
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:36 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=54/70  Signal level=-56 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:6   Missed beacon:0
+
+
+Modelo padrão: Tx-Power=14 dBm.
+
+Alteração feita no codigo python do modelo padrão foi "net.propagationModel(model="friis", sL = 4)".
+
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+
+
+Modelo Friis Propagation Loss Model: Tx-Power=20 dBm.   
+
+Questão 3.3:
+
+É um modelo mais simples de implementar, pois é necessário poucos paramentros. O Friis Propagation Loss Model não requer de um ambiente cheio de estruturas, já que esse método envolve poucas variáveis.
+
+Questão 4.1:
+
+Primeiro alteramos a posição sta3 com "py sta3.setPosition('50,20,0')". Após isso essa estação ficou associada as outras. Fizemos um iperf do sta1 (posição [10.0, 20.0, 0.0]
+) ao sta3, com uma distancia 40 metros, o resultado foi de '7.09 Mbits/sec. Alteramos de novo a posicão do sta3 com py sta3.setPosition('30,20,0'). A distância foi de 20 metros, e a resposta do comando iperf de 14.2 Mbits/sec.
+
+Questão 4.2:
+
+Clear Channel Assessment é um dos componentes de sensores da operadora Wifi, verificando se o meio está ocioso ou não. Ele é estruturado em IEEE 802.11-2007. O CCA também detecta o portador e a energia. Ele possui duas funções relacionadas: CCA-CS, ligado ao portador e CCA-ED a energia. 
+
+Questão 5.1:
+
+Não, o nó do sta1 é móvel diferento do sta2. Desse modo existe um momente em que os dois perdem a comunicação quando o sta1 perde o alcance do sta2.
+
+Questão 5.2:
+
+Handover. Este procedimento é empregado em redes sem fio e representa uma transferência de conexão de um usuario de um canal de rádio para outro. A ideia dele é tentar manter a integridade do sinal sem ter bloqueios, melhorando a mobilidade do usuário.
+
+Questão 6.1:
+
+A comunicação é muito fraca tanto em sta1 a sta3 e sta4 a sta6, não existindo comunicação em ambos os casos (ESSID:off/any). 
+
+Questão 6.3:
+
+Para visualizar perfeitamente o alcance de sinal de cada estação. Pois agora é adicionado o eixo z, permitindo observar a altura do sinal e como ele funciona na realidade. 
+

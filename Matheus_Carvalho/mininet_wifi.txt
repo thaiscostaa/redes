@@ -1,0 +1,88 @@
+Aluno: Matheus Santos Carvalho.
+Turma: 431
+
+Questão 1.1:
+
+Global network modelling based on mininet approach.
+As vezes é necessário prever como os virus e malwares se disseminam na Web. Pois você pode simular a presença de virus, vendo como o mesmo se comporta.
+
+Questão 2.1:
+
+4 packets transmitted, 4 received, 0% packet loss, time 3062ms
+rtt min/avg/max/mdev = 0.097/0.125/0.199/0.044 ms
+mininet-wifi>
+
+Questão 2.2:
+
+10.5 Mbits/sec
+
+Questão 2.3:
+
+{'txpower': [14], 'wlan': ['sta1-wlan0'], 'ip': ['10.0.0.1/8'], 'range': 67, 'antennaGain': [5], 'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'mac': ['02:00:00:00:00:00'], 'frequency': [2.412], 'mode': ['g'], 'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ], 'antennaHeight': [1], 'position': (10.0, 20.0, 0.0), 'channel': ['1'], 'rssi': [-54.0]}
+
+'ip': ['10.0.0.1/8'] --> endereço ip da maquina.
+
+'range': 67 --> alcance do sinal.
+
+'wlan': ['sta1-wlan0']--> nome da interface wireless.
+
+'mac': ['02:00:00:00:00:00']--> endereço mac da maquina, interface de comunicação.
+
+'channel': ['1']--> canal do router.
+
+'position': (10.0, 20.0, 0.0)-->posição da estação.
+
+'mode': ['g']-->modo de operação da rede.
+
+'antennaHeight': [1]-->altura da antena.
+
+'antennaGain': [5]-->sinal da antena.
+
+'frequency': [2.412]-->Frequencia do sinal.
+
+'txpower': [14]-->potência do sinal.
+
+'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]--> Estações ao alcance.
+
+'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]-->Estação associada.
+
+Questão 3.1:
+
+O nó da sta3. Pois o mesmo esta fora do range da rede. Está também ligado a AP1, mas de forma bem limitada.
+
+Questão 3.2:
+
+LogDistancePropagationLossModel. O sinal mudou de -48 dBm no sta1 para -62 dBm com a mudança do modelo.
+
+
+Questão 3.3:
+
+Local que libere a livre circulação de sinal, não tendo obstaculos.
+
+Questão 4.1:
+
+sta1 e sta3 - 50.00m ['0.00 Mbits / seg', '0.00 Mbits / seg']
+sta1 e sta2 - 31.62m ['8.02 Mbits / seg', '8.42 Mbits / seg']
+sta2 e sta3 - 22.36m ['0.00 Mbits / seg', '0.00 Mbits / seg']
+
+Questão 4.2:
+
+O Clear Channel Assessmentt é um dos modos de sensores na WLAN ou WIFI. É definido pelo protocolo IEEE 802.11. Existem duas funções de CCA: CCA-CS e a CCA-ED. Funcionameto é quando, antes de transmitir um pacote, o dispositivo executa um CCA para detectar energia no canal. Se o dispositivo detectar energia acima do limite CCA, não trafegará o pacote.
+
+Questão 5.1:
+
+Não foi continua, já que o nó sta1 não é fixo diferente do sta2 que é fixo. Desse modo, com a movimentação do nó movel, o sta1 fica fora do range do Ap1,que está conectado o sta2.
+
+Questão 5.2:
+
+Um handover. Está relacionado ao acesso, recurso de rádio e controle da rede e tem um impacto significativo na capacidade e na performance do sistema.
+
+Questão 6.1:
+
+Não há comunicação entre sta1 e sta3. As estações se conectam com outras estações que estejam dentro ou no trecho de interseção de sua área de alcance. Como resultado,  sta1 não consegue se comunicar diretamente com sta3, e entre sta4 e sta6 ocorre da mesma forma.
+
+Questão 6.2:
+
+Questão 6.3:
+
+Modelos 3D pra observar melhor as variações da rede. Sta1  está fora do alcance do Sta2 assim está fora de comunicação. 
