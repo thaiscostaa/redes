@@ -1,0 +1,37 @@
+ALUNO : JOÃO FELIPE REGIS SOUZA       TI: 431
+1.1
+De acordo com o Google Scholar, a principal publicação sobre Mininet é a "Mininet-WiFi: Emulating software-defined wireless networks" desenvolvida por brasileiros na Universidade de Campinas (UNICAMP). A mesma foi apresentada em uma conferência em Barcelona.
+2.1
+No ping STA1 ping STA2 não ocorreu perda de pacotes com  o  tempo de 13500ms. Já no segundo ping, após a reconexão de STA1, também não ocorreu perda de pacotes mas o tempo diminuiu um pouco : 11271ms.
+2.2
+STA1- 10.5 Mbits/sec e STA2- 10.6 Mbits/sec.
+
+2.3- TxPower, potência transmitida pelo modem: 14; a wlan, componentes que fazem parte da lan: sta1-wlan0; ip, protocolo de rede local da sta1: 10.0.0.1/8; range, alcance da rede: 15; mac, interface de comunicação: 02:00:00:00:00:00; frequency: 2.412Hz; mode, modelo ou geração de rede: g; position: 1.0,0.0,0.0.
+
+2.4 
+
+3.1-
+O nó incomunicável é o STA3. O mesmo está fora do limite de alcance da rede. Apenas parte do sinal está dentro do alcance. Ele está associado ao AP1, mas de forma parcial.
+
+3.2- 
+O modelo escolhido foi  o “Log-Normal Shadowing Propagation Loss Model”. O nivel de antes foi : -62dBm.O nível do sinal STA1 desceu para -71dBm quando mudou-se o modelo.O sinal caiu porque o modelo apresenta alterações de sinal e alcance.
+3.3-
+Por ter mudanças de nível de sinal, o modelo Log-Normal é pertinente em qualquer ambiente.
+
+4.1- 
+O Iperf de STA1 (-32dBm)  e STA3(-37dBm)  deu 18 Mbits/sec para os dois, ou seja, largura 0. Distância de 50m entre eles.
+4.2-
+O Clear Channel Assessmentt é um dos mecanismos de sensores na WLAN. É definido pelo protocolo IEEE 802.11. Existem duas CCA, a CCA-CS que é o sentido do operador cuja capacidade do receptor é detectar e decodificar um preâmbulo WiFi e a CCA-ED, que é a detecção de energia onde o receptor tem a capacidade de detectar energia excessiva no canal operacional e interferir na transmissão.
+
+5.1-
+A comunicação entre STA1 e STA2 foi interrompida, o STA1 é um nó móvel que saiu da área de alcance de AP1 e foi para o alcance de AP2, ou seja, não tem como ocorrer a comunicação entre STA1 e STA2 por estarem em áreas de rede diferentes.
+
+5.2- Este processo se chama handover, ele funciona como uma estação móvel onde os nós também são móveis. Ocorre a combinação de dados de uma célula para outra com setores diferentes.
+
+6.1-
+Não há comunicação entre STA1 e STA3. O ponto de STA1 está fora da área de alcance de STA2 e STA3, logo não tem como ocorrer a comunicação. Entretanto, há comunicação entre STA2 e STA3.
+6.2-
+ 
+
+6.3-
+Utilizaria em experimentos mais realistas, assim como o modelo  Log-Normal Shadowing Propagation Loss Model. 
