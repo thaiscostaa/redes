@@ -1,0 +1,86 @@
+Discentes: Carlos Davi Silva Pereira e Vitor José da Guarda Pereira 
+
+Q 1.1
+Chegamos à conclusão que a principal publicação científica relacionada ao Mininet-WiFi é “Mininet-WiFi: Emulaçao de Redes Sem Fio Definidas por Software com suporte a Mobilidade. Por: Ramon dos Reis Fontes, Christian Esteve Rothenberg” pois nele tivemos uma grande ajuda para compreender a atividade, contém uma linguagem clara e objetiva.  
+
+Q 2.1
+O atraso observado entre sta1 e sta2 foi de 0.125ms. Não houve perda de pacotes “0% packet loss”.
+6 packets transmitted, 6 received, 0% packet loss, time 5118ms
+rtt min/avg/max/mdev = 0.096/0.125/0.251/0.056 ms
+
+Q 2.2
+Após o uso do comando do iperf obtivemos esse resultado entre os nós sta1 e sta2.
+Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+Q 2.3
+{'txpower' ou ‘força do sinal trasmitida’: [14], 'wlan' ou ‘rede de área local sem fio’: ['sta1-wlan0'], 'ip' ou ‘endereço local da rede’: ['10.0.0.1/8'], 'range' ou ‘alcance da rede’: [62], 'antennaGain' ou ‘ganho da antena/potencia’: [5.0], 'apsInRange': [], 'mac' ou ‘comunicação’: ['02:00:00:00:00:00'], 'frequency' ou ‘frequência’: [2.412], 'mode' ou ‘modelo da rede (wireless)’: ['g'], 'rssi': [-60], 'antennaHeight' ou ‘altura da antena’: [1.0], 'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=4572> ], 'channel' ou ‘canal’: ['1']}
+
+Q 2.4
+ANULADA
+
+Q 3.1
+O sta3 está incomunicável pois o mesmo encontra-se fora do alcance do ap1. Ele não está associado ao ap1.
+
+Q 3.2
+Utilizamos o modelo friis e fizemos as mudanças necessárias no código. No modelo propagationModel observamos o nível de sinal de -56 dBm, no modelo friis não conseguimos identificar esse nível, só percebemos mudanças na força de sinal transmitida ‘TX-Power’  
+net.propagationModel(model="logDistance", exp=4) 
+Bit Rate:54 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=54/70  Signal level=-56 dBm
+
+net.propagationModel(model="friis", sL = 4)
+Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+
+Q 3.3
+Como o modelo friis é utilizado para medir a potência transmitida de uma antena para outra, possa ser que esse modelo seja ideal na parte de telecomunicações. 
+
+Q 4.1
+mininet-wifi> py sta1.setPosition('10,20,0')
+mininet-wifi> py sta3.setPosition('10,20,10')
+mininet-wifi> distance sta1 sta3
+The distance between sta1 and sta3 is 10.00 meters
+mininet-wifi> iperf
+*** Iperf: testing TCP bandwidth between sta1 and sta3
+*** Results: ['17.9 Mbits/sec', '17.9 Mbits/sec']
+
+A distância entre os dois nós foi de 10 metros e a largura de banda foi perceptível graças ao comando iperf: ['17.9 Mbits/sec', '17.9 Mbits/sec']. 
+
+Q 4.2
+Clear Channel Assessment (CCA) é um dos dois mecanismos de sensores da operadora na WLAN (ou WiFi). Antes de transmitir um pacote, o dispositivo executa um CCA para detectar energia no canal. Se o dispositivo detectar energia acima do limite CCA, não transmitirá o pacote, é basicamente um controlador nas transmissões para passar informações. 
+
+Q 5.1
+mininet-wifi> sta1 ping sta2
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=3.47 ms
+64 bytes from 10.0.0.3: icmp_seq=2 ttl=64 time=2.05 ms
+64 bytes from 10.0.0.3: icmp_seq=3 ttl=64 time=2.08 ms
+64 bytes from 10.0.0.3: icmp_seq=4 ttl=64 time=2.07 ms
+64 bytes from 10.0.0.3: icmp_seq=5 ttl=64 time=2.14 ms
+64 bytes from 10.0.0.3: icmp_seq=6 ttl=64 time=2.18 ms
+64 bytes from 10.0.0.3: icmp_seq=7 ttl=64 time=2.31 ms
+64 bytes from 10.0.0.3: icmp_seq=8 ttl=64 time=2.52 ms
+64 bytes from 10.0.0.3: icmp_seq=9 ttl=64 time=2.53 ms
+^C
+--- 10.0.0.3 ping statistics ---
+20 packets transmitted, 9 received, 55% packet loss, time 19250ms
+rtt min/avg/max/mdev = 2.051/2.377/3.477/0.426 ms
+
+A comunicação não foi constante foi interrompida, pois quando sta1 sai do alcance de ap1 passando para ap2, ocorre perda de pacote.
+
+Q 5.2
+O processo ocorrido foi Handover, que é caracterizado por cuidar da mudança de unidades moveis em rede sem fio. Handoff é um elemento essencial de comunicações celulares. Algoritmos de handoff eficientes são um modo rentável de aumentar a capacidade e QoS (Qualidade de Serviço) de sistemas celulares.
+
+Q 6.1
+De acordo com o gráfico tanto “sta1 e sta3” e “sta4 e sta6” estão em comunicação pois estão na mesma área devido a intercessão, porém a comunicação parece ser mínima. Após fazer o comando “sta1 ping sta3” e “sta4 ping sta6”, foi observado que  sta1 e sta3 realizam a comunicação com sucesso e sta4 e sta6 ficam fora do alcance.
+
+Q 6.2
+ANULADA
+
+Q 6.3
+Para casos mais precisos a respeito do sinal, pois foi acrescentado mais um eixo sendo perceptível a visão tridimensional o que possibilitou uma melhor compreensão a respeito do alcance dos nós.
+
