@@ -1,0 +1,93 @@
+Discentes: Laís Melo e Mailane Queiroz.
+
+(QUESTÃO 1.1)
+O principal artigo encontrado foi “Mininet-WiFi: Emulating software-defined wireless networks”, pois traz uma gama maior de informações a respeito do mininet-Wifi, como por exemplo as principais funções e o objetivo da criação. O artigo tem como autores Ramon R. Fontes, Samira Afzal, Samuel H. B. Brito, Mateus A. S. Santos e Christian Esteve Rothenberg.
+(QUESTÃO 2.1)
+17 packets transmitted, 0 received, +5 errors, 100% packet loss, time 16380ms.
+
+(QUESTÃO 2.2)
+Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+(QUESTÃO 2.3)
+{'txpower': [14], 'wlan': ['sta1-wlan0'], 'ip': ['10.0.0.1/8'], 'range': [62], 'antennaGain': [5.0], 'apsInRange': [], 'mac': ['02:00:00:00:00:00'], 'frequency': [2.412], 'mode': ['g'], 'rssi': [-60], 'antennaHeight': [1.0], 'associatedTo': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=3981> ], 'channel': ['1']}
+
+(QUESTÃO 3.1)
+O nó incomunicavel é o sta3. Ele está incomunicavel pois está fora da área de cobertura de AP1.
+
+(QUESTÃO 3.2) 
+modelo logDistance:
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:12 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=54/70  Signal level=-56 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:8   Missed beacon:0
+
+modelo friis:
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:12 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=68/70  Signal level=-42 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:7   Missed beacon:0
+
+lo        no wireless extensions.
+
+(QUESTÃO 3.3) 
+Em ambientes muito extensos. Por que o modelo Friis é muito eficaz em propagação de sinais em ambientes extensos.
+
+(QUESTÃO 4.2) 
+O CCA é um recurso que dá uma melhor qualidade de conexão, pois ele verifica o nível do sinal e quando o mesmo é menor que -92 dBm a comunicação é cortada.
+
+(QUESTÃO 5.1)
+Sta1 e sta2 não mantiveram comunicação.
+sta1 ping sta2
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+From 10.0.0.2 icmp_seq=1 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=2 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=3 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=4 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=5 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=6 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=7 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=8 Destination Host Unreachable
+From 10.0.0.2 icmp_seq=9 Destination Host Unreachable
+^C
+--- 10.0.0.3 ping statistics ---
+10 packets transmitted, 0 received, +9 errors, 100% packet loss, time 9202ms
+
+(QUESTÃO 5.2)
+Handover se caracteriza pela possibilidade do terminal realizar a troca automática de base sem queda de conexão.
+
+(QUESTÃO 6.1)
+STA1 e STA3 se comunicam e não tem nenhum pacote perdido.
+sta1 ping sta3
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=11.3 ms
+64 bytes from 10.0.0.3: icmp_seq=2 ttl=64 time=5.02 ms
+64 bytes from 10.0.0.3: icmp_seq=3 ttl=64 time=4.98 ms
+64 bytes from 10.0.0.3: icmp_seq=4 ttl=64 time=5.08 ms
+64 bytes from 10.0.0.3: icmp_seq=5 ttl=64 time=4.99 ms
+^C
+--- 10.0.0.3 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 4.981/6.284/11.343/2.530 ms
+
+STA4 e STA6 não se comunicam.
+sta4 ping sta6
+PING 10.0.0.6 (10.0.0.6) 56(84) bytes of data.
+From 10.0.0.4 icmp_seq=1 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=2 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=3 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=4 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=5 Destination Host Unreachable
+From 10.0.0.4 icmp_seq=6 Destination Host Unreachable
+^C
+--- 10.0.0.6 ping statistics ---
+8 packets transmitted, 0 received, +6 errors, 100% packet loss, time 7144ms
