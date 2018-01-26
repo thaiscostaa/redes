@@ -1,0 +1,28 @@
+
+1.1-
+O artigo com mais recursos é o “Mininet-WiFi: Emulating software-defined wireless networks”, cujo autores são: Ramon R. Fontes, Samira Afzal, Samuel H. B. Brito, Mateus A. S. Santos e Christian Esteve Rothenberg. A mesma aborda os componentes principais do Mininet-Wifi, a diferença entre o Mininet e o Mininet-Wifi, as funcionalidades principais, o objetivo e a problemática que envolveu a criação do Mininet-Wifi.
+
+2.1-
+No primeiro ping STA1 ping STA2, antes de desconectar STA1, não ocorreu perda de pacotes. Já no segundo ping, após a reconexão de STA1, também não ocorreu perda de pacotes, mas o tempo foi menor, totalizando um atraso de 5636ms.
+2.2- 
+Após o comando iperf o resultado observado foi: STA1- 10.5 Mbits/sec e STA2- 10.6 Mbits/sec.
+2.3- TxPower, potência transmitida pelo modem: 14; a wlan, componentes que fazem parte da lan: sta1-wlan0; ip, protocolo de rede local da sta1: 10.0.0.1/8; range, alcance da rede: 15; mac, interface de comunicação: 02:00:00:00:00:00; frequency: 2.412Hz; mode, modelo ou geração de rede: g; position: 1.0,0.0,0.0.
+2.4- anulada.
+
+3.1-
+O nó incomunicável é o STA3. Ele está associado ao AP1, mas de forma parcial e insuficiente.
+3.2- 
+O modelo escolhido foi  o “Log-Normal Shadowing Propagation Loss Model”. O nivel de sinal no teste anterior foi de -57dBm, após mudar o modelo, o nível de sinal de STA1 desceu para -73dBm. 
+3.3-
+Por ser mais parecido com o real, e por ter mudanças de nível de sinal, o modelo Log-Normal pode ser utilizado em qualquer ambiente.
+
+4.1- 
+O Iperf de STA1 (-32dBm)  e STA3(-37dBm)  deu 18 Mbits/sec para os dois, ou seja, largura 0. A distância entre eles é de 50m.
+
+5.1-
+A comunicação entre STA1 e STA2 foi interrompida, o STA1 é um nó móvel que saiu da área de alcance de AP1 e foi para o alcance de AP2.
+5.2- O processo ocorrido com STA1 é chamado de handover, ele funciona com uma estação móvel onde os nós também são móveis. 
+6.1-
+STA1 e STA3 não se comunicam. O ponto de STA1 está fora da área de alcance de STA2 e STA3. A única comunicação que ocorre é entre STA2 e STA3.
+6.3-
+Utilizaria em experimentos mais realistas, assim como o modelo  Log-Normal Shadowing Propagation Loss Model. Caso a transfrência de dados esteja dando erro por conta da distância das estações, poderia utilizar o modelo 3D para visualizar melhor e identificar as mudanças que devem ser feitas.
