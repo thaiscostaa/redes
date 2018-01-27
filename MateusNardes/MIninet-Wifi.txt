@@ -1,3 +1,5 @@
+Atividade feita em dupla pelos alunos: Mateus Nardes e Jefferson Santos
+
 1.1-Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research, pois esclarece conceitos basicos sobre o app de uma forma didatica
 2.1- A média do atraso observado foi de 0,049ms. Não houve perda de pacote.
 2.2-foi utilizado a ferramenta iperf para avaliar a banda disponível, que foi = ['10.5 Mbits/sec', '10.6
