@@ -1,0 +1,49 @@
+1.1-Mininet-WiFi: A Platform for Hybrid Physical-Virtual Software-Defined Wireless Networking Research, pois esclarece conceitos basicos sobre o app de uma forma didatica
+2.1- A média do atraso observado foi de 0,049ms. Não houve perda de pacote.
+2.2-foi utilizado a ferramenta iperf para avaliar a banda disponível, que foi = ['10.5 Mbits/sec', '10.6
+Mbits/sec'].
+2.3-
+txpower : potência de transmissão [14]
+wlan : ['sta1-wlan0']
+ip : endereço de ip [‘10.0.0.1/8’]
+range : alcance do sinal  [62]
+antennaGain: ganho da antena [5.0]
+mac : ['02:00:00:00:00:00']
+frequency : Frequência do sinal [2.412]
+mode : ['g']
+antennaHeigh : Altura da antena [1.0]
+position : posição [1.0, 0.0, 0.0]
+channel : Canal ['1']
+rssi : [-30.0]
+3.1-  sta3. Ele está fora do alcance do sinal do roteador. Não, pois está fora da curva do alcance do
+sinal do roteaador.
+3.2-sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"
+Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00
+Bit Rate:11 Mb/s   Tx-Power=14 dBm
+Retry short limit:7   RTS thr:off   Fragment thr:off
+Encryption key:off
+Power Management:off
+Link Quality=54/70  Signal level=-56 dBm
+Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+Tx excessive retries:0  Invalid misc:6   Missed beacon:0
+Modelo padrão  Tx-Power=14 dBm
+Após isso, foi alterado de “logDistance” para “friis” e “exp” para “sL”
+sta1-wlan0  IEEE 802.11  ESSID:"my-ssid"
+Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm
+Retry short limit:7   RTS thr:off   Fragment thr:off
+Encryption key:off
+Power Management:off
+Com o modelo net.propagationModel(model="friis", sL=4), o valor mudou para Tx-Power=20 dBm
+3.3- Um local onde o sinal possa circular livremente.
+4.1-
+4.2-Ele é um parâmetro usado para testar se o pacotes estão com o nível de energia correto.Se
+estiverem acima do parâmetro, o pacote não será enviado.
+5.1- Não, pois o sta2 parou antes de entrar no alcance de sinal do ap2, já o está staa1 continuou em
+direção a curva de sinal do ap2. O que difere é que o sta2 ficou estático e o sta1 continuou em
+movimento.
+5.2- O handover é a característica mais crítica com relação ao tempo, pois assegura a continuidade de uma chamada.
+6.1- Eles conseguem se comunicar, mas a comunucação vai ser lenta, pois há abostáculos entre eles.
+O mesmo acontece com o sta4 e sta6. A comunicação seria mais rápida se fosse sta1 pra sta2 e sta4
+pra sta6.
+6.3- Para visualizar se os sinais dos computadores estão conectados. Observando o raio de sinal de
+cada um.
