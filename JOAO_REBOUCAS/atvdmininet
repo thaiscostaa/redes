@@ -1,0 +1,14 @@
+1.1– existe o trabalho delay tolerant approaches in last mile tatical trabalho feito por Ricardo Fernandes e Edison Freitas, há uma diferencça entre o mini net e o mini net-wifi esse que por sua vez apresenta uma conexão entre as maquinas que permote o acesso de dados entre as conexões sem fio
+2.1– um atraso de 0.139 mas não houve perdas de pacote, “0% packet loss time 4086ms”
+2.2– testando a banda tcp disponível entre sta1 e sta2 é de 10.5mbits/sec
+2.3– sta1 -  tem uma frequência de 2.412, no modo associated (ovasp ap1: 1º:123.0.0.1) altura da antena de 1.
+Mode – modo da rede, wlan – suporte de conectividade, range- alcance, channel- numeração do canal, frequency- frequência
+2.4– nulo
+3.1 – o sta3 está incomunicável já que seu host está inacessível e não associado à ap1
+3.2 – propagaçãp log-distancia, há uma formula adapitavel para o ambiente simulador, o nível do sinal desce para -71dbm. O modelo apresenta uma aparência real, o nível do sinal caiu
+3.3 – o log normal pode ser usado em qualquer ambiente 
+4.1 – sta1 = 50m     sta2 =31.6    sta3 =22,3
+4.2 – é um mecanismo responsável de averiguar o sinal antes do envio dos pacotes se o valor não for acessível ele não envia.
+5.1 – A comunicação foi interrompida o sta1 não esta no alcance pois não tem como haver comunicação entre o sta1 e o sta2 em diferentes áreas 
+5.2 – handover que é uma transferência de conexões do usuário de um canal para o outro
+6.1 – As estações que estejam em mesma área de comunicação assim o sta1 não se comunica com o sta3 como ocorre em sta4 e sta6 
