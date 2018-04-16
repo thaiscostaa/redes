@@ -1,0 +1,47 @@
+Ifba - Campus Jequié
+Thais Costa        TI 431         15/04/2018
+Redes de Computadores - Ramon Fontes 
+Introdução às Redes de Computadores 
+1. Qual o objetivo principal de uma rede de computadores?
+Compartilhamento de recursos e informações e entre computadores e seus uuários de maneira hábil, rápida e segura.
+ 2. Quais as diferenças entre as redes ​PAN,​ ​LAN,​ ​MAN​ e ​WAN​? 
+PAN: Redes que usam de conecção sem fio para interligar dispositivos variados em uma área bem reduzida.
+LAN: Redes que interligam computadores e outros dispositivos de redes em um mesmo espaço físico.
+MAN: Redes que permitem a interligação de redes locais e metropolitanas em uma área geografica maior.
+WAN: Abrange uma área maior que a MAN podendo chegar a até mesmo um país ou continente.
+Dessa forma a principal diferença entre elas é a distância de alcance que cada uma possui. 
+3. Qual a diferença entre uma ​rede ponto-a-ponto​ e uma ​rede cliente-servidor​? 
+Na rede ponto-a-ponto os dados compartilhados passam por todos os dispositivos conectados porém só são reconhecidos pelo dispositivo receptor, já na rede cliente-servidor tudo o que é compartilhado passa por um servidor que é o local central onde os usuários compartilham e acessam recursos. Os requeridores de serviços são denominados clientes e os qe fornecem o serviço são denominados servidores.
+4. ​Cite três tipos de servidores​, quanto aos serviços que realizam, explicando            a função de cada um deles. 
+Servidor Web: Responsável por aceitar pedidos HTTP dos navegadores (clientes) e responde-los com dados HTTP, geralmente páginas da web tais como documentos HTML.
+Servidor de Arquivo: Responsável pelo armazenamento de arquivo de dados necessários para o compartilhamento na redes com os outros usuários.
+Servidor de Email: Responsável pela processamento e entrega de email a usuário da rede ou não.
+Topologias de Rede 
+ 
+5. O que é uma ​topologia de rede​ do tipo ​malha​?
+Na topologia de rede de tipo malha os computadores se interligam entre si, ponto a ponto, por meio de cabos e dispositivos de interligação. 
+6. O que é uma ​topologia de rede​ do tipo ​híbrida​? Como funciona?
+Uma topologia de rede mista é o resultado da combinação de duas ou mais topologias de rede. Adequa-se em função do ambiente, e muitos casos o uso dessa topologia é com objetivo de reutilizas as estruturas já exitentes, poupando custos, flexibilizando e as expandindo.
+ 7. Cite um ponto positivo e um ponto negativo, quanto às ​topologias​: ​estrela​, barramento​ e ​anel​. 
+Estrela: Se um dispositivo falhar apenas ele é afetado, por outro lado, exige maior comprimento de cabos para efetuar as ligações.
+Barramento: O uso de cabos é econômico porém uma falha no cabo paralisa a rede inteira.
+Anel:Todos os computadores acessam a rede igualmente, porém se um computador falhar pode afetar o resto da rede. 
+Arquitetura de redes de computadores 
+ 8. Quais são as sete camadas do modelo OSI?
+Camada Física, Redes, Transpore, Seção, Enlace de dados, Apresentação, Aplicação.
+ 9. Das camadas citadas na resposta da questão anterior, qual a principal            função de cada uma? 
+Camada Física: Transmissão binária
+Enlace de dados: Endereçamento físico e transmissão confiavel de quadros.
+Redes: Endereçamento lógico e roteamento; controle de tráfego.
+Transporte: Transmissão confiável de dados.
+Sessão: Comunicação entre hosts.
+Apresentação:Representação de dados.
+Aplicações: Processos de redes para aplicações.
+10. Quais as diferenças entre os modos de comunicação simplex, half-duplex e full-duplex?
+Numa comunicação simplex é quando se tem um transmissor pra um ou mais receptores, porém os papeis nunca seram invertidos e o receptor não poderá sinalizar se os dados foram recebidos. 
+Na comunicação half-duplex se tem um transmissor e um receptor onde ambos podem trasmitir e receber, porém, nunca simultaneamente. Já na comunicação full-duplex o transmissor e o receptor podem transmitir dados simultaneamente em ambos os sentidos.
+11. Quais são as ​camadas​ do ​modelo TCP/IP​? 
+Enlace, Internet, Transporte, Aplicação.
+12. Qual camada você achou mais importante no modelo OSI e no modelo TCP/IP? Por quê? 
+Camada física pois codifica os dados estabelecendo interfaces com o meio físico e transporta os sinais para todas as camadas superiores.
+Camada de Interface com a rede pois promove a interface entre o modelo TCP/IP e os diversos tipos de redes e transmite os datagramas pelo meio físico encontrando o caminho mais curto e confiável.
