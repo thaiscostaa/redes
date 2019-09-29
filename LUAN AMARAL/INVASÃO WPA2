@@ -1,0 +1,14 @@
+Foram descobertos graves pontos fracos no WPA2, um protocolo que assegura todas as redes Wi-Fi protegidas modernas. Isso pode ser abusado para roubar informações confidenciais, como números de cartão de crédito, senhas, mensagens de bate-papo, e-mails, fotos e assim por diante. O ataque funciona contra todas as redes Wi-Fi protegidas modernas. Dependendo da configuração da rede, também é possível injetar e manipular dados. 
+Os pontos fracos estão no padrão Wi-Fi, e não em produtos ou implementações individuais. Portanto, qualquer implementação correta do WPA2 provavelmente será afetada.Em geral, todos os dados ou informações que a vítima transmite podem ser descriptografados. Além disso, dependendo do dispositivo que está sendo usado e da configuração da rede, também é possível descriptografar os dados enviados para a vítima (por exemplo, o conteúdo de um site).Os seguintes identificadores de Vulnerabilidades e exposições comuns (CVE) foram designados para rastrear quais produtos são afetados por instâncias específicas do nosso ataque de reinstalação chave:
+
+CVE-2017-13077 : Reinstalação da chave de criptografia pairwise (PTK-TK) no handshake de 4 vias.
+CVE-2017-13078 : Reinstalação da chave de grupo (GTK) no handshake de 4 vias.
+CVE-2017-13079 : Reinstalação da chave de grupo de integridade (IGTK) no aperto de mão de 4 vias.
+CVE-2017-13080 : reinstalação da chave de grupo (GTK) no handshake da chave do grupo.
+CVE-2017-13081 : reinstalação da chave do grupo de integridade (IGTK) no handshake da chave do grupo.
+CVE-2017-13082 : Aceitando uma Solicitação de Reassociação Rápida de Transição BSS retransmitida (FT) e reinstalando a chave de criptografia pairwise (PTK-TK) ao processá-la.
+CVE-2017-13084 : reinstalação da chave STK no aperto de mão PeerKey.
+CVE-2017-13086 : reinstalação da tecla Tunelled Direct-Link Setup (TDLS) PeerKey (TPK) no handshake TDLS.
+CVE-2017-13087 : reinstalação da chave de grupo (GTK) ao processar um quadro de resposta do modo de suspensão de rede sem fio (WNM).
+CVE-2017-13088 : reinstalação da chave de grupo de integridade (IGTK) ao processar uma moldura de resposta do Modo de espera do Gerenciamento de rede sem fio (WNM).
+Observe que cada identificador CVE representa uma instanciação específica de um ataque de reinstalação de chave. Isso significa que cada ID CVE descreve uma vulnerabilidade específica do protocolo e, portanto, muitos fornecedores são afetados por cada ID CVE individual .

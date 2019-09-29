@@ -1,0 +1,7 @@
+IFBA
+ALUNA-THAIS DOS SANTOS COSTA TI-431
+O WAP2 protocolo de segurança utilizado na maioria das redes de WI-FI modernas por não ter falhas como o WEP agora conta com uma calha de segurança.
+Key reinstallation attacks (ataques de reinstalação de chaves) batizado como Krack, funciona contra todos os roteadores modernos de senha. O alvo do ataque não é o roteador em si, mas sim, os dispositivos conectados à rede.
+O Krack não permite descobrir a senha da rede, mas sim descriptografar os dados de dispositivos conectados, mesmo com camadas extra de proteção como HTTPS ou aplicativos de VPN.
+O principal ataque é contra o handshake ("aperto de mão" entre rede e aparelho), todas as redes usa o handshake para gerar uma nova chave, acontece que agora ele é vulnerável para o ataque de reinstalação de chave.
+Em estudos descobriu-se que o ataque funciona quando quem ataca está dentro do alcance da rede, e apesar de ocorrer em outros, é mais fácil em dispositivos Linux e Android 6.0 ou superior.

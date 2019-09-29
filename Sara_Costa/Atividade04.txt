@@ -1,0 +1,87 @@
+Questão 1 -
+2^n-2 >=30
+n >=5
+
+11100000 = 224
+variação de 256 -224 = 32
+
+24+3(números 1 do último octeto)= 27 - */27*
+
+Resposta: 10.188.31.0/27, Letra A.
+
+
+Questão 2 - 
+IP 172.16.28.252
+Mask 255.255.240.0
+
+10101100.00010000.00011100.11111100 -host
+11111111.11111111.11110000.00000000 - Mask
+--------------------------------------------
+10101100.00010000.00010000.00000000 - Rede
+
+Resposta: 172.16.16.0, Letra A.
+
+
+Questão 3-
+2^n-2>=60
+ n=6
+ 11000000 = 192
+Variação de 256-192 = 64
+
+Rede - Broadcast
+0    -  63
+64   -  127 -----> Letra B.
+
+
+Questão 4 -
+IP10.24.24.24/29
+11111000 = 248
+variação de 256-248 = 8
+ 
+Rede - Broadcast
+0    -  7
+8    -  15
+16   -  23
+24   -  31 ---------> Endereço de rede, Letra D.
+
+
+Questão 5 -
+Resposta: Letra D.
+
+
+Questão 6 -
+11110000.00000000 = 240.0 (últimos octetos)
+Variação de 256-240 = 16
+ 
+número de zeros = 12
+ 
+2^12-2=4094
+Resposta: Letra A.
+ 
+Questão 7 -
+11111110.00000000 = 254.0  (últimos octetos)
+Variação de 256-254 = 2
+
+Rede - Broadcast
+0    -  1
+2    -  3 --------> 192.0.2.255, Letra B.
+4    -  5
+6    -  7
+
+Questão 8 -
+11111111.11111111.11111100.00000000/22
+Variação de 256-252 = 4
+
+Rede - Broadcast
+0    -  3
+4    -  7
+8    -  11
+12   -  15
+16   -  19
+20   -  23
+24   -  27
+28   -  31
+32   -  35
+36   -  39
+
+Respostas:Letras B e D.

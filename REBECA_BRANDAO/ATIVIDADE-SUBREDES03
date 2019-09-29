@@ -1,0 +1,136 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO-TI431
+1-Você está em um ambiente de data center foram atribuídos a seguinte faixa de
+endereço 10.188.31.0/23. Você é solicitado para desenvolver um esquema de endereçamento que
+permita o máximo de subredes com até 30 hosts em cada. Qual faixa de endereço IP encaixa com
+esses requisitos?
+A. 10.188.31.0/27
+B. 10.188.31.0/26
+C. 10.188.31.0/29
+D. 10.188.31.0/28
+E. 10.188.31.0/25
+2^n-2>=30
+n>=5
+mask=/32-5
+mask=/27
+último octeto=11100000-->224
+var=256-224
+var=32
+0-31
+32-63
+letra A - 10.188.31.0/27
+
+2-Dado um endereço IP 172.16.28.252 com a máscara de subrede 255.255.240.0, qual é
+o endereço de rede correto?
+A. 172.16.16.0
+B. 172.16.24.0
+C. 172.16.0.0
+D. 172.16.28.0
+
+Máscara=255.255.240.0-->/28
+penúltimo octeto=11110000-->240
+var=256-240=16
+0-15
+16-31-->rede
+32-47
+end de rede=>letra A. 172.16.16.0
+
+3-Observe a exibição. Uma nova subrede com 60 hosts foi adicionada a rede. Qual
+endereço de subrede deve ser usado para provar endereços de rede suficientes e obter o menor
+desperdício possível de endereços?
+A. 192.168.1.56/27
+B. 192.168.1.64/26
+C. 192.168.1.64/27
+D. 192.168.1.56/26
+
+2^n-2>=60
+2^n>=62
+n>=6
+mask=/32-6
+mask=/26
+último octeto=11000000-->192
+var=256-192
+var=64
+0-63
+64-127
+letra B. 192.168.1.64/26
+
+4-Um administrador de redes recebe uma mensagem de rede enquanto tenta configurar a
+interface Ethernet de um roteador com o Endereço IP 10.24.24.24/29.
+A. O endereço é um endereço de broadcast.
+B. É uma falha na interface Ethernet.
+C. É necessário primeiro habilitar o comando ip subnet-zero.
+D. Esse é um endereço de rede.
+
+/29-->29 uns e três zeros
+último octeto=11111000-->248
+var=256-248
+var=8
+0-7
+8-15
+16-23
+24-31--->end de rede
+letra d
+5-Observe a exibição. HostA não consegue efetuar ping até HostB. Assumindo que o
+roteamento está configurado perfeitamente, qual deve ser a causa deste problema?
+A. HostA não está na mesma subrede que seu gateway padrão.
+B. O endereço do SwitchA é um endereço de subrede.
+C. A interface F0/0 no RouterA está em uma subrede que não pode ser usada.
+D. A interfaces seriais dos roteadores não estão na mesma subrede.
+E. A interface F0/0 no RouterB está usando um endereço de broadcast.
+/27-->27 uns e 5 zeros.
+último octeto=11100000-->224
+var=256-224
+var=32
+0-31
+32-63
+64-95
+Letra c
+
+6-Se a uma interface Ethernet de um roteador está atribuído o Endereço IP 172.1.1.1/20,
+qual o número máximo de hosts é possível nessa subrede?
+A. 4094
+B. 1024
+C. 8190
+D. 2046
+E. 4096
+
+/20-->20 uns e 12 zeros
+penúltimo octeto=11110000
+2^12-2>=n
+n>=4096-2
+n=4094
+letra A. 4094
+
+7-Para a rede 192.0.2.0/23, qual é um endereço de IP válido que pode ser atribuido a um
+host?
+A. 192.0.2.0
+B. 192.0.2.255
+C. 192.0.3.255
+D. 192.0.4.0
+
+/23-->23 uns e 9 zeros
+penúltimo octeto=11111110-->254
+256-254=2
+0-1
+2-3
+4-5
+Letra B. 192.0.2.255
+
+8-Quais 2 endereços podem ser atribuídos para host's em uma subrede com máscara
+255.255.252.0?(Escolha duas.)
+A. 113.10.4.0
+B. 186.54.3.0
+C. 175.33.3.255
+D. 26.35.2.255
+E. 17.35.36.0
+/30
+último octeto=11111100-->252
+256-252
+var=4
+0-3
+4-7
+8-11
+B. 186.54.3.0-->host
+D. 26.35.2.255-->host
+letras b e d 

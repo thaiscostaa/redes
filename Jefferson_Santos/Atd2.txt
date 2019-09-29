@@ -1,0 +1,30 @@
+Discente: Jefferson de Jesus Santos
+Turma: 431
+
+                            Atividade 2
+                            
+  Seção 4.1
+
+1- Na camada de rede um pocote é denominado de datagrama. O comutador de pacote na camada de rede local ou ethernet é chamado switche, os roteadores conectando computadores de uma rede à internet por meio de um chaveamento intermdiário. 
+
+Seção 4.4
+ 
+12- Sim. O número de endereços de IP é igual ao número de interface.
+
+13-11011111.00000001.00000011.00011011
+
+14-IP:  10.17.8.41
+Máscara de rede: 255.255.248.0
+Roteador de default: 10.17.10.220
+Endereço do IP do DNS Local: 10.17.10.20
+
+18-O roteador sem fio usa NAT e os endereços de IP podem ser atribuídos ao computadores por meio do DHCP.
+
+19-O IPV6 é um endereço de 128 bits, funciona por meio de autoconfiguraçãoe suporta pacotes de 1280 bytes sem risco de fragmentação.
+O IPV4 é um endereço de 32 bits, só funciona se for adicionado manualmente e suporta 576 bytes sem resico de fragmentação.
+
+2-Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteamento na rede.
+Roteamento dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construída a partir de informações trocadas entre protocolos de roteamento. 
+
+3-O algoritmo dijkstra sulociona o problema do caminho mais curto num grafo dirigido ou não dirigido com arestas de peso não negativo, em tempo computacional. Simples e com boa permomance. Não garante a exatidão de suas soluções.                          
+                            

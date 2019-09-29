@@ -1,0 +1,52 @@
+1-
+ Camada 3
+
+2-
+Segmentos
+3-
+ TCP e UDP,  o TCP checa se os segmentos foram recebidos pelo receptor e reenvia se necessário e custa tempo e recurso e o UDP não estabelece uma conexão antes do dados for enviados, ele simplesmente entrega a informação, não checa se os dados foram recebidos pelo receptor. A TCP é confiável e a UDP é rápida.
+4-
+(X) Orientado à conexão; 
+( ) É um protocolo simples; 
+( ) Entrega de dados com baixa sobrecarga; 
+( ) Não orientado a conexão. 
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(X) Entrega de dados com sobrecarga adicional; 
+(X) Entrega ordenada, confiável e realiza controle de fluxo 
+(X) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+
+5 - 
+( ) Orientado à conexão;
+( ) É um protocolo simples; 
+( x) Entrega de dados com baixa sobrecarga; 
+( x) Não orientado a conexão. 
+( x) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6- Pois, é utilizado tanto no TCP como no UDP  como forma de endereçamento , identifica aplicações e conversação e aplicações comuns possuem portas padrão.
+
+7. O que são os sockets?
+ Porta + IP;
+
+8-
+Quando os segmentos trafegarem do
+hospedeiro B para o A, o número de porta fonte será a porta y e o  número de porta destino será a porta x. Isso ocorre porque em uma conexão TCP
+cliente-servidor ,na qual esta acontecendo uma comunicação entre as pontas.
+Quando ocorre uma requisição de A para B temos os quadros de portas descritos
+no início do enunciado, e quando ocorre a resposta de B para A esse quadro se
+altera, pois ao chegar no hospedeiro B o segmento TCP (uma tupla que contem 4
+elementos: end. IP da fonte, n. porta de fonte, end. de destino e n. porta de
+destino), o protocolo usará todos os 4 valores para demultiplexar (direcionar
+para porta correta) o segmento para o sockets (portas pelas quais dados passam
+da rede para o processo e do processo para a rede ) apropriado, obtendo assim
+nesta situação como endereço de destino a porta x onde a informação deve ser
+entregue.
+
+9-
+ Melhor controle no nível de aplicação sobre quais os dados são enviados e quando - processo de aplicação passa os dados, protocolo UDP encapsula e repassa para camada de redes, não se preocupando com congestionamento da rede.
+ Não há estabelecimento de conexão - não há apresentação entre cliente-servidor, UDP envia a informação sem precisar de formalidade entre as entidades comunicantes.
+ Não há estado de conexão - não mantém estado de conexão, nem controle de congestionamento, o que possibilita um número maior de clientes ativos ao mesmo servidor.
+Um exemplo de aplicação que roda sobre UDP é o protocolo DNS (Domain Name System) que se beneficia da característica de não estabelecimento de conexão do protocolo para fazer suas consultas e evitando um possível atraso de conexão que poderia acontecer se este rodasse em TCP.

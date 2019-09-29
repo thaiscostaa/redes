@@ -1,0 +1,84 @@
+Martha Meira Monteiro e Thais Costa                        				TI431
+
+					Mininet-WiFi
+
+Questão 1.1:
+Emulando Redes WiFi com o Mininet-WiF.    Pois apresenta a importância do mininet-wifi, por simular e prever perfeitamente fiel o funcionamento de uma rede.
+
+Questão 2.1:
+Para 6 pacotes a média foi 0.135ms.
+
+Questão 2.2:
+Resultados: 10.5 Mbits/sec, 10.6 Mbits/sec
+
+Questão 2.3:
+'ip': ['10.0.0.1/8'] --> endereço ip da maquina.
+'range': 67 --> alcance do sinal.
+'wlan': ['sta1-wlan0']--> nome da interface wireless.
+'mac': ['02:00:00:00:00:00']--> endereço mac da maquina.
+'channel': ['1']--> canal do router.
+'position': (10.0, 20.0, 0.0)-->posição da estação.
+'mode': ['g']-->modo de operação da rede.
+'antennaHeight': [1]-->altura da antena.
+'antennaGain': [5]-->sinal da antena.
+'frequency': [2.412]-->Frequencia do sinal.
+'txpower': [14]-->potência do sinal.
+'apsInRange': [<OVSAP ap1: lo:127.0.0.1,ap1-wlan1:None pid=6257> ]--> Estações ao alcance.
+
+Questão 3.1: 
+Sta3 parece estar incomunicável pois não se encontra na area de alcance de roteador(ap1).
+
+Questão 3.2:
+antes de alterar o código →  IEEE 802.11  ESSID:"my-ssid"  
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+
+depois de alterar o código com “ net.propagationModel(model="friis", sL = 4)” o encontrado no slide.    →  Mode:Managed  Frequency:5.18 GHz  Access Point: 02:00:00:00:03:00   
+          Bit Rate:1 Mb/s   Tx-Power=14 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:off
+          Link Quality=68/70  Signal level=-42 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:6   Missed beacon:0
+
+
+Questão 3.3:
+Em transmissões de longa distancia. 
+
+Questão 4.1: 
+mininet-wifi> py sta1.setPosition('17,23,4')
+mininet-wifi> py sta2.setPosition('30,40,19')
+mininet-wifi> distance sta1 sta2
+The distance between sta1 and sta2 is 26.13 meters
+mininet-wifi> iperf
+*** Iperf: testing TCP bandwidth between sta1 and sta2 
+*** Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+mininet-wifi> py sta1.setPosition('7,43,80')
+mininet-wifi> py sta2.setPosition('30,9,92')
+mininet-wifi> distance sta1 sta2
+The distance between sta1 and sta2 is 42.77 meters
+mininet-wifi> iperf
+*** Iperf: testing TCP bandwidth between sta1 and sta2 
+*** Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+ininet-wifi> py sta1.setPosition('7,43,80')
+mininet-wifi> py sta2.setPosition('7,43,80')
+mininet-wifi> distance sta1 sta2
+The distance between sta1 and sta2 is 0.00 meters
+mininet-wifi> iperf
+*** Iperf: testing TCP bandwidth between sta1 and sta2 
+
+^[[A*** Results: ['10.5 Mbits/sec', '10.6 Mbits/sec']
+
+
+Questão 4.2:  
+É um mecanismo para determinar se o meio está ocioso ou não.
+
+Questão 5.1:
+Se manteve interrupita até o sta1 sair da area de acesso de ap1, que sta2 esta conectado e por isso ele é diferente de sta2.
+Questão 5.2:
+Handover: é o procedimento empregado em redes sem fio para tratar a transição de uma unidade móvel  de uma célula para outra de forma transparente ao utilizador.
+
+  

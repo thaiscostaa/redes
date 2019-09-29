@@ -1,0 +1,32 @@
+01.
+
+Questão 01.
+	Datagrama.Comutador/Switch:É um dispositivo utilizado em redes de computadores para reencaminhar pacotes (frames) entre os diversos nós. 
+		  Roteador: Conectam os computadores de uma rede à internet por meio de chaveamento intermediário.	
+
+Questão 12.
+	Tem.Depende do numero de interfaces.
+
+Questão	13.
+	11011111.00000001.00000011.00011011
+Questão 14.
+	Endereço ip: 10.17.8.55
+	Mascara da rede: 255.255.248.0
+	Roteador de default:10.17.10.220
+	Endereço ip de seu servidor DNS local:192.168.56.1
+
+Questão 18.
+	Como o roteador distribui IP's privados, para sua rede interna, para sair para internet ele precisa usar um NAT.	
+Questão 19.
+	O cabeçalho do IPV6 tem menos informação do que o do IPV4, Tem a source Address e a Destination Address.	
+
+
+02.
+Roteamento Estático:
+Utiliza-se uma rota pré-definida e configurada manualmente pelo administrador da rede,no qual o administrador define qual rota e insere no roteador, esta rota vai para tabela de roteamento que fica armazenada no roteador, e finalmente inicia o processo de roteamento de pacotes com base na rota definida.
+
+Roteamento Dinamico:
+São utilizados protocolos de roteamentos que ajustam automaticamente as rotas de acordo com as alterações de topologia e outros fatores, tais como o tráfego.
+
+03.
+  É um algoritmo para determinar o caminho mais curto dado uma origem de vértice para o resto de vértices em um gráfico direcionado e com pesos em cada borda. Funciona explorando todos os caminhos mais curtos que começam a partir da origem do vértice e que levam a todos os outros vértices; Quando o caminho mais curto é obtido a partir da origem do vértice, ao resto dos vértices que compõem o gráfico, o algoritmo pára.

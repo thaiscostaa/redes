@@ -1,0 +1,28 @@
+IFBA
+ALUNA-ZAIRA OLIVEIRA SANTOS
+
+Questão 1:
+a)131.247.95.216
+b) É iniciado um diálogo entre o servidor e a máquina.
+c) No frame 6 há uma solicitação de pacote e no frame 7 ocorre a continuação do envio do segmento.
+d) ------
+e)A página foi remontada e em seguida atualizada.
+f) É solicitada uma confirmação de pacote.
+g) Porque já está contida no pacote e foi referenciada no início da conversação entre máquina e servidor.
+i) É solicitado um ícone para a página , ele é remontado pelo servidor e depois enviado.
+j) O cliente está acessando uma página web.
+
+Questão 2:
+a) 
+www.yahoo.akadns.net: type A, class IN, addr 216.109.117.106
+www.yahoo.akadns.net: type A, class IN, addr 216.109.117.109
+b)6 pacotes
+c)O cliente pede para acessar uma página web e no 27 existe uma resposta.Não se pode obter apenas um servidor para atender ao cliente ,pois o mesmo está sujeito a falhas que poderiam comprometer o uso da página web.
+d) O endereço ainda não foi obtido pelo servidor.
+e)O pedido DNS já foi enviado antes e por isso não é preciso pedi-lo novamente.
+f)A máquina fica aguardando o pacote ser enviado na ordem correta.
+
+Questão 3:
+a)Ambos partem da mesma origem ,porém chegam a destinos diferentes: um a porta 80 que equivale ao http e o outro a porta 443 que equivale ao https.
+b) Como é uma porta segura significa que no momento está ocorrendo uma criptografia dos dados.
+c) O quadro 20 é o campo correspondente  e a diferença dele para o quadro 6 é que nele os dados estão criptografados e no 6 é somente a solicitação de uma página web simples.

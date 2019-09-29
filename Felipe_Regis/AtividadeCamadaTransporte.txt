@@ -1,0 +1,63 @@
+Aluno: João Felipe Regis Souza
+Turma : 431
+
+1)
+ 	A Camada de Transporte no moodelo TCP/IP é a de número 3. Terceira Opção.
+()Camada1  ()Camada2  (x)Camada3  ()Camada4  ()Camada5   ()Camada6   ()Camada7
+
+2)
+A PDU da camada de transporte é o "segmento".
+
+(X) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+3)
+Os mais utilizados são TCP e UDP.
+
+( )ARP (X)TCP ( )IP ( )DNS (X)UDP
+
+4)
+Características do Protocolo TCP:
+(X) Orientado à conexão; 
+( ) É um protocolo simples; 
+( ) Entrega de dados com baixa sobrecarga; 
+( ) Não orientado a conexão. 
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(X) Entrega de dados com sobrecarga adicional; 
+(X) Entrega ordenada, confiável e realiza controle de fluxo 
+(X) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5)
+() Orientado à conexão;
+(X) É um protocolo simples; 
+(X) Entrega de dados com baixa sobrecarga; 
+(X) Não orientado a conexão. 
+(X) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( ) Entrega de dados com sobrecarga adicional; 
+( ) Entrega ordenada, confiável e realiza controle de fluxo 
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6)
+As portas são necessárias para selecionar um endereço específico do host assim como da aplicação. Serve também para identificar diferentes serviços em um mesmo HOST e, a diferenciar as sessões entre hosts . 
+7)
+Socket 	é um endereço complexo que abrange uma porta do protocolo + o endereço do rede. São endereços de comunicação para mapear dados até a seu processo exclusivo.
+
+8)
+A --> B
+Porta de Origem : X ; Porta de Destino: Y
+B --> A
+Porta de Origem:Y  ; Porta de Destino: X
+
+9)
+O protocolo de tranporte UDP não sobrecarrega os dados e não está precupado com a validação do processo de tansporte de dados. Desse modo, um desenvolvedor que visa uma comunicação que, acima de tudo, exige rapidez e que os erros possam ser corrgidos externamente (EX: PEDIR PARA REPITIR A FALA EM UMA CHAMADA DE VOZ), tem o protocolo UDP como a melhor escolha para aplicação.
+
+10)
+a-O:50 D:23
+b-O:20 D:23
+c-O:23 D:50
+d-O:23 D:20
+e- Endereços de origem são diferentes.
+
+
+
+
+ 

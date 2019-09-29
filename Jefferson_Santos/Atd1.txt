@@ -1,0 +1,25 @@
+Discente: Jefferson de Jesus Santos
+Turma:431 
+  
+                        Atividade 1
+                        
+  Questão 1
+O gateway padrão vai ser referente ao ip de rede, pois há um ping válido. Ou seja, ele é um encaminhador de pacotes.
+
+Questão 2
+Gera um problema de conexão. O servidor não consegue estabelecer conexão com o navegador.
+
+Questão 3 
+TCP e UDP 
+Ex:
+http: 80/tcp e 80/udp
+pop3: 110/tcp e 110/udp
+ssh: 22/tcp e 22/udp
+
+Questão 4
+O tcp envia e recebe dados e udp só envia.
+
+Questão 5
+As saídas de sudo netstat -lt é em udp, apresentando Endereço Local, Endereço remoto e o Estado.
+sudo netstat -lu é em tcp, apresentando Endereço Local, Endereço remoto e o Estado.
+O netstat permite ver configurações da rede.

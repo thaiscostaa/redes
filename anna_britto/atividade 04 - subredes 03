@@ -1,0 +1,70 @@
+1) 10.188.31.o/23
+hosts = 30
+2^n - 2>= 30
+2^n >= 32
+n = 5
+32 - 5 = 27
+mask /27
+Letra = 'A'
+
+2) 172.16.28.252
+mask 255.255.240.0
+256 - 240 = 16
+Variação de 16 a 16, logo será a opção 172.16.16.0
+Letra = 'A'
+
+3) 2^n - 2 >= 60
+2^n >= 62
+n = 6
+32 - 6 = 26
+mask /26
+11000000 = 192
+256 - 192 = 64 --> variação, logo será 192.168.1.64/26
+Letra = 'B'
+
+4) 10.24.24.24/29 
+11111000 = 248 
+256 - 248 = 8 (variação)
+           .0
+           .8
+           .16
+           .24 --> endereço de rede
+           .32
+Letra = 'D'
+
+5) 192.168.1.33/27
+1110000 = 224
+256 - 224 = 32
+Como a variação é de 32 a 32, o endereço é de host logo ele pode ser usado.
+Letra = 'C'
+
+6) 172.1.1.1/20
+mask 11111111.11111111.11110000.00000000
+quant 1 = 20
+quant 0 = 12
+2^n - 2 >= x
+2^12 - 2 >= x
+4096 - 2 = x
+x = 4094
+Letra = 'A'
+
+7) 192.0.2.0/23
+11111110 = 254
+256 - 254 = 2 
+        .0
+        .2
+        .4
+'A' rede
+'B' host 
+'C' broadcast
+'D' rede
+Letra = 'B'
+
+8) 255.255.252.0
+256 - 252 = 4 (variação)
+'A' rede
+'B' host
+'C' broadcast
+'D' host
+'E' rede
+Letras = 'B' e 'D'

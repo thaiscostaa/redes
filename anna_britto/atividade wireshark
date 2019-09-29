@@ -1,0 +1,21 @@
+01)  a)  131.247.95.216
+b) Conversação do usuário com o servidor.
+c) O frame 6 está solicitando uma página web e o frame 7 está enviando um segmento.
+e) O servidor mudou o tamanho do segmento para que ele pudesse caber no próximo processo e assim ser enviado.
+f) O usuário tá respondendo ao servidor.
+g) Porque o link foi referenciado antes na conversação.
+h) O servidor ajusta e envia os dados, após isso, ele recebe uma confirmação e assim continua enviado os dados em partes até o fim para o arquivo ser carregado.
+i) O usuário solicita o ícone e o servidor reajusta o segmento, o envia, e a página é carregada. Depois o usuário envia uma confirmação encerrando a conversação.
+j) O usuário está acessando uma página web, ele envia e recebe sinais de busca web e também o protocolo http é usado, assim como a porta de destino é 80.
+
+02)  a) yahoo. 216.109.117.106 e 216.109.117.109
+b) 16 pacotes são necessários.
+c) O pacote 26 solicita o acesso em uma página web e o pacote 27 é a resposta do servidor. Não, outros servidores podem prestar assistência.
+d) Os endereços são iguais, o usuário deve ter carregado a página novamente.
+e) Não precisou de outro pedido DNS, pois já havia feito uma pré-conversação com o sistema.
+f) Sim, fazem parte do mesmo pacote. A máquina conserva o número do último pacote enviado na ordem correta e espera o reenvio dos outros pacotes na ordem certa.
+
+03) a) O endereço das portas de destino são diferentes, o mesmo usuário acessou só que duas páginas distintas. 
+b) Porque se trata de um protocolo https. 
+c) Frame 20. O quadro 21 é uma aplicação de dados em quê a conversação teve sucesso, e o quadro 6 indica uma solicitação de página web.
+

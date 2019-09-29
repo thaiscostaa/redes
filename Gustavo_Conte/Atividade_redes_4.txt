@@ -1,0 +1,88 @@
+questao 1
+
+letra A
+
+2 ^ n -  = 30
+2 ^ n=32
+n = 5
+
+se tem 32 btis e 5 são zeros vai ser /27
+
+
+
+questao 2
+
+letra A
+
+como a mascara é 255.255.240.0
+
+as 2 primeiras porçoes são uns 
+vai ficar 172.16.16.0
+
+por que a variação é de 16 em 16 --------256-240=16--------
+
+como o endereço fornecido é 172.16.28.0
+
+o endereço fornecido é de host
+
+questao 3
+
+2 ^ n -  = 60
+2 ^ n=62
+n = 6
+
+se tem 32 bits menos 6 zeros vai ser /26
+
+a variação é 256-192=64
+
+letra b
+
+questao 4
+letra D
+começa a variar no 4 octeto
+248-256=8
+
+variação de 8-8
+ o endereço fornecido é de rede
+0
+8
+16
+24
+
+questao 5
+
+letra d
+
+host A esta na segunda subrede e o b na terceira
+variação é de 32 a 32
+varia no quarto octeto
+224-256=32
+
+
+
+questao 6
+letra a 
+se é /20 tem 12 zeros 
+2^12 - 2 =4094
+
+
+questao 7
+
+letra b
+
+varição no terceiro octeto de 2-2
+254-256=2
+letra a e d é rede e c é broadcast
+
+resposta é letra b
+pq o ultimo bit do terceiro octeto não está "ligado"
+
+questao 8
+
+252-256=4
+ resposta b e d
+
+A e E é endereço de rede e c é de broadcast
+186.54.3.0----- precisaria se 186.54.3.255 para ser broacast
+e
+26.35.2.255 ----- precisaria esta com o ultimo bit do terceiro octeto ligado para ser broadcast 

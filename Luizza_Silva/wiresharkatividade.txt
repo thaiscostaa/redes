@@ -1,0 +1,44 @@
+1- a) 
+131.247.95.216. 
+ 
+b. A porta de origem está solicitando a confirmação, no caso se pode ou não conectar-se com o servidor  para a troca de dados. 
+ 
+c. O frame 6 é a solicitação  da pág. HTTP, e o frame 7 envia a resposta da solicitação.
+ 
+e. A página é remontada e atualizada por causa da perda de pacote. 
+ 
+f. solicita abretura de imagem  
+ 
+g. por que no codigo da pagina está predefindo o carregamento da imagem.
+ 
+h. há uma remontagem dos segmentos até o carregamento completo da imagem.
+ 
+i. a solicitação do carregamento do icoone utilizado na página. 
+ 
+j. Acessando uma página web. 
+
+Exercício 02. 
+ 
+a. cname 216.109.117.106  e 131.247.95.216 
+b. 17 pacotes 
+ 
+c. resposta da solicitaçao da página. Não, porque pode ocorrer  vários problemas como: congestionamento, queda do servidor, entre outros. 
+ 
+d. Porque esta ocorrendo acessos a servidores diferentes . 
+ 
+e. Porque é o mesmo endereço DNS. 
+ 
+ 
+f. O pacote precisa ser reenviado para chegarem na ordem correta. 
+Ele guarda o ultimo que foi enviado corretamente e começa a reenviar os demais.
+
+ 
+Questões 03. 
+ 
+a. Uma refere-se a HTTP e a outra refere-se a HTTPS.
+uma está criptografada e a outra não. 
+ Pacote 3 dst port:80 
+Pacote 12 dst port:443  
+b. Os dados estão criptografados, logo, eles não mostram.
+ 
+c. 20,

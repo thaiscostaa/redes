@@ -1,0 +1,41 @@
+Questão 1. 
+R- Camada 2
+
+Questão 2. 
+R- Segmento
+
+Questão 3. 
+R- TCP e UDP
+
+Questão 4. 
+R-
+Orientado à conexão; 
+Entrega de dados com sobrecarga adicional; 
+Entrega ordenada, confiável e realiza controle de fluxo; 
+É utilizado em aplicações como navegadores Web, E-mail e FTP.
+
+Questão 5. 
+R-
+ É um protocolo simples; 
+Entrega de dados com baixa sobrecarga; 
+Não orientado a conexão; 
+É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+
+Questão 6. 
+R- O número de portas identifica a qual protocolo deverá se encarregar da informação trazida por um pacote e comunicar com uma porta exterior.
+
+Questão 7. 
+R- Socket é um ponto final de um fluxo de comunicação entre processos através de uma rede de computadores.
+
+Questão 8. 
+R- Origem Y do computador B  que vai encaminhar os segmentos e Destino X no computador A.    
+
+Questão 9. 
+R- Pois uma das vantagens do UDP é que ele é mais rápido e tem baixa sobrecarga de dados, e em determinados tipos de aplicação não é necessário dizer que o dado chegou ao destino.
+Questão 10. 
+Resposta:
+a) De 233 ate 15
+b) De 180 ate 15
+c) De 15 ate 233
+d) De 15 ate 180
+e) Não, pois mesmo sendo hospedeiros, eles possuem número portas diferentes

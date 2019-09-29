@@ -1,0 +1,121 @@
+4- Rede inaucansavel
+1- Funciona como encaminhador de pacotes.
+2- Ele afeta a conectividade da rede.
+3- portas do http:  80, pop3: 110, ssh:22, telnet: 23, nntp:119, ftp:20.
+4- O TCP além de enviar ele recebe também, ao contrário do UDP que só envia.
+5-sudo netstat -lt é o TCP, sudo netstat -lu É O UDP. 
+Observar as configurações da rede.
+
+
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ps -aux | grep dhclient
+[sudo] senha para alunos: 
+root      5280  0.0  0.0  16120  3720 ?        S    14:06   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-wls2.pid -lf /var/lib/NetworkManager/dhclient-13c21294-73c6-485a-b9ff-98b8d636ddf1-wls2.lease -cf /var/lib/NetworkManager/dhclient-wls2.conf wls2
+alunos    5493  0.0  0.0  21312  1020 pts/1    S+   14:10   0:00 grep --color=auto dhclient
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    600    0        0 wls2
+10.17.8.0       0.0.0.0         255.255.248.0   U     600    0        0 wls2
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wls2
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=54 time=52.3 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=54 time=62.1 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=54 time=67.0 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=54 time=68.7 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=54 time=51.9 ms
+64 bytes from 8.8.8.8: icmp_seq=6 ttl=54 time=60.6 ms
+64 bytes from 8.8.8.8: icmp_seq=7 ttl=54 time=66.3 ms
+64 bytes from 8.8.8.8: icmp_seq=8 ttl=54 time=62.9 ms
+64 bytes from 8.8.8.8: icmp_seq=9 ttl=54 time=63.3 ms
+64 bytes from 8.8.8.8: icmp_seq=10 ttl=54 time=64.3 ms
+^C
+--- 8.8.8.8 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 51.973/62.000/68.791/5.432 ms
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig
+enp0s25   Link encap:Ethernet  Endereço de HW 3c:4a:92:5f:24:ba  
+          UP BROADCAST MULTICAST  MTU:1500  Métrica:1
+          pacotes RX:0 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:0 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B) TX bytes:0 (0.0 B)
+          IRQ:19 Memória:f0500000-f0520000 
+
+lo        Link encap:Loopback Local  
+          inet end.: 127.0.0.1  Masc:255.0.0.0
+          endereço inet6: ::1/128 Escopo:Máquina
+          UP LOOPBACK RUNNING  MTU:65536  Métrica:1
+          pacotes RX:5851 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:5851 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1 
+          RX bytes:542970 (542.9 KB) TX bytes:542970 (542.9 KB)
+
+wls2      Link encap:Ethernet  Endereço de HW 1c:65:9d:71:b6:e4  
+          inet end.: 10.17.9.87  Bcast:10.17.15.255  Masc:255.255.248.0
+          endereço inet6: fe80::edd8:f6f:3c0d:7b4/64 Escopo:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Métrica:1
+          pacotes RX:147306 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:92739 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1000 
+          RX bytes:175633569 (175.6 MB) TX bytes:9892351 (9.8 MB)
+
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 0
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 10.17.9.87
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ping 8.8.8.8
+connect: Network is unreachable
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ^C
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    600    0        0 wls2
+10.17.8.0       0.0.0.0         255.255.248.0   U     600    0        0 wls2
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wls2
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route add default gw 10.17.10.220
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo route -n
+Tabela de Roteamento IP do Kernel
+Destino         Roteador        MáscaraGen.    Opções Métrica Ref   Uso Iface
+0.0.0.0         10.17.10.220    0.0.0.0         UG    0      0        0 wls2
+0.0.0.0         10.17.10.220    0.0.0.0         UG    600    0        0 wls2
+10.17.8.0       0.0.0.0         255.255.248.0   U     600    0        0 wls2
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 wls2
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 down
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 hw ether 1c:65:9d:71:b6:1c
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig wls2 up
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo ifconfig
+enp0s25   Link encap:Ethernet  Endereço de HW 3c:4a:92:5f:24:ba  
+          UP BROADCAST MULTICAST  MTU:1500  Métrica:1
+          pacotes RX:0 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:0 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B) TX bytes:0 (0.0 B)
+          IRQ:19 Memória:f0500000-f0520000 
+
+lo        Link encap:Loopback Local  
+          inet end.: 127.0.0.1  Masc:255.0.0.0
+          endereço inet6: ::1/128 Escopo:Máquina
+          UP LOOPBACK RUNNING  MTU:65536  Métrica:1
+          pacotes RX:7070 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:7070 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1 
+          RX bytes:631682 (631.6 KB) TX bytes:631682 (631.6 KB)
+
+wls2      Link encap:Ethernet  Endereço de HW 1c:65:9d:71:b6:1c  
+          inet end.: 10.17.9.87  Bcast:10.17.15.255  Masc:255.255.248.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Métrica:1
+          pacotes RX:150555 erros:0 descartados:0 excesso:0 quadro:0
+          Pacotes TX:93514 erros:0 descartados:0 excesso:0 portadora:0
+          colisões:0 txqueuelen:1000 
+          RX bytes:176060349 (176.0 MB) TX bytes:10031603 (10.0 MB)
+
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ grep http  /etc/services
+# Updated from http://www.iana.org/assignments/port-numbers and other
+# sources like http://www.freebsd.org/cgi/cvsweb.cgi/src/etc/services .
+http		80/tcp		www		# WorldWideWeb HTTP
+http		80/udp				# HyperText Transfer Protocol
+https		443/tcp				# http protocol over TLS/SSL
+https		443/udp
+http-alt	8080/tcp	webcache	# WWW caching service
+http-alt	8080/udp
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ ]
+

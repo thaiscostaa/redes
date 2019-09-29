@@ -1,0 +1,22 @@
+Problema 1
+  
+Resposta: 
+ a) 1-3-4-5-6
+ b) Sim, pois na questão anterior levou em consideração o menor caminho para chegar de 1-6 passando pelo nó 3-4.
+ c) Não, pois referência muda.
+ 
+ 
+ Problema 2: 
+   
+Resposta: 
+ 
+ seria pelo nós 1-2-3-4-8.
+ 
+ 
+ Problema 3:
+   
+ Resposta:
+ a) o jogo quer quantidade mínima de pontos que o jogador terá de ter até seu destino final, passando pelos quadradinhos, cujos números neles postos são esses pontos. 
+ 
+ 
+ b)  +0-7-2-3-1-8

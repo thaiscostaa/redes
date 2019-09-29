@@ -1,0 +1,27 @@
+Questão 1.
+a) 131.247.95.216
+b) SYN indica que está iniciando uma sessão e ACK indica que está reconhecendo dados pelo TCP
+Frame 3: é o cliente (1143) que está iniciando a conversação solicitando o acesso a uma porta web (80). (SYN)
+Frame 4: o cliente está obtendo resposta do servidor.
+Frame 5: comunicação que indica o recebimento do pacote feita pelo TCP (ACK) 
+c) GET é um comando de Protocolo de Transferência de Hipertexto para solicitar dados de um Servidor HTTP
+No frame 6 é solicitado dados de um servidor HTTP (GET). O frame 7 é o reconhecimento de dados pelo TCP (ACK).  
+e) O frame 9 é o último segmento TCP de uma PDU remontada, isso significa que o wireshark acha que o pacote em questão contém parte de um pacote (PDU - "Unidade de dados de protocolo") para um protocolo que é executado no topo do TCP. O frame 10 está reafirmando o conteúdo da página web. 
+f) O frame 11 está sendo reconhecido o recebimento dos dados do servidor para o cliente.
+g) Pois a imagem já foi montada, devido ela está no código.
+h) São confirmados os dados pelo TCP (ACK) de PDU remontada na maioria das vezes. 
+i) Está sendo solicitado o carregamento do ícone na página HTTP e logo depois está sendo confirmado o recebimento do mesmo.
+j) Acessando uma nova página web.
+
+Questão 2.
+a) www.yahoo.com CNAME www.yahoo.akadns.net
+216.109.117.109 e 216.109.117.110
+b) 17 pacotes serão necessários 
+c) solicitação da página e a resposta. Não, pois pode acontecer diversos problemas como: congestionamento, sobrecarga.
+d) está sendo feitos acessos a servidores distintos. 
+e) Porque é o mesmo endereço DNS. A linha é igual ao pacote
+f) Somente o 143. Ele guarda até o ultimo que foi recebido corretamente.
+
+Questão 3.
+a) Uma é criptografada a outra não, ou seja, no frame 3 a porta 80 (HTTP) é insegura, no frame 12 a porta 443 (HTTPS) é segura.  
+b) Não existem quadros listados para yahoo na linha iii pois estão sendo criptografados (HTTPS) 

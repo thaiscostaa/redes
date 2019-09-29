@@ -1,0 +1,33 @@
+Ifba, 2018
+Discente: Jefferson de Jesus Santos  
+Docente: Ramon 
+Turma: 431
+
+
+1-
+a) 131.247.95.216
+b) Frame 3- Uma conversação está sendo iniciada solicitando aceso a uma página.
+Frame 4-O servidor está respondendo o cliente.
+Frame 5-Confirmação de recebimento do pacote feito pela TCP.
+c)Frame 6-Solicitação de dados de uma HTTP.
+Frame 7-Reconhecimento de dados pela TCP.
+e)A página é remontada e atualizada. Ocorreu uma perda de dados.
+f)Frame 11-Reconhece o recebimento dos dados do servidor para o cliente.
+g)A imagem ja foi montada, pois a mesma já estava no código html.
+h)O conjunto de dados para o cliente é remontado e enviado, depois o recebimento do pacote é confirmado.
+i)Solicitação de carregamento de um icone da página HTTP,depois o recebimento do pacote é confirmado.
+j)Acessando uma página web.
+
+2-
+a)www.yahoo.com CNAME www.yahoo.akadns.net
+216.109.117.109 e 216.109.117.110
+b)São necessários 17 pacotes.
+c)Solicitação e resposta da página. Não, pois vários problemas podem acontecer, por exemplo:congestionamento de dados, a rede pode ficar sobre carregada, entre outros.
+d)Pois está sendo feito acesso a servidores distintos.
+e)Pois tem o mesmo endereço DNS.
+f)Apenas o 143. Ele guarda até o último que foi recebido corretamente e reenvia os errados.
+
+3-
+a)Um é criptografado, o outro não, ou seja, o frame 3, a porta 80 está insegura(HTTP), ja o frame 12, porta 143 é segura(HTTPS).
+b)Não exitem quadros listados, pois os dados estão criptografados(HTTPS).
+c) 13-20. Os dados estão criptografados.

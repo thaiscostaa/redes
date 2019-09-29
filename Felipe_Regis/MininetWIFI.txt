@@ -1,0 +1,70 @@
+ALUNOS : João Felipe,Luiza Santos
+1.1
+De acordo com o Google Scholar, a principal publicação sobre Mininet é a "Mininet-WiFi: Emulating software-defined wireless networks" desenvolvida por brasileiros na Universidade de Campinas (UNICAMP). A mesma foi apresentada em uma conferência em Barcelona.O artigo diz sobre o software que emula redes sem fio, ou melhor, é uma extensão de um software genérico “Mininet” que apenas simulava rede com fio. 
+
+2.1
+Houve uma média de atraso de 0,035 ms sem a perda de pacotes. Isso acontece pois a conexão entre o STA1 e STA2 é sucedida com mínimos atrasos (0,035 ms). 
+
+2.2
+ Utilizou a ferramenta “iperf” com o intuito de mensurar a largura da banda.
+Desse modo,  entre STA1 e o STA2, a largura obtida foi de [10.5 Mbits/sec', '10.6 Mbits/sec'].
+
+2.3
+De acordo com a lista de parâmetros obtida através do código “py sta1.params” foi visto que o valor de “txpower”, que é a força de transmissão, resultou 14 ; o ip da STA1 é 10.0.0.1/8 ; o alcançe (range) foi igual a  62;  “antennaGain” ou  ”ganho de antena” igual a 5; apsInRange  são as possíveis estações que estão no alcance; o MAC é o endereço físico da “station” simulada :’02:00:00:00:00:00’; frequência do sinal (frequency) : 2.412; mode : g ; posição(position)  foi de (20, 40, 50); canal (channel) foi o 1 ; e  rssi [-70.0]
+
+2.4
+	anulada
+
+3.1
+O nò incomunicável é o STA3, pois, de acordo com o gráfico, o mesmo não está dentro da área de alcançe do roteador. O ponto STA3 não está associado ao ap1.
+
+3.2
+Utilizou-se o modelo “friis” para uma nova simulação, dessa forma foi observada uma mudança no nivel do sinal (Signal Level). Inicialmente , com o modelo logDistance, o nível de sinal obtido foi -56 dBm, já o modelo “friis” respondeu com -43 dBm.
+
+3.3
+Como a mudança da configuração padrão para o modelo “friis” mostrou um melhor nível de sinal, este seria interessante em um ambiente que o host estivesse mais distante do ponto de acesso. 
+
+
+4.1
+Utilzou-se o modelo “friis” mudando no arquivo python :” net.propagationModel(model="friis",sL =10 )” . As posições das estações foram mudadas para :
+    net.addStation('sta1', position='20,20,0')
+    net.addStation('sta2', position='30,30,0')
+    net.addStation('sta3', position='50,20,0')
+
+Depois todas as estações foram conectadas pelos seguintes códigos :
+“sta1 ping sta2” 
+“sta1 ping sta3” 
+“sta2 ping sta3” 
+Foi utilizado o código “iperf” para mensurar o RSSI:
+“iperf sta1 sta2”
+“iperf sta1 sta3”
+“iperf sta2 sta3”
+
+Tabela :
+CON           \      Distância   (m)       \   Largura (RSSI)                                |
+sta1 – sta2   \        14.14                     \ ['16.1 Mbits/sec', '16.2 Mbits/sec']      |
+sta1 – sta3   \          30	                         \['7.11 Mbits/sec', '7.16 Mbits/sec']   |
+sta2 – sta3    \         22.36                      \['10.8 Mbits/sec', '10.9 Mbits/sec']    |
+
+Diante das comparações entre os atributos analisou-se que  a conexão sta1 e sta2 obeteve menor distância (14.14) e maior largura(‘16.1’ , ‘16.2’); sta1 e sta3 obteve maior distância (30) e a menor largura (‘7.11’,’7.16’). Com esses dois resultados percebe-se que a largura e a distância são inversamente proporcionais, ou seja, quando a distância for grande a largura  será menor e vice-versa.
+ 
+4.2
+O CCA Threshold funciona como um limitador que corta a comunicação quando o nível de sinal é menor que -92 dBm. Com a utilizaçâo do CCA evita-se conflito de canais e, assim, melhora a peformance do roteador evitando rotas que não oferecem vantagem. 
+
+5.1
+A comunicação entre sta1 e sta2 durante um espaço de tempo de 20s permaneceu initerrupta, nos outros não houve comunicação, pois o host de destino era inalcansável. Nos 11s o nó sta2 parou, enquanto sta1 continuou a se afastar do ap1. 
+
+5.2
+ O que ocorre com sta1 é handover, ou seja,  basicamente uma lapso na camada de sessão. Pois, como dito na questão supracitada, sta1  se afasta do campo de conexão projetado por ap1. 
+
+6.1
+No CLI foi pingado sta1 com sta3 utilizando o código: “sta1 ping sta3”, feito isso percebeu-se que em 10s houve o envio de 11 pacotes e somente 10 recebidos, totalizando uma perda de 9% de pacotes. Além da longa distância entre as estações outro fator que corrobora com tal deficiência é a interferência das sessões entre sta1 e sta2.
+Inicialmente foi pingado sta4 com sta6  com o código “sta4 ping sta6”, entretanto, apesar de a estrutura e posições serem exatamente iguais não há conexão.
+
+6.3
+Situações nas quais o usuários não conhecem a verdadeira distância entre as estações.
+
+
+ 
+
+ 

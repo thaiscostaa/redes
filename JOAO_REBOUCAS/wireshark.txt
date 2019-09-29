@@ -1,0 +1,35 @@
+1-
+	a) 131.247.95.216
+	
+	b) está acontecendo a troca de dados de ida e volta de uma pesquisa com o destino de a origem
+	c) está havendo a resposta do http, ou seja o cliente chegou no resultado de sua pesquisa na web
+	e) HÁ uma remontação do pacote, pois houve perda e a solicitação é enviada novamente
+	
+	f) o destino de origem esta enviando um pacote de volta
+	
+	g) pois houve muita remontação de pacotes
+	
+	h) respostas do servidor ao cliente que muitas foram perdidas e muitas foram remontadas após a pesquisa de uma GIF
+	
+o usuario pesquisou a logo da pagina e o servidor deu resposta com seu icone
+
+	j) acessando uma pagina da web
+
+2-
+	a) www.yahoo.com      206.109.117.106
+				206.109.117.109
+	
+	b) 4 quadros
+
+	c) o usuario esta fazendo outra pesquisa
+	
+	d- são paginas diferentes mas com nomes parecidos por isso ele usa o DNS pois essa pagina não havia sido buscada até então
+
+	e- ele recebe novamente sem precisar de um DNS por que a pesquisa do site já havia sido feita por isso ele pode receber quantas vezes for nescessario sem o DNS
+
+	f- esta havendo uma reformulação do pacote TCP, sim são imagens da web que estão contidas na pagida do pacote 160, vai haver um engarrafamento por conta desses imprevistos e o TCP vai continuar remandando em outros servidores até o pacote chegar corretamente
+
+3-
+o tamanho entre eles, significa que são solicitações de outras pesquisas
+por que já foi feita pesquisa do yahoo igual, está
+ 

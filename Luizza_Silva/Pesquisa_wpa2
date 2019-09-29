@@ -1,0 +1,9 @@
+IFBA
+ALUNA-Luiza Silva Santos
+Pesquisa sobre a quebra do protocolo WPA2
+
+Após o protocolo de segurança WEP ter sido quebrado há alguns anos, recentemente foi divulgada a quebra de outro sistema de criptografia o WPA2 que era tido como o mais seguro protocolo de segurança de redes domésticas. O que mais chama a atenção é que tal quebra foi feita de maneira simples e, portanto, pode está sendo usada por crackeres de todo o mundo.
+A falha encontrada no WAP2 pode ser porta de entrada para diversos tipos de ataques à segurança pessoal de qualquer usuário das redes WIFI, pois possibilita a descriptografia de diversas informações, não apenas senhas e logins mas também fotos e mensagens trocadas, por tais usuários. Também é possibilitada a invasão de sites visitados mesmo com a camada extra de proteção o HTTPS.
+Para a comprovação dessa descoberta foram feitos testes de invasão em um aparelho smartphone android, tal ataque resultou na descriptografia de muitas das informações presentes no aparelho com uma certa facilidade. Isso ocorre porque o Android e o Linux são mais vulneráveis há (re) instalação da chave de criptografia totalmente zero.
+A principal vertente de tal ataque é contra o handshake de 4 vias do protocolo WPA2. Este aperto de mão é executado quando um cliente deseja se juntar a uma rede Wi-Fi protegida e é usado para confirmar que o cliente e o ponto de acesso possuem as credenciais corretas (por exemplo, a senha pré-compartilhada da rede).
+Apesar das descobertas sobre tais falhas não é indicado o não uso do protocolo WPA2, além de não haver precedentes sobre a criação de um novo tipo de WPA3 por exemplo, as recomendações são para que apenas sejam feitas as atualizações disponíveis em qualquer aparelho que  se conecte a rede WIFI.

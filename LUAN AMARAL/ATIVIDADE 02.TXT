@@ -1,0 +1,113 @@
++ATIVIDADE 02 
+
+
+ 
++QUESTÕES DO LIVRO: 
+
+
+ 
++QUESTÃO 1 
+
+
+ 
++O nome de um pacote de camada de rede é chamado de datagrama. O computador de pacotes é chamado de switche e os roteadores conectam-se aos computadores e um rede a internet através do chaveamento intermediário.   
+
+
+ 
++QUESTÃO 12 
+
+
+ 
++Sim os roteadores têm endereços ips e sua quantidade é igual ao numero de interface. 
+
+
+ 
++QUESTÃO 13 
+
+
+ 
++Equivale a 11011111.00000001.00000011.000111000. 
+
+
+ 
++  
+
+
+ 
++QUESTÃO 14 
+
+
+ 
++ endereço de rede: 10.17.9.143, mascara:255.255.248.0, reteador default:10.17.8.0 e endereço ip DNS:127.0.1.1 
+
+
+ 
++ 
+
+
+ 
++QUESTÃO 18 
+
+
+ 
++Os endereços IP são designados aos computadores através do DHCP. Sim o roteador sem fio usa NAT. 
+
+
+ 
++ 
+
+
+ 
++QUESTÃO 19 
+
+
+ 
++No cabeçalho do ipv4 o comprimento varia de 20 a 60 byttes e depende das opções de IP, já  no ipv6 é fixo um comprimento de 40 bytes e não existem opções de cabeçalho de IP, ele adiciona outros cabeçalho de extensão conhecidos por AH e ESP. Geralmente o ipv6 é mais simples que o ipv4. 
+
+
+ 
++Suas principais diferenças são: O IPv4 tem 32 bits de endereço e o IPv6 tem 128, o suporte de IPSec é opcional no IPv4 e obrigatório no IPv6. A fragmentação é feita pelo router no IPv4 e pelo host emissor no IPv6. O ARP utiliza requisitos do tipo Broadcast no IPv4 e no IPv6, não se usa mais, pois foram substituídos pelos mensagens Neibhbor Discovery. NO ipv4 é utilizado o endereço de broadcast para enviar tráfego para todos os hosts e o endereço precisa ser configurado manualmente, já no IPv6 não se usa mais o endereço de Broadcast e sim o Multcast e não é configurado manualmente pois foi adicionado funcionalidades de autoconfiguração. Além disso o Ipv4 faz uso do NAT e o Ipv6 não. 
+
+
+ 
++As semelhanças são que ambos admitem entrega sem conexão, permetem o emissor escolha o tamanho de um datagrama e exigem que o emissor especifique o numero de saltos que um datagrama pode fazer, antes de ser descartado. 
+
+
+ 
++ 
+
+
+ 
++QUESTÃO 2 
+
+
+ 
++ No roteamento estático é mais utilizado em rede com um numero de roteadores limitados e a tabela de roteamento é feita manualmente pelo administrador do sistema, essas tabelas não se ajustam automaticamente as alterações da rede.  A vantagem é que tem segurança devido a não divulgação das rotas que devem permanecer escondidas e a redução do overhead introduzido pela troca de mensagens. 
+
+
+ 
++O roteamento dinâmico é para redes com mais de uma rota possível para o mesmo ponto e diferente do roteamento estático sua tabela é construída partir de informações trocadas entre protocolos de roteamento. Os protocolos são desenvolvidos para distribuir informação da rede e devem resolver situações complexas no roteamento em maior eficácia que o administrador e ainda trocam para uma rota alternativa quando a rota primária se torna inoperável e decidi qual é a melhor rota para um destino. 
+
+
+ 
++ 
+
+
+ 
++ 
+
+
+ 
++QUESTÃO 3 
+
+
+ 
++O Algoritmo de Dijkstra é aquele que calcula o caminho de menor custo entre vértices de um grafo. Escolhido um vértice como raiz da busca, ele calcula qual o custo mínimo deste vértice para todos os demais vértices do grafo, é bastante simples e com um bom nível de desempenho. Ele não garante, a exatidão da solução caso haja a arcos com valores negativos. 
+
+
+ 
++Este algoritmo parte de uma estimativa inicial para o custo mínimo e vai sucessivamente ajustando esta estimativa. Ele considera que um vértice estará fechado quando já tiver sido obtido um caminho de custo mínimo do vértice tomado como raiz da busca até ele. Caso contrário ele dita estar aberto. Quando todos os vértices tiverem sido fechados, os valores obtidos serão os custos mínimos dos caminhos que partem do vértice tomado como raiz da busca até os demais vértices do grafo. O caminho propriamente dito é obtido a partir dos vértices chamados acima de precedentes. Como apresentado o algoritmo de Dijkstra computa apenas um único caminho de custo mínimo entre um dado par de vértices. Para se obter todos os caminhos de custo mínimo entre dois vértices é necessário modificar a forma de anotação dos precedentes. A modificação no passo 3 indicada a seguir é suficiente para permitir o cômputo de todos os caminhos por um processo similar ao descrito acima. 
+
+
+ 
++ 

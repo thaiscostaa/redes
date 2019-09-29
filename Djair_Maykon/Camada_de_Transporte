@@ -1,0 +1,29 @@
+1ª - Camada 4
+
+2ª - Segmento
+
+3ª - TCP e UDP
+
+4ª - (x) Orientado à conexão; 
+     (x) Entrega de dados com sobrecarga adicional; 
+     (x) Entrega ordenada, confiável e realiza controle de fluxo 
+     (x) É utilizado em aplicações como navegadores web, E-mail e FTP
+     
+5ª - (x) É um protocolo simples; 
+     (x) Entrega de dados com baixa sobrecarga; 
+     (x) Não orientado a conexão. 
+     (x) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+     
+6ª - Serve para identificar quais são os tipos de protocolo.
+
+7ª - É o ponto final de um fluxo de comunicação entre processos dentro de uma rede de computadores.
+
+8ª - Origem Y e Destino X.
+
+9ª - Pelo fato dele ser mais rápido, pela baixa sobrecarga de dados, e por não necessitar dizer que o dado chegou ao destino.
+
+10ª - a) De 120 para 23.
+      b) De 161 para 23.
+      c) De 23 para 120. 
+      d) De 23 para 161. 
+      e) Sim, pois eles podem acessar a mesma porta de origem.

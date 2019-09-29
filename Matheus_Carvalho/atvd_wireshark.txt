@@ -1,0 +1,47 @@
+Discente: Matheus Santos Carvalho.
+Turma: 431.
+
+Questão 1:
+
+  a)131.247.95.216
+
+  b)Os 3 estão enviando informação e recebendo confirmações, pois são TCP.
+
+  c)O frame 6 está navegando na internet, enquanto o 7 está enviando e recebendo dados.
+
+  d)Ok.
+
+  e)Está acontecendo a reestruturação do pacote em si, porque ocorreu a perda e por isso foi solicitado novamente.
+  
+  f)A origem está reenviando o pacote.
+
+  g)Isso ocorre porque ja havia ocorrido uma reestruturação de dados.
+
+  h)Ocorreu uma remontação e troca de dados dos pacotes ate chegar em uma imagem em gif.
+
+  i)Esta realizando uma query no us.js2.yimg.com, com resposta do icone da pagina.
+
+  j)Acessando uma pagina.
+
+Questão 2:
+
+  a)www.yahoo.com CNAME www.yahoo.akadns.net
+  216.109.118.70 e 216.109.118.76.
+
+  b)6 pacotes.
+
+  c)No 26 o usuario solicita para acessar uma pagina WEB e no 27 ele tem a resposta. Não podem vir em um mesmo servidor pois pode ocorrer uma falha do mesmo ou a necessidade de outro servidor.
+
+  d)Pode ter ocorrido uma pesquisa a um DNS diferente ou uma falha.
+
+  e)Por que o DNS ja foi alocado no sistema. Ambos tem o mesmo Host.
+
+  f)Os pacotes 141 e 142 não foram remontados no pacote 160, já o 143 foi. É necessário que os pacotes sejam enviados na ordem correta, se não ocorrer isso a máquina aguarda eles serem reenviados na ordem certa.
+	
+ Questão  3:
+
+  a)O cliente hello indica que esta criptografando os dados, já que no 12 foi em uma porta HTTPs e a 3 em HTTP.
+
+  b)Esta ocorrendo uma criptografia dos dados, sendo assim se refere a um HTTPs (porta 43).
+
+  c)O 20. A diferença é que um está com criptografia de dados.

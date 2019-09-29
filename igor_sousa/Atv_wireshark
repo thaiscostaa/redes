@@ -1,0 +1,47 @@
+Igor Sousa TI431
+Data 07/01/19
+
+		                                          Atividade Wireshark
+
+1°
+a)
+131.274.95.216
+b)
+Está sendo estabelecida uma conexão do cliente com o servidor.
+c)
+O cliente requisitou uma página HTML para o servidor.
+d)
+e)
+Houve um erro no pacote, e o pacote está sendo remoontado no frame 10.
+f)
+O cliente está confirmando que recebeu a página HTML.
+g)
+Porque o cliente não precisa fazer requisições para que o logo da página seja carregada.
+h)
+O cliente fez uma requisição no frame 13, nos frames 14 a 21, houve uma conversa entre o servidor e a maquina do cliente, e no frame 22 o cliente confirmar que recebeu o que foi requisitado.
+i)
+O cliente fez a requisição de um ícone, que é confirmada no frame 25 pelo servidor e no frame 26 o cliente confirma que recebeu a confirmação.
+j)
+O cliente está acessando uma página HTML, pois nos dois primeiros frames houve uma requisição DNS para descobrir o IP do nome que o cliente inseriu, e houveram várias requisições de protocolo HTML.
+
+2°
+a)
+Cname: www.yahoo.akadns.net, IP 1: 216.109.117.106, IP 2: 216.109.117.109.
+b)
+16 frames.
+c)
+O cliente está acessando outra página HTML. Não.
+d)
+Porque o common name é diferente. Não.
+e)
+O host dos dois são iguais.
+f)
+Fazem. Será gerado um erro.
+
+3°
+a)
+A porta de destino é diferente. Diz que a primeira foi HTML e a segunda não foi.
+b)
+Está ocorrendo um handshake entre o cliente e o servidor. Porque a página HTML do yahoo não está sendo requisitada durante o handshake.
+c)
+O endereço de IP. O protocolo.

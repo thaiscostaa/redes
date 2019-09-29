@@ -1,0 +1,47 @@
+IFBA - Campus Jequié     Técnico em Informática
+Discente: Laiane dos Santos Pereira    TI: 431
+Docente: Ramon Fontes 
+Disciplina: Redes de Computadores - I Unidade
+Data: 27/11/2017
+
+     ~~ Revisão - Camada 3 ~~
+
+Questão 1:
+O nome de um pacote de camada de rede é datagrama. Na camada de rede local ou ethernet, o comutador de pacotes chama-se switche, e os 
+computadores de uma rede são conectados pelos roteadores à internet através de chaveamento intermediário.
+
+Questão 12:
+Sim. O número de endereços IPs de um roteador, é igual ao número de interfaces que possui.
+
+Questão 13:
+223.1.3.27 = 11011110.00000001.00000011.00011011
+
+Questão 14:
+Endereço IP: 10.17.8.44
+Mask: 255.255.248.0
+Roteador de default: 10.17.10.220
+Endereço IP DNS: 127.0.1.1
+
+Questão 18:
+Tipicamente o roteador wireless inclui um servidor DHCP. DHCP é usado para atribuir endereço para 5 PCs e a interface de roteador. 
+Sim, o roteador wireless também usa NAT, pois obtém apenas endereços de IP do ISP.
+
+Questão 19:
+O IPv6 foi projetado para suportar cabeçalhos adicionais que permitissem a expansão/evolução do protocolo em diferentes cenários.
+Esses cabeçalhos adicionais são encadeados após o cabeçalho padrão do IPv6, possibilitando funcionalidades opcionais. Por conta disso, 
+o campo Options do IPv4 foi aposentado, o qual fazia com que o tamanho do cabeçalho IPv4 variasse de 20 a 24 bytes. Dessa forma, 
+o cabeçalho do IPv6 passa a ter tamanho fixo de 40 bytes, o que proporciona maior agilidade no processamento dos roteadores. 
+Eles não têm campo em comum.
+
+Questão 2:
+O roteamento estático utiliza uma rota pré-definida e configurada manualmente pelo administrador da rede. O roteamento dinâmico utiliza 
+protocolos de roteamentos que ajustam automaticamente as rotas de acordo com as alterações de topologia e outros fatores, tais como o 
+tráfego.
+O roteamento estático é normalmente configurado manualmente, as rotas não se alteram dinamicamente de acordo com as alterações da 
+topologia da rede e a tabela de roteamento é estática. Já o roteamento dinâmico não precisa da intervenção constante do administrador.
+
+Questão 3:
+O algoritmo de Dijkstra identifica, a partir de um vértice do grafo, qual é o custo mínimo entre esse vértice e todos os outros do grafo.
+No início, o conjunto S contém somente esse vértice, chamado origem. A cada passo, selecionamos no conjunto de vértices sobrando, o que é
+o mais perto da origem. Depois atualizamos, para cada vértice sobrando, a sua distância em relação à origem. Se passando pelo novo 
+vértice acrescentado, a distância fica menor, é essa nova distância que será memorizada.

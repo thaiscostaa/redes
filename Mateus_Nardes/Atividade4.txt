@@ -1,0 +1,64 @@
+Questão 1.
+a)2 ^ n -  = 30; 2 ^ n=32; n = 5
+Tendo 32 bits e 5 são zeros então vai ser /27.
+
+Questão 2.
+172.16.28.252/20
+255.255.240.0
+11111111.11111111.11110000.0000000 = 240
+256-240
+VAR=16
+0-15
+16-31
+32-63
+64-127
+R=A
+Questão 3.
+2 ^ n -  = 60
+2 ^ n=62
+n = 6
+Se tem 32 bits menos 6 zeros vai ser /26
+a variação é 256-192=64
+Alternativa b)
+
+Questão 4.
+Alternativa d)
+4-
+11111111.11111111.11111111.11111000
+256-248=8
+0-7
+8-15
+16-23
+24-31
+Questão 5.
+d) Host A esta na segunda subrede e o B na terceira
+variação é de 32 a 32, varia no quarto octeto,  224-256=32
+
+Questão 6.
+Se é /20 tem 12 zeros; 2^12 - 2 =4094
+Questão 7-
+11111111.11111111.11111110.00000000
+
+256-254=2
+0-1
+2-3--
+4-5
+6-7
+R=B
+
+Questão 8-
+11111111.11111111.11111100.00000000
+/22
+256-252=4
+0-3
+4-7
+8-11
+12-15
+16-19
+20-23
+24-27
+28-31
+32-35
+36-39
+R=B e D
+

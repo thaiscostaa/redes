@@ -1,0 +1,9 @@
+Problema 1;
+a)1->3->4->5 ->6.
+b) Sim, pois o caminho citado na questão chega no nó 4 pelo menor caminho possível.
+c) Não, pois a mudança entre os nós.
+Problema 2:
+R=1->2->3->4->8.
+Problema 3:
+a) Para desenvolver o jogo é preciso reformular a tabela, de forma que fique organizado da esquerda pra a direita e de cima para baixo. 
+b) Levando em conta a questão anterior, o menor caminho será:1->5->9->10->11->12.

@@ -1,0 +1,128 @@
+IFBA - Campus Jequié     Técnico em Informática
+Discente: Laiane dos Santos Pereira    TI: 431
+Docente: Ramon Fontes 
+Disciplina: Redes de Computadores - I Unidade
+Data: 16/10/2017
+
+     ~~ Atividade Subredes03 ~~
+
+Questão 1:
+   IP: 10.188.31.0/23
+
+Cálculo Host:
+(2^n)-2 >= 30 --> n = 5
+4º octeto: 11100000 = 224 --> /27
+IP: 10.188.31.0/27
+
+R.:A.
+  
+
+
+Questão 2:
+    IP: 172.16.28.252
+    Máscara: 255.255.240.0  
+ 
+3º octeto: 11110000 = 240
+Variação de subrede: 256 - 240 = 16
+Subrede   Rede  Broadcast
+   1        0       15
+   2        16      31
+   3        32      63
+
+IP: 172.16.16.0
+
+R.: A.
+
+
+
+Questão 3: 
+   
+Cálculo Host:
+(2^n)-2 >= 60 --> n = 6
+4º octeto: 11000000 = 192 --> /26
+Variação de subrede: 256 - 192 = 64
+Subrede   Rede  Broadcast
+   1        0       63
+   2        64      127
+   3        128     191
+
+IP: 192.168.1.64/26
+
+R.: B.
+
+
+
+Questão 4:
+    IP: 10.24.24.24/29
+
+4º octeto: 11111000 = 248 --> /29
+Variação de subrede: 256 - 248 = 8
+Subrede   Rede  Broadcast
+   1        0       7
+   2        8       15
+   3        16      23
+   4        24      31
+
+O IP fornecido é um endereço de rede.
+
+R.: D.
+
+
+
+Questão 5:
+    
+4º Octeto: 11100000 = 224 --> /27
+Variação de subrede: 256 - 224 = 32
+Subrede   Rede  Broadcast
+   1        0       31
+   2        32      63
+   3        64      95
+   4        96      127
+ 
+A interfaces seriais dos roteadores não estão na mesma subrede. O S0/0 do Router A, está na 2ª subrede e tem por endereço de rede: 192.168.1.32/27. Já O S0/0 do Router B, está na 3ª subrede e tem por endereço de rede: 192.168.1.64/27.
+
+R.: D.
+
+
+
+Questão 6: 
+    IP: IP 172.1.1.1/20
+
+3º octeto: 11110000 = 240 --> /20
+Variação de subrede: 256 - 240 = 16
+Número de zeros: 12
+Cálculo Host:
+(2^n)-2 --> (2^12)-2 = 4094 hosts
+
+R.: A.
+
+
+
+Questão 7: 
+    IP: 192.0.2.0/23
+
+3º octeto: 11111110 = 254 --> /23
+Variação de subrede: 256 - 254 = 2
+Subrede   Rede  Broadcast
+   1        0       1
+   2        2       3
+   3        4       5
+IP: 192.0.2.255
+
+R.: B.
+
+
+Questão 8: 
+    Máscara: 255.255.252.0
+
+3º octeto: 11111100 = 252 --> /22
+Variação de subrede: 256 - 252 = 4
+Subrede   Rede  Broadcast
+   1        0       3
+   2        4       7
+   3        8       11
+
+IPs: 186.54.3.0
+     26.35.2.255
+
+R.: B e D.
